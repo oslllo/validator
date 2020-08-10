@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * URL
-         * Test if `value` is an URL.
+         * @description Test if `value` is an URL.
          *
-         * require_protocol - if set as true isURL will return false if protocol is not present in the URL.
+         * @description require_protocol - if set as true isURL will return false if protocol is not present in the URL.
          * require_valid_protocol - isURL will check if the URL's protocol is present in the protocols option.
          * protocols - valid protocols can be modified with this option.
          * require_host - if set as false isURL will not check if host is present in the URL.

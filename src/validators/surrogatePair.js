@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * surrogatePair
-		 * Test if `value` contains any surrogate pairs chars.
+		 * @description Test if `value` contains any surrogate pairs chars.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value; contains any surrogate pairs chars, otherwise false.
 		 * @api public
 		 */

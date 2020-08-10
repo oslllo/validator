@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * halfWidth
-		 * Test if `value` contains any half-width chars.
+		 * @description Test if `value` contains any half-width chars.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value` contains any half-width chars, false otherwise
 		 * @api public
 		 */

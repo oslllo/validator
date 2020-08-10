@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * instance
-		 * Test if `value` is an instance of `constructor`.
+		 * @description Test if `value` is an instance of `constructor`.
 		 *
 		 * @param {*} value value to test
 		 * @param {*} constructor constructor value

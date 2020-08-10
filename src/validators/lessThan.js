@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * lessThan
-		 * Test if `value` is less than `other`.
+		 * @description Test if `value` is less than `other`.
 		 *
 		 * @param {Number} value value to test
 		 * @param {Number} other value to compare with

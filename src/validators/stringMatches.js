@@ -4,13 +4,13 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * stringMatches
-         * Test if `value` matches the pattern.
+         * @description Test if `value` matches the pattern.
          *
-         * Either matches('foo', /foo/i) or matches('foo', 'foo', 'i').
+         * @description Either matches('foo', /foo/i) or matches('foo', 'foo', 'i').
 		 *
-         * @param {string} value value to test
-         * @param {string} pattern test pattern
-		 * @param {string} modifiers test modifiers
+         * @param {String} value value to test
+         * @param {String} pattern test pattern
+		 * @param {String} modifiers test modifiers
 		 * @return {Boolean} true if `value` matches the pattern, otherwise false.
 		 * @api public
 		 */

@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * magnetURI
-		 * Test if `value` is a magnet uri format.
+		 * @description Test if `value` is a magnet uri format.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value` is a magnet uri format, otherwise false.
 		 * @api public
 		 */

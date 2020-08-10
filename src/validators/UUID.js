@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * UUID
-		 * Test if `value` is a UUID (version 3, 4 or 5).
+		 * @description Test if `value` is a UUID (version 3, 4 or 5).
 		 *
          * @param {String} value value to test
          * @param {Number} version which version to use

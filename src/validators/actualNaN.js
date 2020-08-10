@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * actualNaN
-		 * Test if `value` is actual NaN.
+		 * @description Test if `value` is actual NaN.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if 'value' is actual NaN, false otherwise

@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * error
-		 * Test if `value` is an error object.
+		 * @description Test if `value` is an error object.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is an error object, false otherwise

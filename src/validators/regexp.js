@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * regexp
-		 * Test if `value` is a regular expression.
+		 * @description Test if `value` is a regular expression.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is a regexp, false otherwise

@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * within
-		 * Test if `value` is within `start` and `finish`.
+		 * @description Test if `value` is within `start` and `finish`.
 		 *
 		 * @param {Number} value value to test
 		 * @param {Number} start lower bound

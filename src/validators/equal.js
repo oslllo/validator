@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * equal
-		 * Test if `value` is equal to `other`.
+		 * @description Test if `value` is equal to `other`.
 		 *
 		 * @param {*} value value to test
 		 * @param {*} other value to compare with

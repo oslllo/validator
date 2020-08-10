@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * date
-		 * Test if `value` is a date.
+		 * @description Test if `value` is a date.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is a date, false otherwise

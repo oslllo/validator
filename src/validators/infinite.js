@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * infinite
-		 * Test if `value` is positive or negative infinity.
+		 * @description Test if `value` is positive or negative infinity.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is positive or negative Infinity, false otherwise

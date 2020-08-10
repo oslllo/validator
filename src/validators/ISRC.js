@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * ISRC
-		 * Test if `value` is a ISRC.
+		 * @description Test if `value` is a ISRC.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value` is a ISRC, otherwise false.
 		 * @api public
 		 */

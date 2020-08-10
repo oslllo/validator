@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * dataURI
-		 * Test if `value is a data uri format.
+		 * @description Test if `value is a data uri format.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value` is a data uri format, false otherwise
 		 * @api public
 		 */

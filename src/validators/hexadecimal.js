@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * hexadecimal
-		 * Test if `value` is a hexadecimal number.
+		 * @description Test if `value` is a hexadecimal number.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if 'value' is a hexadecimal number, false otherwise

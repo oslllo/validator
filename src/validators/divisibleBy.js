@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * divisibleBy
-		 * Test if `value` is divisible by `n`.
+		 * @description Test if `value` is divisible by `n`.
 		 *
 		 * @param {Number} value value to test
 		 * @param {Number} n dividend
@@ -16,9 +16,9 @@ module.exports = function (v) {
 			var isDivisorInfinite = this.infinite(n);
 			var isNonZeroNumber =
 				this.number(value) &&
-				!isActualNaN(value) &&
+				!this.actualNaN(value) &&
 				this.number(n) &&
-				!isActualNaN(n) &&
+				!this.actualNaN(n) &&
 				n !== 0;
 			return (
 				isDividendInfinite ||

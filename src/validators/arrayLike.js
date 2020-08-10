@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * arraylike
-		 * Test if `value` is an arraylike object.
+		 * @description Test if `value` is an arraylike object.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is an arguments object, false otherwise

@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * symbol
-		 * Test if `value` is an ES6 Symbol
+		 * @description Test if `value` is an ES6 Symbol
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is a Symbol, false otherise

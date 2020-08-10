@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * whitelisted
-		 * Test if `value` characters appear in the whitelist.
+		 * @description Test if `value` characters appear in the whitelist.
 		 *
 		 * @param {String} value value to test
 		 * @param {String} chars whitelist

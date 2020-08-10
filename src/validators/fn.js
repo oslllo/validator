@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * fn
-		 * Test if `value` is a function.
+		 * @description Test if `value` is a function.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is a function, false otherwise

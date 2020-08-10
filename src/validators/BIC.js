@@ -6,7 +6,7 @@ module.exports = function (v) {
 		 * BIC
 		 * Test if 'value' is a BIC (Bank Identification Code) or SWIFT code.
 		 *
-		 * @param {string} value BIC code
+		 * @param {String} value BIC code
 		 * @return {Boolean} true if 'value' is a BIC (Bank Identification Code) or SWIFT code, false otherwise
 		 * @api public
 		 */

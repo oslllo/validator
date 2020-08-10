@@ -6,8 +6,10 @@ require("./validators/actualNaN")(Validator);
 require("./validators/after")(Validator);
 require("./validators/alpha")(Validator);
 require("./validators/alphanumeric")(Validator);
-require("./validators/arguments")(Validator);
+require("./validators/args")(Validator);
+require("./validators/argsEmpty")(Validator);
 require("./validators/array")(Validator);
+require("./validators/arrayEmpty")(Validator);
 require("./validators/arrayLike")(Validator);
 require("./validators/ascii")(Validator);
 
@@ -15,7 +17,7 @@ require("./validators/base32")(Validator);
 require("./validators/base64")(Validator);
 require("./validators/before")(Validator);
 require("./validators/BIC")(Validator);
-require("./validators/bigInt")(Validator);
+require("./validators/bigint")(Validator);
 require("./validators/bool")(Validator);
 require("./validators/btcAddress")(Validator);
 require("./validators/byteLength")(Validator);
@@ -26,6 +28,7 @@ require("./validators/currency")(Validator);
 require("./validators/dataURI")(Validator);
 require("./validators/date")(Validator);
 require("./validators/dateString")(Validator);
+require("./validators/dateValid")(Validator);
 require("./validators/decimal")(Validator);
 require("./validators/defined")(Validator);
 require("./validators/divisibleBy")(Validator);
@@ -53,6 +56,7 @@ require("./validators/hash")(Validator);
 require("./validators/hex")(Validator);
 require("./validators/hexadecimal")(Validator);
 require("./validators/hexColor")(Validator);
+require("./validators/hosted")(Validator);
 require("./validators/HSL")(Validator);
 
 require("./validators/IBAN")(Validator);
@@ -98,6 +102,7 @@ require("./validators/number")(Validator);
 require("./validators/numeric")(Validator);
 
 require("./validators/object")(Validator);
+require("./validators/objectLiteral")(Validator);
 require("./validators/octal")(Validator);
 require("./validators/odd")(Validator);
 

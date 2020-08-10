@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * empty
-		 * Test if `value` is empty.
+		 * @description Test if `value` is empty.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is empty, false otherwise
@@ -21,7 +21,7 @@ module.exports = function (v) {
 			}
 
 			if (type === "[object Object]") {
-				for (key in value) {
+				for (var key in value) {
 					if (this._hasOwnProperty(value, key)) {
 						return false;
 					}

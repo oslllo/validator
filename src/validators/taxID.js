@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * taxID
-		 * Test if `value` is a valid Tax Identification Number.
+		 * @description Test if `value` is a valid Tax Identification Number.
 		 *
 		 * @param {String} value value to test
 		 * @param {String} locale  default locale is en-US

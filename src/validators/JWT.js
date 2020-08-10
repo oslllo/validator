@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * JWT
-		 * Test if `value` is valid JWT token.
+		 * @description Test if `value` is valid JWT token.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value` is valid JWT, otherwise false.
 		 * @api public
 		 */

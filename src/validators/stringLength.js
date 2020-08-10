@@ -4,13 +4,10 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * stringLength
-		 * Test if `value's length falls in a range.
+		 * @description Test if `value's length falls in a range.
 		 *
-		 * options is an object which defaults to {min:0, max: undefined}. Note: this function takes into account surrogate pairs.
-		 *
-		 *
-		 * @param {string} value value to test
-		 * @param {object} options options object
+		 * @param {String} value value to test
+		 * @param {object} options defaults to {min:0, max: undefined}. Note: this function takes into account surrogate pairs.
 		 * @return {Boolean} true if `value`'s length falls in a range, otherwise false.
 		 * @api public
 		 */

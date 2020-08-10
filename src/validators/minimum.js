@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * minimum
-		 * Test if `value` is less than `others` values.
+		 * @description Test if `value` is less than `others` values.
 		 *
 		 * @param {Number} value value to test
 		 * @param {Array} others values to compare with
@@ -14,7 +14,7 @@ module.exports = function (v) {
 		minimum: function (value, others) {
 			if (this.actualNaN(value)) {
 				throw new TypeError("NaN is not a valid value");
-			} else if (!this.arraylike(others)) {
+			} else if (!this.arrayLike(others)) {
 				throw new TypeError("second argument must be array-like");
 			}
 			var len = others.length;

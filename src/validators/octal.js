@@ -4,9 +4,9 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * octal
-		 * Test if `value` is a valid octal number.
+		 * @description Test if `value` is a valid octal number.
 		 *
-		 * @param {string} value value to test
+		 * @param {String} value value to test
 		 * @return {Boolean} true if `value is a valid octal number, otherwise false.
 		 * @api public
 		 */

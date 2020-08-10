@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * array
-		 * Test if 'value' is an array.
+		 * @description Test if 'value' is an array.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is an array, false otherwise

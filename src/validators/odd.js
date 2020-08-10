@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * odd
-		 * Test if `value` is an odd number.
+		 * @description Test if `value` is an odd number.
 		 *
 		 * @param {Number} value value to test
 		 * @return {Boolean} true if `value` is an odd number, false otherwise

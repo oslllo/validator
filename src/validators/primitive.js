@@ -4,7 +4,7 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * primitive
-		 * Test if `value` is a primitive.
+		 * @description Test if `value` is a primitive.
 		 *
 		 * @param {*} value value to test
 		 * @return {Boolean} true if `value` is a primitive, false otherwise
