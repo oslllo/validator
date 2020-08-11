@@ -42,3 +42,4 @@ require("./src/validators/test.objectLiteral");
 require("./src/validators/test.regexp");
 require("./src/validators/test.hex");
 require("./src/validators/test.bigint");
+require("./src/validators/test.symbol");
