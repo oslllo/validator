@@ -32,6 +32,11 @@ describe("is.primitive", () => {
 			assert.isFalse(is.primitive(invalid.data));
 		});
 	});
+	describe("Symbol", () => {
+		if (typeof Symbol === "function") {
+			it(`can tell that symbol is a primitive`, () => {
+				assert.isTrue(is.primitive(Symbol("foo")));
+			});
+		}
+	});
 });
-
-// TODO: test symbols
