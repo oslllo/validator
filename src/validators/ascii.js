@@ -11,7 +11,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		ascii: function (value) {
-			return this.validator.ascii(...arguments);
+			return this.validator.isAscii(...arguments);
 		},
 	});
 };

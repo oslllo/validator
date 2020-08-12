@@ -3,7 +3,7 @@
 module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
-		 * before
+		 * dateBefore
 		 * @description Test if 'value' is a date that's before the specified date.
 		 *
 		 * @param {String} value starting date
@@ -11,8 +11,8 @@ module.exports = function (v) {
 		 * @return {Boolean} true if 'value' is a date that's before the specified date., false otherwise
 		 * @api public
 		 */
-		before: function (value, date) {
-            return this.validator.isBefore(...arguments)
-        },
+		dateBefore: function (value, date) {
+			return this.validator.isBefore(...arguments);
+		},
 	});
 };

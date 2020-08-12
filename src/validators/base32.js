@@ -11,7 +11,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		base32: function (value) {
-			return this.validator.base32(...arguments);
+			return this.validator.isBase32(...arguments);
 		},
 	});
 };

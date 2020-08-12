@@ -10,8 +10,9 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value is a valid port number, otherwise false.
 		 * @api public
 		 */
-         portNumber: function (value) {
-             return this.validator.isPort(...arguments);
-         }
+		portNumber: function (value) {
+			arguments[0] = arguments[0].toString();
+			return this.validator.isPort(...arguments);
+		},
 	});
 };

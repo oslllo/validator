@@ -14,7 +14,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		email: function (value, options) {
-			this.validator.isEmail(...arguments);
+			return this.validator.isEmail(...arguments);
 		},
 	});
 };

@@ -18,6 +18,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		float: function (value, options) {
+			arguments[0] = arguments[0].toString();
 			return this.validator.isFloat(value.toString(), options);
 		},
 	});

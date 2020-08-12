@@ -15,7 +15,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		base64: function (value, options) {
-			return this.validator.base64(...arguments);
+			return this.validator.isBase64(...arguments);
 		},
 	});
 };
