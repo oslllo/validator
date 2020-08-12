@@ -23,18 +23,18 @@ describe("is.primitive", () => {
 		"Function('return 42n')()",
 	];
 	inputs.valid(data).forEach((valid) => {
-		it(`can tell that ${valid.description} is a primitive`, () => {
+		it(`can validate that ${valid.description} is a primitive`, () => {
 			assert.isTrue(is.primitive(valid.data));
 		});
 	});
 	inputs.invalid(data).forEach((invalid) => {
-		it(`can tell that ${invalid.description} is NOT a primitive`, () => {
+		it(`can validate that ${invalid.description} is NOT a primitive`, () => {
 			assert.isFalse(is.primitive(invalid.data));
 		});
 	});
 	describe("Symbol", () => {
 		if (typeof Symbol === "function") {
-			it(`can tell that symbol is a primitive`, () => {
+			it(`can validate that symbol is a primitive`, () => {
 				assert.isTrue(is.primitive(Symbol("foo")));
 			});
 		}

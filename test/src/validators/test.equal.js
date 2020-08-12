@@ -16,7 +16,7 @@ describe("is.equal", () => {
 			"-Infinity",
 		];
 		inputs.valid(data).forEach((valid) => {
-			it(`can tell that ${valid.description} primitive is equal to itself`, () => {
+			it(`can validate that ${valid.description} primitive is equal to itself`, () => {
 				assert.isTrue(is.equal(valid.data, valid.data));
 			});
 		});

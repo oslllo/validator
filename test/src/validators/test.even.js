@@ -13,12 +13,12 @@ describe("is.even", () => {
 		"-Infinity",
 	];
 	inputs.valid(data).forEach((valid) => {
-		it(`can tell that ${valid.description} is even`, () => {
+		it(`can validate that ${valid.description} is even`, () => {
 			assert.isTrue(is.even(valid.data));
 		});
 	});
 	inputs.invalid(data).forEach((invalid) => {
-		it(`can tell that ${invalid.description} is NOT even`, () => {
+		it(`can validate that ${invalid.description} is NOT even`, () => {
 			assert.isFalse(is.even(invalid.data));
 		});
 	});

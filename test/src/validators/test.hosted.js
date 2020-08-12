@@ -15,12 +15,12 @@ describe("is.hosted", () => {
 		],
 	};
 	hosted.valid.forEach((host) => {
-		it(`can tell that ${type(host.a)} is hosted`, () => {
+		it(`can validate that ${type(host.a)} is hosted`, () => {
 			assert.isTrue(is.hosted("a", host));
 		});
     });
     hosted.invalid.forEach((host) => {
-		it(`can tell that ${type(host.a)} is NOT hosted`, () => {
+		it(`can validate that ${type(host.a)} is NOT hosted`, () => {
 			assert.isFalse(is.hosted("a", host));
 		});
 	});

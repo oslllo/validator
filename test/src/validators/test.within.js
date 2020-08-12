@@ -54,23 +54,23 @@ describe("is.within", () => {
 		});
 	});
 	//! TRUE
-	it(`can tell that 2 is between 1 and 3`, () => {
+	it(`can validate that 2 is between 1 and 3`, () => {
 		assert.isTrue(is.within(2, 1, 3));
 	});
-	it(`can tell that 0 is between -1 and 1`, () => {
+	it(`can validate that 0 is between -1 and 1`, () => {
 		assert.isTrue(is.within(0, -1, 1));
 	});
-	it(`can tell that infinity always returns true (1)`, () => {
+	it(`can validate that infinity always returns true (1)`, () => {
 		assert.isTrue(is.within(2, 0, Infinity));
 	});
-	it(`can tell that infinity always returns true (2)`, () => {
+	it(`can validate that infinity always returns true (2)`, () => {
 		assert.isTrue(is.within(2, Infinity, 0));
 	});
-	it(`can tell that infinity always returns true (3)`, () => {
+	it(`can validate that infinity always returns true (3)`, () => {
 		assert.isTrue(is.within(Infinity, 2, 0));
 	});
 	//! FALSE
-	it(`can tell that 2 is not between -1 and 1`, () => {
+	it(`can validate that 2 is not between -1 and 1`, () => {
 		assert.isFalse(is.within(2, -1, 1));
 	});
 });

@@ -4,32 +4,32 @@ const { is, assert, inputs } = require("../helper");
 
 describe("is.greaterThan", () => {
     //! TRUE
-	it(`can tell that 3 is greater than 2`, () => {
+	it(`can validate that 3 is greater than 2`, () => {
 		assert.isTrue(is.greaterThan(3, 2));
     });
-    it(`can tell that abc is greater than a`, () => {
+    it(`can validate that abc is greater than a`, () => {
 		assert.isTrue(is.greaterThan('abc', 'a'));
     });
     //! FALSE
-    it(`can tell that 3 is NOT greater than 3`, () => {
+    it(`can validate that 3 is NOT greater than 3`, () => {
 		assert.isFalse(is.greaterThan(3, 3));
     });
-    it(`can tell that 2 is NOT greater than 3`, () => {
+    it(`can validate that 2 is NOT greater than 3`, () => {
 		assert.isFalse(is.greaterThan(2, 3));
     });
-    it(`can tell that 3 is NOT greater than 3`, () => {
+    it(`can validate that 3 is NOT greater than 3`, () => {
 		assert.isFalse(is.greaterThan(3, 3));
     });
-    it(`can tell that abc is NOT greater than abc`, () => {
+    it(`can validate that abc is NOT greater than abc`, () => {
 		assert.isFalse(is.greaterThan('abc', 'abc'));
     });
-    it(`can tell that a is NOT greater than abc`, () => {
+    it(`can validate that a is NOT greater than abc`, () => {
 		assert.isFalse(is.greaterThan('a', 'abc'));
     });
-    it(`can tell that Infinity is NOT greater than anything`, () => {
+    it(`can validate that Infinity is NOT greater than anything`, () => {
 		assert.isFalse(is.greaterThan(Infinity, 0));
     });
-    it(`can tell that anything is NOT greater than Infinity`, () => {
+    it(`can validate that anything is NOT greater than Infinity`, () => {
 		assert.isFalse(is.greaterThan(0, Infinity));
     });
     //! THROWS
