@@ -2,6 +2,12 @@
 
 const is = require("../../");
 const { assert } = require("chai");
+const DOM = require("../../src/dom");
+
+const { JSDOM } = require("jsdom");
+let dom = new JSDOM(`<!DOCTYPE html></html>`);
+var window = dom.window;
+var document = window.document;
 
 const type = function (value) {
 	return Object.prototype.toString
@@ -95,7 +101,7 @@ const inputs = {
 		//! BIGINTS
 		{
 			name: "Function('return 42n')()",
-			data: Function('return 42n')(),
+			data: Function("return 42n")(),
 			description: "(bigint) Function('return 42n')()",
 		},
 		{
@@ -274,7 +280,7 @@ const inputs = {
 		},
 		{
 			name: "new RegExp('a', 'g')",
-			data: new RegExp('a', 'g'),
+			data: new RegExp("a", "g"),
 			description: "(reg expression) new RegExp('a', 'g')",
 		},
 	],
@@ -282,7 +288,8 @@ const inputs = {
 
 module.exports = {
 	is,
+	DOM,
+	type,
 	assert,
 	inputs,
-	type,
 };

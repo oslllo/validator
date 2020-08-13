@@ -1,15 +1,15 @@
 "use strict";
 
-const { is, assert, inputs } = require("../helper");
+const { is, assert, inputs, DOM } = require("../helper");
 
-if (typeof HTMLElement !== "undefined") {
-	describe("is.element", () => {
-		it(`can validate that HTMLElement is an element`, () => {
-			var element = document.createElement("div");
-			assert.isTrue(is.element(element));
-		});
-		it(`can validate that object with nodeType is not element`, () => {
-			assert.isTrue(is.element({ nodeType: 1 }));
-		});
+var document = DOM.document;
+
+describe("is.element", () => {
+	it(`can validate that HTMLElement is an element`, () => {
+		var element = document.createElement("div");
+		assert.isTrue(is.element(element));
 	});
-}
+	it(`can validate that object with nodeType is not element`, () => {
+		assert.isFalse(is.element({ nodeType: 1 }));
+	});
+});

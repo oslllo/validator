@@ -29,5 +29,3 @@ describe("is.empty", () => {
 		});
 	});
 });
-
-// Array.prototype.slice.call(arguments) 'empty sliced arguments is not empty arguments'

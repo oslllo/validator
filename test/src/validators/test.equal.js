@@ -88,4 +88,14 @@ describe("is.equal", () => {
 			assert.isFalse(is.equal(g, f));
 		});
 	});
+	describe("function", () => {
+		var func1 = function () {};
+		var func2 = function () {};
+		it(`can validate that the same function is equal to itself`, () => {
+			assert.isTrue(is.equal(func1, func1));
+		});
+		it(`can validate that functions that look the same are are declared at diffrent times are NOT equal`, () => {
+			assert.isFalse(is.equal(func1, func2));
+		});
+	});
 });
