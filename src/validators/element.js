@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		element: function (value) {
+			var HTMLElement = this._window.HTMLElement;
 			return (
 				value !== undefined &&
 				typeof HTMLElement !== "undefined" &&

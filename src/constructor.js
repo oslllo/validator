@@ -1,9 +1,12 @@
 "use strict";
 
+const DOM = require("./dom");
 const validator = require("validator");
 
 const Validator = function () {
 	this.validator = validator;
+	this._window = DOM.window;
+	this._document = DOM.document;
 };
 
 Validator.prototype = {
@@ -29,5 +32,7 @@ Validator.prototype = {
 		return Object.hasOwnProperty.call(obj, prop);
 	},
 };
+
+Validator.JSDOM = DOM.JSDOM;
 
 module.exports = Validator;

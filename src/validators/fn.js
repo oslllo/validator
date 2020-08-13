@@ -11,8 +11,7 @@ module.exports = function (v) {
 		 * @api public
 		 */
 		fn: function (value) {
-			var alert = typeof window !== "undefined" && value === window.alert;
-			if (alert) {
+			if (value === this._window.alert) {
 				return true;
 			}
 			var type = this._getObjectType(value);
