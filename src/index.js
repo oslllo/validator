@@ -3,7 +3,6 @@
 var Validator = require("./constructor");
 
 require("./validators/actualNaN")(Validator);
-require("./validators/dateAfter")(Validator);
 require("./validators/alpha")(Validator);
 require("./validators/alphanumeric")(Validator);
 require("./validators/args")(Validator);
@@ -15,7 +14,6 @@ require("./validators/ascii")(Validator);
 
 require("./validators/base32")(Validator);
 require("./validators/base64")(Validator);
-require("./validators/dateBefore")(Validator);
 require("./validators/BIC")(Validator);
 require("./validators/bigint")(Validator);
 require("./validators/bool")(Validator);
@@ -27,6 +25,8 @@ require("./validators/currency")(Validator);
 
 require("./validators/dataURI")(Validator);
 require("./validators/date")(Validator);
+require("./validators/dateAfter")(Validator);
+require("./validators/dateBefore")(Validator);
 require("./validators/dateValid")(Validator);
 require("./validators/decimal")(Validator);
 require("./validators/defined")(Validator);
@@ -98,7 +98,6 @@ require("./validators/multibyte")(Validator);
 require("./validators/nan")(Validator);
 require("./validators/null")(Validator);
 require("./validators/number")(Validator);
-require("./validators/stringNumeric")(Validator);
 
 require("./validators/object")(Validator);
 require("./validators/objectLiteral")(Validator);
@@ -118,14 +117,15 @@ require("./validators/semVer")(Validator);
 require("./validators/slug")(Validator);
 require("./validators/string")(Validator);
 require("./validators/stringBool")(Validator);
-require("./validators/stringIn")(Validator);
-require("./validators/stringInteger")(Validator);
+require("./validators/stringContains")(Validator);
 require("./validators/stringDecimal")(Validator);
 require("./validators/stringEmpty")(Validator);
-require("./validators/stringLength")(Validator);
 require("./validators/stringEquals")(Validator);
+require("./validators/stringIn")(Validator);
+require("./validators/stringInteger")(Validator);
+require("./validators/stringLength")(Validator);
 require("./validators/stringMatches")(Validator);
-require("./validators/stringContains")(Validator);
+require("./validators/stringNumeric")(Validator);
 require("./validators/surrogatePair")(Validator);
 require("./validators/symbol")(Validator);
 
