@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/oslllo/validator#readme",
   "dependencies": {
+    "jsdom": "^16.4.0",
     "validator": "^13.1.1"
   },
   "devDependencies": {
