@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * true
 		 * @description Test if `value` is true.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is true, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.true(true); // => True
+		 * is.true(1); // => False
+		 * 
 		 */
 		true: function (value) {
 			return this.bool(value) && Boolean(Number(value)) === true;

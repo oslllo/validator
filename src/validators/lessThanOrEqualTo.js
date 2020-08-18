@@ -6,10 +6,19 @@ module.exports = function (v) {
 		 * lessThanOrEqualTo
 		 * @description Test if `value` is less than or equal to `other`.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @param {Number} other value to compare with
-		 * @return {Boolean} if 'value' is less than or equal to 'other'
-		 * @api public
+		 * @return {Boolean} if `value` is less than or equal to 'other'
+		 * @access public
+		 * @example
+		 * 
+		 * is.lessThanOrEqualTo(2, 3); // => True
+		 * is.lessThanOrEqualTo("a", "abc"); // => True
+		 * is.lessThanOrEqualTo("abc", "abc"); // => True
+		 * 
+		 * is.lessThanOrEqualTo(3, 2); // => False
+		 * 
 		 */
 		lessThanOrEqualTo: function (value, other) {
 			if (this.actualNaN(value) || this.actualNaN(other)) {

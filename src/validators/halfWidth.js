@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * halfWidth
 		 * @description Test if `value` contains any half-width chars.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value` contains any half-width chars, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.halfWidth("abc123い"); // => True
+		 * is.halfWidth("あいうえお"); // => False
+		 * 
 		 */
 		halfWidth: function (value) {
 			return this.validator.isHalfWidth(...arguments);

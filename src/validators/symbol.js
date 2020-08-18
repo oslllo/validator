@@ -6,9 +6,16 @@ module.exports = function (v) {
 		 * symbol
 		 * @description Test if `value` is an ES6 Symbol
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a Symbol, false otherise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.symbol(Symbol("foo")); // => True
+		 * is.symbol(Symbol["name"]); // => False
+		 * is.symbol(new Object()); // => False
+		 * 
 		 */
 		symbol: function (value) {
 			return (

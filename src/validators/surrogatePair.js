@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * surrogatePair
 		 * @description Test if `value` contains any surrogate pairs chars.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value; contains any surrogate pairs chars, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.surrogatePair("𠮷野𠮷"); // => True
+		 * is.surrogatePair("鮪"); // => False
+		 * 
 		 */
 		surrogatePair: function (value) {
 			return this.validator.isSurrogatePair(...arguments);

@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * semVer
 		 * @description Test if `value` is a Semantic Versioning Specification (SemVer).
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value is a SemVer, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.semVer("0.0.4"); // => True
+		 * is.semVer("beta"); // => False
+		 * 
 		 */
 		semVer: function (value) {
 			return this.validator.isSemVer(...arguments);

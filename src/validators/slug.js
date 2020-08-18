@@ -6,10 +6,16 @@ module.exports = function (v) {
 		 * slug
 		 * @description Test if `value` is of type slug.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @param {Object} options allow a single hyphen between string. e.g. [cn-cn, cn-c-c]
 		 * @return {Boolean} true if `value is of type slug, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.slug("cs-cz", "cs_67CZ"); // => True
+		 * is.slug("not-----------slug", "cs_67CZ"); // => False
+		 * 
 		 */
 		slug: function (value, options) {
 			return this.validator.isSlug(...arguments);

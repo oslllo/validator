@@ -6,10 +6,19 @@ module.exports = function (v) {
 		 * byteLength
 		 * @description Test if `value`'s length (in UTF-8 bytes) falls in a range.
 		 *
-         * @param {String} value value to test
-         * @param {Object} options is an object which defaults to {min:0, max: undefined}
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
+		 * @param {(Number|Object)} [options = {min:0, max: undefined}] options value
 		 * @return {Boolean} true if `value`'s length (in UTF-8 bytes) falls in a range, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 *
+		 * is.byteLength("abc", 2); // => True
+		 * is.byteLength("a", 2); // => False
+		 *
+		 * is.byteLength("de", { min: 2, max: 3 }); // => True
+		 * is.byteLength("a", { min: 2, max: 3 }); // => False
+		 *
 		 */
 		byteLength: function (value, options) {
 			return this.validator.isByteLength(...arguments);

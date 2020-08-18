@@ -5,12 +5,17 @@ module.exports = function (v) {
 		/**
 		 * stringIn
 		 * @description Test if `value` is in an array of allowed values.
-		 *
-		 *
-		 * @param {String} value value to test
+		 * 
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @param {Array} arr array to check in
-		 * @return {Boolean} true if 'value' is in an array of allowed values, false otherwise
-		 * @api public
+		 * @return {Boolean} true if `value` is in an array of allowed values, false otherwise
+		 * @access public
+		 * @example
+		 *
+		 * is.stringIn("foo", "foobar"); // => True
+		 * is.stringIn("barfoo", "foobar"); // => False
+		 * 
 		 */
 		stringIn: function (value, arr) {
 			return this.validator.isIn(...arguments);

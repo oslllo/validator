@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * empty
 		 * @description Test if `value` is empty.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is empty, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.empty(NaN); // => True
+		 * is.empty([1, 2, 3]); // => False
+		 * 
 		 */
 		empty: function (value) {
 			var type = this._getObjectType(value);

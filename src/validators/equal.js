@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * equal
 		 * @description Test if `value` is equal to `other`.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @param {*} other value to compare with
 		 * @return {Boolean} true if `value` is equal to `other`, false otherwise
+		 * @example
+		 * 
+		 * is.equal(true, true); // => True
+		 * is.equal([1, 2, 3], [2, 3]); // => False
+		 * 
 		 */
 		equal: function (value, other) {
 			if (value === other) {

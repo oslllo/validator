@@ -6,10 +6,16 @@ module.exports = function (v) {
 		 * whitelisted
 		 * @description Test if `value` characters appear in the whitelist.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @param {String} chars whitelist
 		 * @return {Boolean} true if `value' characters appear in the whitelist, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.whitelisted("foo", "abcdefghijklmnopqrstuvwxyz"); // => True
+		 * is.whitelisted("foo bar", "abcdefghijklmnopqrstuvwxyz"); // => False
+		 * 
 		 */
 		whitelisted: function (value, chars) {
 			return this.validator.isWhitelisted(...arguments);

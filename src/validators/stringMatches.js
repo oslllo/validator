@@ -8,11 +8,20 @@ module.exports = function (v) {
          *
          * @description Either matches('foo', /foo/i) or matches('foo', 'foo', 'i').
 		 *
-         * @param {String} value value to test
+		 * @since 0.0.1
+         * @param {String} value `value` to test
          * @param {String} pattern test pattern
 		 * @param {String} modifiers test modifiers
 		 * @return {Boolean} true if `value` matches the pattern, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.stringMatches("abc", /abc/); // => True
+		 * is.stringMatches("acb", /abc/); // => False
+		 * 
+		 * is.stringMatches("abc", "abc", "i") // => True
+		 * is.stringMatches("acb", "abc", "i") // => False
+		 * 
 		 */
          stringMatches: function (value, pattern, modifiers) {
              return this.validator.matches(...arguments)

@@ -6,11 +6,20 @@ module.exports = function (v) {
 		 * within
 		 * @description Test if `value` is within `start` and `finish`.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @param {Number} start lower bound
 		 * @param {Number} finish upper bound
-		 * @return {Boolean} true if 'value' is is within 'start' and 'finish'
-		 * @api public
+		 * @return {Boolean} true if `value` is is within 'start' and 'finish'
+		 * @access public
+		 * @example
+		 * 
+		 * is.within(2, 1, 3); // => True
+		 * is.within(0, -1, 1); // => True
+		 * is.within(2, 0, Infinity); // => True
+		 * 
+		 * is.within(2, -1, 1); // => False
+		 * 
 		 */
 		within: function (value, start, finish) {
 			if (this.actualNaN(value) || this.actualNaN(start) || this.actualNaN(finish)) {

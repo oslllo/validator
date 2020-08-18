@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * primitive
 		 * @description Test if `value` is a primitive.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a primitive, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.primitive(0); // => True
+		 * is.primitive(new Object()); // => False
+		 * 
 		 */
 		primitive: function isPrimitive(value) {
 			if (!value) {

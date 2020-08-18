@@ -6,10 +6,16 @@ module.exports = function (v) {
 		 * divisibleBy
 		 * @description Test if `value` is divisible by `n`.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @param {Number} n dividend
 		 * @return {Boolean} true if `value` is divisible by `n`, false otherwise
-         * @api public
+         * @access public
+		 * @example
+		 * 
+		 * is.divisibleBy(4, 2); // => True
+		 * is.divisibleBy(1, 0); // => False
+		 * 
 		 */
 		divisibleBy: function (value, n) {
 			var isDividendInfinite = this.infinite(value);

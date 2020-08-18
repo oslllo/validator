@@ -6,9 +6,16 @@ module.exports = function (v) {
 		 * undefined
 		 * @description Test if `value` is undefined.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is undefined, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.undefined(undefined); // => True
+		 * is.undefined(null); // => False
+		 * is.undefined(0); // => False
+		 * 
 		 */
          undefined: function (value) {
 			return typeof value === 'undefined';

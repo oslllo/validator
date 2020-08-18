@@ -6,10 +6,16 @@ module.exports = function (v) {
 		 * hosted
 		 * @description Test if `value` is hosted by `host`.
 		 *
+		 * @since 0.0.1
 		 * @param {*} value to test
 		 * @param {*} host host to test with
 		 * @return {Boolean} true if `value` is hosted by `host`, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.hosted("a", { a: {} }); // => True
+		 * is.hosted("a", { a: 3 }); // => False
+		 * 
 		 */
 		hosted: function (value, host) {
 			var NON_HOST_TYPES = {

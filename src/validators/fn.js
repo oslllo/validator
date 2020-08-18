@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * fn
 		 * @description Test if `value` is a function.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a function, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.fn(function () {}); // => True
+		 * is.fn({}); // => False
+		 * 
 		 */
 		fn: function (value) {
 			if (value === this._window.alert) {

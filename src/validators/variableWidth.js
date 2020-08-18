@@ -6,9 +6,14 @@ module.exports = function (v) {
 		 * variableWidth
 		 * @description Test if `value` contains a mixture of full and half-width chars.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value' contains a mixture of full and half-width chars, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.variableWidth("ひらがなカタカナ漢字ABCDE"); // => True
+		 * 
 		 */
 		variableWidth: function (value) {
 			return this.validator.isVariableWidth(...arguments);

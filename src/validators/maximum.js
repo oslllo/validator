@@ -6,10 +6,19 @@ module.exports = function (v) {
 		 * maximum
 		 * @description Test if `value` is greater than 'others' values.
 		 *
-		 * @param {Number} value value to test
-		 * @param {Array} others values to compare with
+		 * @since 0.0.1
+		 * @param {Number|String} value `value` to test
+		 * @param {ArrayLike} others values to compare with
 		 * @return {Boolean} true if `value` is greater than `others` values
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.maximum(3, [3, 2, 1]); // => True
+		 * is.maximum(2, [1, 2, 3]); // => False
+		 * 
+		 * is.maximum("c", ["a", "b", "c"]); // => True
+		 * is.maximum("b", ["a", "b", "c"]); // => False
+		 * 
 		 */
 		maximum: function (value, others) {
 			if (this.actualNaN(value)) {

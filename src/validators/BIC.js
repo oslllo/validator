@@ -4,11 +4,17 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * BIC
-		 * Test if 'value' is a BIC (Bank Identification Code) or SWIFT code.
+		 * @description Test if `value` is a BIC (Bank Identification Code) or SWIFT code.
 		 *
-		 * @param {String} value BIC code
-		 * @return {Boolean} true if 'value' is a BIC (Bank Identification Code) or SWIFT code, false otherwise
-		 * @api public
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
+		 * @return {Boolean} true if `value` is a BIC (Bank Identification Code) or SWIFT code, false otherwise
+		 * @access public
+		 * @example
+		 * 
+		 * is.BIC("SBICKEN1345"); // => True
+		 * is.BIC("S23CKENXXXX"); // => False
+		 * 
 		 */
 		BIC: function (value) {
 			return this.validator.isBIC(...arguments);

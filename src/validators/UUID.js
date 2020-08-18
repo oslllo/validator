@@ -6,10 +6,18 @@ module.exports = function (v) {
 		 * UUID
 		 * @description Test if `value` is a UUID (version 3, 4 or 5).
 		 *
-         * @param {String} value value to test
+		 * @since 0.0.1
+         * @param {String} value `value` to test
          * @param {Number} version which version to use
 		 * @return {Boolean} true if `value' is UUID, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.UUID("A987FBC9-4BED-3078-CF07-9141BA07C9F3"); // => True
+		 * 
+		 * is.UUID("A987FBC9-4BED-3078-CF07-9141BA07C9F3", 3); // => True
+		 * is.UUID("xxxA987FBC9-4BED-3078-CF07-9141BA07C9F3", 3); // => False
+		 * 
 		 */
 		UUID: function (value, version) {
             return this.validator.isUUID(...arguments);

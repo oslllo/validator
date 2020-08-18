@@ -6,10 +6,16 @@ module.exports = function (v) {
 		 * stringLength
 		 * @description Test if `value's length falls in a range.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @param {object} options defaults to {min:0, max: undefined}. Note: this function takes into account surrogate pairs.
 		 * @return {Boolean} true if `value`'s length falls in a range, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.stringLength("abc", { min: 2 }); // => True
+		 * is.stringLength("a", { min: 2 }); // => False
+		 * 
 		 */
 		stringLength: function (value, options) {
 			return this.validator.isLength(...arguments);

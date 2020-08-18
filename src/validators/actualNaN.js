@@ -6,9 +6,17 @@ module.exports = function (v) {
 		 * actualNaN
 		 * @description Test if `value` is actual NaN.
 		 *
-		 * @param {*} value value to test
-		 * @return {Boolean} true if 'value' is actual NaN, false otherwise
-		 * @api public
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
+		 * @return {Boolean} true if `value` is actual NaN, false otherwise
+		 * @access public
+		 * @example
+		 * 
+		 * is.actualNaN(NaN); // => True
+		 * is.actualNaN(null); // => False
+		 * is.actualNaN(undefined); // => False
+		 * is.actualNaN(0); // => False
+		 * 
 		 */
 		actualNaN: function (value) {
 			return value !== value;

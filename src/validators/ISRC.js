@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * ISRC
 		 * @description Test if `value` is a ISRC.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value` is a ISRC, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.ISRC("USAT29900609"); // => True
+		 * is.ISRC("SRC15705223"); // => False
+		 * 
 		 */
 		ISRC: function (value) {
 			return this.validator.isISRC(...arguments);

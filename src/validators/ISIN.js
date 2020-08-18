@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * ISIN
 		 * @description Test if `value` is an ISIN (stock/security identifier).
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value` is an ISIN, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.ISIN("AU0000XVGZA3"); // => True
+		 * is.ISIN("DE000BAY0018"); // => False
+		 * 
 		 */
 		ISIN: function (value) {
 			return this.validator.isISIN(...arguments);

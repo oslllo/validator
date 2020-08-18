@@ -4,11 +4,19 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * mongoId
-		 * @description Test if `value` is a valid hex-encoded representation of a MongoDB ObjectId.
+		 * @description Test if `value` is a valid hex-encoded representation of a 
+		 * MongoDB ObjectId.
 		 *
-		 * @param {String} value value to test
-		 * @return {Boolean} true if `value` is a valid hex-encoded representation of a MongoDB ObjectId, otherwise false.
-		 * @api public
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
+		 * @return {Boolean} true if `value` is a valid hex-encoded representation of a 
+		 * MongoDB ObjectId, otherwise false.
+		 * @access public
+		 * @example
+		 * 
+		 * is.mongoId("507f1f77bcf86cd799439011"); // => True
+		 * s.mongoId("507f1f77bcf86cd7994390"); // => False
+		 * 
 		 */
 		mongoId: function (value) {
 			return this.validator.isMongoId(...arguments);

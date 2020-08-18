@@ -6,9 +6,18 @@ module.exports = function (v) {
 		 * args
 		 * @description Test if `value` is an arguments object.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is an arguments object, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 *
+		 * var valid = (function(){ return arguments })();
+		 * var invalid = Object({ arguments: 1 });
+		 * 
+		 * is.args(valid); // => True
+		 * is.args(invalid); // => False
+		 * 
 		 */
 		args: function (value) {
 			var isStandardArguments =

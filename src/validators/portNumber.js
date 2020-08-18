@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * portNumber
 		 * @description Test if `value` is a valid port number.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value is a valid port number, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.portNumber(8080); // => True
+		 * is.portNumber(-1); // => False
+		 * 
 		 */
 		portNumber: function (value) {
 			arguments[0] = arguments[0].toString();

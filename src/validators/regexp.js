@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * regexp
 		 * @description Test if `value` is a regular expression.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a regexp, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.regexp(new RegExp('a', 'g')); // => True
+		 * is.regexp([]); // => False
+		 * 
 		 */
 		regexp: function (value) {
 			return this._getObjectType(value) === "[object RegExp]";

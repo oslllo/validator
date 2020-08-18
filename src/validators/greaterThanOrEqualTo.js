@@ -6,10 +6,19 @@ module.exports = function (v) {
 		 * greaterThanOrEqualTo
 		 * @description Test if `value` is greater than or equal to `other`.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @param {Number} other value to compare with
 		 * @return {Boolean} true if `value` is greater than or equal to `other`, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.greaterThanOrEqualTo(3, 2); // => True
+		 * is.greaterThanOrEqualTo(3, 3); // => True
+		 * 
+		 * is.greaterThanOrEqualTo(2, 3); // => False
+		 * is.greaterThanOrEqualTo("abc", "a"); // => False
+		 * 
 		 */
 		greaterThanOrEqualTo: function (value, other) {
 			if (this.actualNaN(value) || this.actualNaN(other)) {

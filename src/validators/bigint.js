@@ -3,12 +3,18 @@
 module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
-		 * biging
+		 * bigint
 		 * @description Test if `value` is an ES-proposed BigInt
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a BigInt, false otherise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.bigint(BigInt(42)); // => True
+		 * is.bigint(123); // => False
+		 * 
 		 */
 
 		bigint: function (value) {

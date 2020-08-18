@@ -4,13 +4,19 @@ module.exports = function (v) {
 	Object.assign(v.prototype, {
 		/**
 		 * MD5
-         * @description Test if `value` is a MD5 hash.
-         *
-         * @description Please note that you can also use the isHash(str, 'md5') function. Keep in mind that MD5 has some collision weaknesses compared to other algorithms (e.g., SHA).
+         * @description Test if `value` is a MD5 hash. Please note that you 
+		 * can also use the isHash(str, 'md5') function. Keep in mind that 
+		 * MD5 has some collision weaknesses compared to other algorithms (e.g., SHA).
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value` is a MD5 hash, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.MD5("d94f3f016ae679c3008de268209132f2"); // => True
+		 * is.MD5("KYT0bf1c35032a71a14c2f719e5a14c1"); // => False
+		 * 
 		 */
 		MD5: function (value) {
 			return this.validator.isMD5(...arguments);

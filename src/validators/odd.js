@@ -6,9 +6,14 @@ module.exports = function (v) {
 		 * odd
 		 * @description Test if `value` is an odd number.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @return {Boolean} true if `value` is an odd number, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.odd(1.1); // => True
+		 * is.odd(2); // => False
 		 */
 		odd: function (value) {
 			return (

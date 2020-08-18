@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * decimal
 		 * @description Test if `value` is a decimal number.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a decimal number, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.decimal(1.1); // => True
+		 * is.decimal(123); // => False
+		 * 
 		 */
 		decimal: function (value) {
 			return (

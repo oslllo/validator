@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * number
 		 * @description Test if `value` is a number.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a number, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.number(123); // => True
+		 * is.number("123"); // => False
+		 * 
 		 */
          number: function (value) {
             return this._getObjectType(value) === '[object Number]';

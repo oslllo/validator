@@ -6,10 +6,19 @@ module.exports = function (v) {
 		 * minimum
 		 * @description Test if `value` is less than `others` values.
 		 *
-		 * @param {Number} value value to test
-		 * @param {Array} others values to compare with
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
+		 * @param {Arraylike} others values to compare with
 		 * @return {Boolean} true if `value` is less than `others` values
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.minimum(1, [3, 2, 1]); // => True
+		 * is.minimum("a", ["a", "b", "c"]); // => True
+		 * 
+		 * is.minimum(2, [1, 2, 3]); // => False
+		 * is.minimum("c", ["a", "b", "c"]); // => False
+		 * 
 		 */
 		minimum: function (value, others) {
 			if (this.actualNaN(value)) {

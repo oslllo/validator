@@ -6,9 +6,16 @@ module.exports = function (v) {
 		 * element
 		 * @description Test if `value` is an html element.
 		 *
-		 * @param {*} value value to test
+		 * @since 0.0.1
+		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is an HTML Element, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * var el = document.createElement("div");
+		 * is.element(el); // => True
+		 * is.element({ nodeType: 1 }); // => False
+		 * 
 		 */
 		element: function (value) {
 			var HTMLElement = this._window.HTMLElement;

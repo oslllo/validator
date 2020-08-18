@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * even
 		 * @description Test if `value` is an even number.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @return {Boolean} true if `value` is an even number, false otherwise
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.even(2); // => True
+		 * is.even(7.1); // => False
+		 * 
 		 */
 		even: function (value) {
 			return (

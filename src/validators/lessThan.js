@@ -6,10 +6,18 @@ module.exports = function (v) {
 		 * lessThan
 		 * @description Test if `value` is less than `other`.
 		 *
-		 * @param {Number} value value to test
+		 * @since 0.0.1
+		 * @param {Number} value `value` to test
 		 * @param {Number} other value to compare with
 		 * @return {Boolean} if `value` is less than `other`
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.lessThan(2, 3); // => True
+		 * is.lessThan("a", "abc"); // => True
+		 * 
+		 * is.lessThan("abc", "abc"); // => False
+		 * 
 		 */
 		 lessThan: function (value, other) {
 			if (this.actualNaN(value) || this.actualNaN(other)) {

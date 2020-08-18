@@ -6,9 +6,15 @@ module.exports = function (v) {
 		 * multibyte
 		 * @description Test if `value` contains one or more multibyte chars.
 		 *
-		 * @param {String} value value to test
+		 * @since 0.0.1
+		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value contains one or more multibyte chars, otherwise false.
-		 * @api public
+		 * @access public
+		 * @example
+		 * 
+		 * is.multibyte("ひらがな・カタカナ、．漢字"); // => True
+		 * is.multibyte("abc"); // => False
+		 * 
 		 */
 		multibyte: function (value) {
 			return this.validator.isMultibyte(...arguments);
