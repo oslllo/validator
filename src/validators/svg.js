@@ -15,9 +15,8 @@ module.exports = function (v) {
 		 * @access public
 		 * @example
 		 *
-		 * is.symbol(Symbol("foo")); // => True
-		 * is.symbol(Symbol["name"]); // => False
-		 * is.symbol(new Object()); // => False
+		 * is.svg("<svg width="100" height="100" viewBox="0 0 30 30" version="1.1"></svg>"); // => True
+		 * is.svg("<div><svg></svg></div>"); // => False
 		 *
 		 */
 		svg: function (value) {
