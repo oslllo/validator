@@ -127,6 +127,7 @@ require("./validators/stringLength")(Validator);
 require("./validators/stringMatches")(Validator);
 require("./validators/stringNumeric")(Validator);
 require("./validators/surrogatePair")(Validator);
+require("./validators/svg")(Validator);
 require("./validators/symbol")(Validator);
 
 require("./validators/taxID")(Validator);

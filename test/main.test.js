@@ -122,6 +122,7 @@ require("./src/validators/test.stringLength");
 require("./src/validators/test.stringMatches");
 require("./src/validators/test.stringNumeric");
 require("./src/validators/test.surrogatePair");
+require("./src/validators/test.svg");
 require("./src/validators/test.symbol");
 
 require("./src/validators/test.taxID");
