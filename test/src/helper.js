@@ -75,6 +75,12 @@ const inputs = {
 		});
 	},
 	data: [
+        //! BUffer
+        {
+			name: "Buffer.from('123')",
+			data: Buffer.from('123'),
+			description: "(buffer) Buffer.from(123)",
+		},
 		//! FUNCTION
 		{
 			name: "function () {}",

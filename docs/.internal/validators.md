@@ -29,6 +29,10 @@ Test if `value` contains only letters (a-zA-Z).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value`only contains the letters, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -55,6 +59,10 @@ Test if `value` contains only letters and numbers.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` contains the letters and numbers, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -202,6 +210,10 @@ Test if `value` contains ASCII chars only.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` contains ASCII chars only, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -227,6 +239,10 @@ Test if `value` is base32 encoded.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` contains ASCII chars only, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -249,6 +265,10 @@ Test if `value` is base64 encoded.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a base64 encoded string, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -275,6 +295,10 @@ Test if `value` is a BIC (Bank Identification Code) or SWIFT code.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a BIC (Bank Identification Code) or SWIFT code, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -341,6 +365,10 @@ Test if `value` is a valid BTC address.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid BTC address, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -363,6 +391,10 @@ Test if `value`'s length (in UTF-8 bytes) falls in a range.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value`'s length (in UTF-8 bytes) falls in a range, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -389,6 +421,10 @@ Test if `value`is a credit card.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a credit card, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -412,6 +448,10 @@ Test if `value` is a valid currency amount.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid currency amount, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -438,6 +478,10 @@ Test if `value` is a data uri format.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a data uri format, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -460,6 +504,10 @@ Test if `value` is a valid date. e.g. [2002-07-15, new Date()].
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid date, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -486,6 +534,10 @@ Test if `value` is a date that's after the specified date (defaults to now).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a date that's after the specified date, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -509,6 +561,10 @@ Test if `value` is a date that's before the specified date.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a date that's before the specified date., false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -666,6 +722,10 @@ Test if `value` is an email.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an email, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -759,6 +819,10 @@ Does not validate address checksums.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an Ethereum address using basic regex, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -873,6 +937,10 @@ Test if `value` is a fully qualified domain name (e.g. domain.com).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a fully qualified domain name (e.g. domain.com), false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -898,6 +966,10 @@ Test if `value` contains any full-width chars.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` contains any full-width chars, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -972,6 +1044,10 @@ Test if `value` contains any half-width chars.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` contains any half-width chars, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -994,6 +1070,10 @@ Test if `value` is a hash of type algorithm.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a hash of type algorithm, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1039,6 +1119,10 @@ Test if `value` is a hexadecimal number.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a hexadecimal number, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1061,6 +1145,10 @@ Test if `value`  is a hex color.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a hex color, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1109,6 +1197,10 @@ supported with the exception of a few edge cases (ex: hsl(200grad+.1%62%/1)).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an HSL, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1132,6 +1224,10 @@ Test if `value` is a IBAN (International Bank Account Number).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a IBAN (International Bank Account Number), false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1154,6 +1250,10 @@ Defaults to 'any'.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid identity card code, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1178,6 +1278,10 @@ Imei should be of format ############### or ##-######-######-#.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid IMEI number, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1277,6 +1381,10 @@ Test if `value` is an IP (version 4 or 6).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an IP (version 4 or 6), otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1303,6 +1411,10 @@ Test if `value` is an IP Range(version 4 only).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an IP Range(version 4 only), otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1325,6 +1437,10 @@ Test if `value` is an ISBN (version 10 or 13).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an ISBN, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1348,6 +1464,10 @@ Test if `value` is an ISIN (stock/security identifier).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an ISIN, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1370,6 +1490,10 @@ Test if `value` is a valid ISO 3166-1 alpha-2 officially assigned country code.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid ISO 3166-1 alpha-2, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1392,6 +1516,10 @@ Test if `value` is a valid ISO 3166-1 alpha-3 officially assigned country code.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid ISO 3166-1 alpha-3, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1414,6 +1542,10 @@ Test if `value` is a valid ISO 8601 date; for additional checks for valid dates,
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid ISO 8601, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1439,6 +1571,10 @@ Test if `value` is a ISRC.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a ISRC, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1461,6 +1597,10 @@ Test if `value` is an ISSN.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an ISSN, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1487,6 +1627,10 @@ Test if `value` is valid JSON (note: uses JSON.parse).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is valid JSON, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1513,6 +1657,10 @@ Test if `value` is valid JWT token.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is valid JWT, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1536,6 +1684,10 @@ in the format lat,long or lat, long.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is valid latitude-longitude coordinate, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 
 | Param | Type | Default | Description |
@@ -1612,6 +1764,10 @@ Test if `value` is a locale.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is locale, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1634,6 +1790,10 @@ Test if `value` is lowercase.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is lowercase, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1656,6 +1816,10 @@ Test if `value` is a MACAddress.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a MACAddress, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 
 | Param | Type | Default | Description |
@@ -1681,6 +1845,10 @@ Test if `value` is a magnet uri format.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a magnet uri format, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1731,6 +1899,10 @@ MD5 has some collision weaknesses compared to other algorithms (e.g., SHA).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a MD5 hash, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1753,6 +1925,10 @@ Test if `value` matches to a valid MIME type format.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` matches to a valid MIME type format, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1801,6 +1977,10 @@ Test if `value` is a mobile phone number.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a MACAddress, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1827,6 +2007,10 @@ MongoDB ObjectId.
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a valid hex-encoded representation of a 
 MongoDB ObjectId, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1849,6 +2033,10 @@ Test if `value` contains one or more multibyte chars.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value contains one or more multibyte chars, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -1981,6 +2169,10 @@ Test if `value` is a valid octal number.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value is a valid octal number, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2025,6 +2217,10 @@ Test if `value` is a valid passport number.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value is a valid passport number, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2053,7 +2249,7 @@ Test if `value` is a valid port number.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| value | <code>String</code> | `value` to test |
+| value | <code>String</code> \| <code>Number</code> | `value` to test |
 
 **Example**  
 ```js
@@ -2070,6 +2266,10 @@ Test if `value` is a postal code.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value is a valid postal code, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2137,6 +2337,10 @@ Test if `value` is a valid RFC 3339 date.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value is a valid RFC 3339 date, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2159,6 +2363,10 @@ Test if `value` is a rgb or rgba color.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value  is a rgb or rgba color, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2183,6 +2391,10 @@ Test if `value` is a Semantic Versioning Specification (SemVer).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value is a SemVer, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2205,6 +2417,10 @@ Test if `value` is of type slug.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value is of type slug, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2250,6 +2466,10 @@ Test if `value` is a boolean.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a boolean, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2272,6 +2492,10 @@ Test if `value` contains the seed.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` contains the seed, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2299,6 +2523,10 @@ Test if `value` represents a decimal string, such as 0.1, .3, 1.1, 1.00003, 4.0,
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` represents a decimal string, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 
 | Param | Type | Default | Description |
@@ -2321,6 +2549,10 @@ Test if `value` is an empty string.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is an empty string, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2347,6 +2579,10 @@ Test if `value` matches the comparison.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` matches the comparison, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2370,6 +2606,10 @@ Test if `value` is in an array of allowed values.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is in an array of allowed values, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2393,6 +2633,10 @@ Test if `value` is a string integer.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` is a string integer, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2418,6 +2662,10 @@ Test if `value's length falls in a range.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value`'s length falls in a range, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2441,6 +2689,10 @@ Either matches('foo', /foo/i) or matches('foo', 'foo', 'i').
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value` matches the pattern, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2468,6 +2720,10 @@ Test if `value` contains only numbers.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value contains one or more multibyte chars, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2494,6 +2750,10 @@ Test if `value` contains any surrogate pairs chars.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value; contains any surrogate pairs chars, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2505,6 +2765,33 @@ Test if `value` contains any surrogate pairs chars.
 ```js
 is.surrogatePair("𠮷野𠮷"); // => True
 is.surrogatePair("鮪"); // => False
+```
+
+* * *
+
+<a name="svg"></a>
+
+## svg(value) ⇒ <code>Boolean</code>
+Test if the string is a valid SVG.
+
+**Kind**: global function  
+**Returns**: <code>Boolean</code> - true if `value` is a valid SVG, false otherise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
+**Access**: public  
+**Since**: 0.0.1  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> | `value` to test |
+
+**Example**  
+```js
+is.symbol(Symbol("foo")); // => True
+is.symbol(Symbol["name"]); // => False
+is.symbol(new Object()); // => False
 ```
 
 * * *
@@ -2539,6 +2826,10 @@ Test if `value` is a valid Tax Identification Number.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value' is a valid Tax Identification Number, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2630,6 +2921,10 @@ Test if `value` is uppercase.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value' is uppercase, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2661,6 +2956,10 @@ validate_length - if set as false isURL will skip string length validation
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value' is an URL, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2685,6 +2984,10 @@ Test if `value` is a UUID (version 3, 4 or 5).
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value' is UUID, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2710,6 +3013,10 @@ Test if `value` contains a mixture of full and half-width chars.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value' contains a mixture of full and half-width chars, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 
@@ -2731,6 +3038,10 @@ Test if `value` characters appear in the whitelist.
 
 **Kind**: global function  
 **Returns**: <code>Boolean</code> - true if `value' characters appear in the whitelist, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
 **Access**: public  
 **Since**: 0.0.1  
 

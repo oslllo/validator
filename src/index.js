@@ -18,6 +18,7 @@ require("./validators/BIC")(Validator);
 require("./validators/bigint")(Validator);
 require("./validators/bool")(Validator);
 require("./validators/btcAddress")(Validator);
+require("./validators/buffer")(Validator);
 require("./validators/byteLength")(Validator);
 
 require("./validators/creditCard")(Validator);

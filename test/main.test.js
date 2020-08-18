@@ -16,6 +16,7 @@ require("./src/validators/test.BIC");
 require("./src/validators/test.bigint");
 require("./src/validators/test.bool");
 require("./src/validators/test.btcAddress");
+require("./src/validators/test.buffer");
 require("./src/validators/test.byteLength");
 
 require("./src/validators/test.creditCard");
