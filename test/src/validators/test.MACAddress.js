@@ -5,6 +5,7 @@ const { is, assert, inputs } = require("../helper");
 describe("is.MACAddress", () => {
 	it(`works`, () => {
 		assert.isTrue(is.MACAddress("ab:ab:ab:ab:ab:ab"));
+		assert.isFalse(is.MACAddress("01:02:03:04:05"));
 	});
 	it(`works with arguments`, () => {
 		assert.isTrue(

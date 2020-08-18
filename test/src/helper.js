@@ -231,6 +231,11 @@ const inputs = {
 			data: "abc",
 			description: "(string) 'abc'",
 		},
+		{
+			name: "'123'",
+			data: "123",
+			description: "(string) '123'"
+		},
 		//! UNDEFINED
 		{
 			name: "undefined",

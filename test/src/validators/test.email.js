@@ -5,6 +5,7 @@ const { is, assert, inputs } = require("../helper");
 describe("is.email", () => {
 	it(`works`, () => {
 		assert.isTrue(is.email("foo@bar.com"));
+		assert.isFalse(is.email("invalidemail@"));
 	});
 	it(`works with arguments`, () => {
 		assert.isTrue(

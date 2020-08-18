@@ -9,6 +9,7 @@ describe("is.base64", () => {
 				"TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4="
 			)
 		);
+		assert.isFalse(is.base64("12345"));
 	});
 	it(`works with arguments`, () => {
 		assert.isTrue(
