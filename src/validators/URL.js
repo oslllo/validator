@@ -19,6 +19,7 @@ module.exports = function (v) {
          * @param {String} value `value` to test
          * @param {Object} [options = { protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, require_host: true, require_valid_protocol: true, allow_underscores: false, host_whitelist: false, host_blacklist: false, allow_trailing_dot: false, allow_protocol_relative_urls: false, disallow_auth: false }] options object.
 		 * @return {Boolean} true if `value' is an URL, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

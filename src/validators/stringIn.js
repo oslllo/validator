@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {Array} arr array to check in
 		 * @return {Boolean} true if `value` is in an array of allowed values, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 *

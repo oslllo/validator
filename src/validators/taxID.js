@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {String} [locale = "en-US"]  default locale is en-US
 		 * @return {Boolean} true if `value' is a valid Tax Identification Number, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

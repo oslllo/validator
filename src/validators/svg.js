@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @since 0.0.1
 		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value` is a valid SVG, false otherise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 *

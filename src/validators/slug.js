@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {Object} options allow a single hyphen between string. e.g. [cn-cn, cn-c-c]
 		 * @return {Boolean} true if `value is of type slug, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

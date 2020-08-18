@@ -9,6 +9,7 @@ module.exports = function (v) {
 		 * @since 0.0.1
 		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is a hexadecimal number, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

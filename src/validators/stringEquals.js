@@ -10,6 +10,7 @@ module.exports = function (v) {
          * @param {String} value `value` to test
          * @param {String} comparison value to compare with
 		 * @return {Boolean} true if `value` matches the comparison, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
          * @example
          * 

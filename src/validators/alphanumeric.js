@@ -18,6 +18,7 @@ module.exports = function (v) {
          * 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 
          * 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. 
 		 * @return {Boolean} true if `value` contains the letters and numbers, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

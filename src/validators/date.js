@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {String} [format = "YYYY/MM/DD"] date format to check with
 		 * @return {Boolean} true if `value` is a valid date, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

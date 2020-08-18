@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {String} chars whitelist
 		 * @return {Boolean} true if `value' characters appear in the whitelist, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @return {Boolean} true if `value` is a valid hex-encoded representation of a 
 		 * MongoDB ObjectId, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

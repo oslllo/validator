@@ -10,6 +10,7 @@ module.exports = function (v) {
          * @param {String} value `value` to test
          * @param {Number} version which version to use
 		 * @return {Boolean} true if `value' is UUID, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

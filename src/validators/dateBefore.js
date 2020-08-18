@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value starting date
 		 * @param {String} date before date
 		 * @return {Boolean} true if `value` is a date that's before the specified date., false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

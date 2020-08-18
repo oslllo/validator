@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @since 0.0.1
 		 * @param {*} value `value` to test
 		 * @return {Boolean} true if `value` is an Ethereum address using basic regex, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

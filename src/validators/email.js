@@ -21,6 +21,7 @@ module.exports = function (v) {
 		 * domain_specific_validation is true, some additional validation will be enabled, 
 		 * e.g. disallowing certain syntactically valid email addresses that are rejected by GMail.
 		 * @return {Boolean} true if `value` is an email, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

@@ -13,6 +13,7 @@ module.exports = function (v) {
          * @param {String} pattern test pattern
 		 * @param {String} modifiers test modifiers
 		 * @return {Boolean} true if `value` matches the pattern, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

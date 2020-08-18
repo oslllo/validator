@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {object} options defaults to {min:0, max: undefined}. Note: this function takes into account surrogate pairs.
 		 * @return {Boolean} true if `value`'s length falls in a range, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

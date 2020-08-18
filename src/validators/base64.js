@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @param {Object} [options = {urlSafe: false}] options, when urlSafe is true 
 		 * it tests the given base64 encoded string is url safe
 		 * @return {Boolean} true if `value` is a base64 encoded string, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

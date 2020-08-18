@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value `value` to test
 		 * @param {(Number|Object)} [options = {min:0, max: undefined}] options value
 		 * @return {Boolean} true if `value`'s length (in UTF-8 bytes) falls in a range, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 *

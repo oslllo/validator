@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {String} value to test
 		 * @param {Object} options defaults to { ignore_whitespace:false }
 		 * @return {Boolean} true if `value` is an empty string, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

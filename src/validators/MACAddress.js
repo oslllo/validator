@@ -12,6 +12,7 @@ module.exports = function (v) {
 		 * it allows the use of hyphens, spaces or dots e.g '01 02 03 04 05 ab', 
 		 * '01-02-03-04-05-ab' or '0102.0304.05ab'.
 		 * @return {Boolean} true if `value` is a MACAddress, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

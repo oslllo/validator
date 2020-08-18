@@ -16,6 +16,7 @@ module.exports = function (v) {
 		 * 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']. 
 		 * Note: decimal_digits is given as a range like '1,3', a specific value like '3' or min like '1,'.
 		 * @return {Boolean} true if `value` represents a decimal string, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

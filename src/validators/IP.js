@@ -10,6 +10,7 @@ module.exports = function (v) {
 		 * @param {*} value `value` to test
 		 * @param {String} version ip version to test with
 		 * @return {Boolean} true if `value` is an IP (version 4 or 6), otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

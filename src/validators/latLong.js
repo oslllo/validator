@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @param {Object} [options = { checkDMS: false }]  Pass checkDMS as true to validate 
 		 * DMS(degrees, minutes, and seconds) latitude-longitude format.
 		 * @return {Boolean} true if `value` is valid latitude-longitude coordinate, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

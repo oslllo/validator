@@ -28,6 +28,7 @@ module.exports = function (v) {
 		 *  the country code and therefore must start with +. Locale list is 
 		 * validator.isMobilePhoneLocales.
 		 * @return {Boolean} true if `value` is a MACAddress, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

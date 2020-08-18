@@ -12,6 +12,7 @@ module.exports = function (v) {
 		 * @param {Object} options contains the keys allow_hyphens. Defaults to first 
 		 * format . If allow_hyphens is set to true, the validator will validate the second format.
 		 * @return {Boolean} true if `value` is a valid IMEI number, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

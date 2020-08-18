@@ -12,6 +12,7 @@ module.exports = function (v) {
          * @param {Object} [options = { ignoreCase: false}] defaults to { ignoreCase: false}. 
          * ignoreCase specified whether the case of the substring be same or not.
 		 * @return {Boolean} true if `value` contains the seed, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
          * @example
          * 

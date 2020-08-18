@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @param {object} [options = { case_sensitive: false, require_hyphen: false }] options object. 
 		 * If case_sensitive is true, ISSNs with a lowercase 'x' as the check digit are rejected.
 		 * @return {Boolean} true if `value` is an ISSN, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

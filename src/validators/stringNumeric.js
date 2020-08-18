@@ -18,6 +18,7 @@ module.exports = function (v) {
 		 * 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 
 		 * 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA'].
 		 * @return {Boolean} true if `value contains one or more multibyte chars, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

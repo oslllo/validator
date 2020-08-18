@@ -16,6 +16,7 @@ module.exports = function (v) {
 		 * greater than or less than, respectively, the value provided (e.g. {gt: 1, lt: 4} 
 		 * 'for a number between 1 and 4).
 		 * @return {Boolean} true if `value` is a string integer, false otherwise
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

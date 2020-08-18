@@ -11,6 +11,7 @@ module.exports = function (v) {
 		 * @param {object} [options = { allow_primitives: false }] If allow_primitives
 		 * is true, the primitives 'true', 'false' and 'null' are accepted as valid JSON values.
 		 * @return {Boolean} true if `value` is valid JSON, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 *

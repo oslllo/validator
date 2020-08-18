@@ -13,6 +13,7 @@ module.exports = function (v) {
 		 * 'GR', 'HR', 'HU', 'IE' 'IN', 'IS', 'IT', 'JP', 'KR', 'LT', 'LU', 'LV', 'MT', 
 		 * 'NL', 'PO', 'PT', 'RO', 'SE', 'SL', 'SK', 'TR', 'UA', 'US' ].
 		 * @return {Boolean} true if `value is a valid passport number, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 

@@ -10,6 +10,7 @@ module.exports = function (v) {
          * @param {String} value `value` to test
 		 * @param {number} version version value
 		 * @return {Boolean} true if `value` is an ISBN, otherwise false.
+         * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
 		 * 
