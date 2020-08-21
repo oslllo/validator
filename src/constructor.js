@@ -1,12 +1,13 @@
 "use strict";
 
-const DOM = require("./dom");
+const main = require("./main");
 const validator = require("validator");
 
 const Validator = function (v) {
+	this._fs = main.fs;
 	this.validator = validator;
-	this._window = DOM.window;
-	this._document = DOM.document;
+	this._window = main.window;
+	this._document = main.document;
 };
 
 Validator.prototype = {
@@ -33,6 +34,6 @@ Validator.prototype = {
 	},
 };
 
-Validator.JSDOM = DOM.JSDOM;
+Validator.JSDOM = main.JSDOM;
 
 module.exports = Validator;

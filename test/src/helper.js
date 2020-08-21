@@ -2,12 +2,6 @@
 
 const is = require("../../");
 const { assert } = require("chai");
-const DOM = require("../../src/dom");
-
-const { JSDOM } = require("jsdom");
-let dom = new JSDOM(`<!DOCTYPE html></html>`);
-var window = dom.window;
-var document = window.document;
 
 const type = function (value) {
 	return Object.prototype.toString
@@ -75,10 +69,10 @@ const inputs = {
 		});
 	},
 	data: [
-        //! BUffer
-        {
+		//! BUffer
+		{
 			name: "Buffer.from('123')",
-			data: Buffer.from('123'),
+			data: Buffer.from("123"),
 			description: "(buffer) Buffer.from(123)",
 		},
 		//! FUNCTION
@@ -240,7 +234,7 @@ const inputs = {
 		{
 			name: "'123'",
 			data: "123",
-			description: "(string) '123'"
+			description: "(string) '123'",
 		},
 		//! UNDEFINED
 		{
@@ -299,7 +293,6 @@ const inputs = {
 
 module.exports = {
 	is,
-	DOM,
 	type,
 	assert,
 	inputs,
