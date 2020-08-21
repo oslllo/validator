@@ -140,3 +140,9 @@ require("./src/validators/test.variableWidth");
 
 require("./src/validators/test.whitelisted");
 require("./src/validators/test.within");
+
+/**
+ * @ignore
+ * @description make sure that this is always last
+ */
+require("./src/env/test.browser");
