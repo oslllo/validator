@@ -18,11 +18,11 @@ module.exports = function (v) {
 		 * 
 		 */
 		element: function (value) {
-			var HTMLElement = this._window.HTMLElement;
+            var htmlelement = this._window.HTMLElement;
 			return (
 				value !== undefined &&
-				typeof HTMLElement !== "undefined" &&
-				value instanceof HTMLElement &&
+				typeof htmlelement !== "undefined" &&
+				value instanceof htmlelement &&
 				value.nodeType === 1
 			);
 		},
