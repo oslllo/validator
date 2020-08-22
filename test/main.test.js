@@ -102,6 +102,7 @@ require("./src/validators/test.octal");
 require("./src/validators/test.odd");
 
 require("./src/validators/test.passportNumber");
+require("./src/validators/test.pathToDir");
 require("./src/validators/test.pathToFile");
 require("./src/validators/test.portNumber");
 require("./src/validators/test.postalCode");

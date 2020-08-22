@@ -106,6 +106,7 @@ require("./validators/octal")(Validator);
 require("./validators/odd")(Validator);
 
 require("./validators/passportNumber")(Validator);
+require("./validators/pathToDir")(Validator);
 require("./validators/pathToFile")(Validator);
 require("./validators/portNumber")(Validator);
 require("./validators/postalCode")(Validator);
