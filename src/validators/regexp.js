@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is a regexp, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.regexp(new RegExp('a', 'g')); // => True
 		 * is.regexp([]); // => False
-		 * 
+		 *
 		 */
 		regexp: function (value) {
 			return this._getObjectType(value) === "[object RegExp]";

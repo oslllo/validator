@@ -12,15 +12,16 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is less than `others` values
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.minimum(1, [3, 2, 1]); // => True
 		 * is.minimum("a", ["a", "b", "c"]); // => True
-		 * 
+		 *
 		 * is.minimum(2, [1, 2, 3]); // => False
 		 * is.minimum("c", ["a", "b", "c"]); // => False
-		 * 
+		 *
 		 */
 		minimum: function (value, others) {
+            /*eslint no-magic-numbers: "off"*/
 			if (this.actualNaN(value)) {
 				throw new TypeError("NaN is not a valid value");
 			} else if (!this.arrayLike(others)) {

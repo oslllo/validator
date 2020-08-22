@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is an EAN (European Article Number), false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.EAN("9421023610112"); // => True
 		 * is.EAN("079777681629"); // => False
-		 * 
+		 *
 		 */
 		EAN: function (value) {
 			return this.validator.isEAN(...arguments);

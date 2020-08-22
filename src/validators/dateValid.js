@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @returns {Boolean} true if `value` is a valid date, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.dateValid(new Date()); // => True
 		 * is.dateValid({}); // => False
-		 * 
+		 *
 		 */
 		dateValid: function (value) {
 			return this.date(value) && !isNaN(Number(value));

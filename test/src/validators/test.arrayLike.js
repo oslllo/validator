@@ -1,6 +1,6 @@
 "use strict";
 
-const { is, assert, inputs } = require("../helper");
+const { is, assert } = require("../helper");
 
 describe("is.arrayLike", () => {
 	it(`can validate that undefined is NOT array-like`, () => {
@@ -28,7 +28,7 @@ describe("is.arrayLike", () => {
     it(`can validate that object with empty string length is NOT array-like`, () => {
 		assert.isFalse(is.arrayLike({ length: '' }));
     });
-    
+
 	it(`can validate that zero length is array-like`, () => {
 		assert.isTrue(is.arrayLike({ length: 0 }));
 	});
@@ -41,11 +41,12 @@ describe("is.arrayLike", () => {
 	it(`can validate that empty arguments are array-like`, () => {
 		(function () {
 			assert.isTrue(is.arrayLike(arguments));
-		})();
+		}());
     });
+    /*eslint no-unused-vars: "off"*/
     it(`can validate that nonempty arguments are array-like`, () => {
 		(function (arg1, arg2, arg3) {
 			assert.isTrue(is.arrayLike(arguments));
-		})(1, 2, 3);
+		}(1, 2, 3));
 	});
 });

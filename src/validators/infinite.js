@@ -11,12 +11,12 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is positive or negative Infinity, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.infinite(Infinity); // => True
 		 * is.infinite(-Infinity); // => True
-		 * 
+		 *
 		 * is.infinite(9999999999); // => False
-		 * 
+		 *
 		 */
 		infinite: function (value) {
 			return value === Infinity || value === -Infinity;

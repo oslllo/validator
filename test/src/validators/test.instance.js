@@ -1,6 +1,6 @@
 "use strict";
 
-const { is, assert, inputs } = require("../helper");
+const { is, assert } = require("../helper");
 
 describe("is.instance", () => {
 	it(`can validate that new Date is instanceof Date`, () => {

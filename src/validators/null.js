@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is null, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.null(null); // => True
 		 * s.null(0); // => False
-		 * 
+		 *
 		 */
 		null: function (value) {
 			return value === null;

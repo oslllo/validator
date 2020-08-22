@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is a boolean, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.bool(true); // => True
 		 * is.bool(1); // => False
-		 * 
+		 *
 		 */
 		bool: function (value) {
 			return this._getObjectType(value) === "[object Boolean]";

@@ -3,7 +3,7 @@
 const main = require("./main");
 const validator = require("validator");
 
-const Validator = function (v) {
+const Validator = function () {
 	this._fs = main.fs;
 	this.validator = validator;
 	this._window = main.window;

@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is defined, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.defined("foobar"); // => True
 		 * is.defined(undefined); // => False
-		 * 
+		 *
 		 */
 		defined: function (value) {
             return typeof value !== 'undefined';

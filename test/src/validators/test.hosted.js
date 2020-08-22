@@ -1,6 +1,6 @@
 "use strict";
 
-const { is, assert, inputs, type } = require("../helper");
+const { is, assert, type } = require("../helper");
 
 describe("is.hosted", () => {
 	var hosted = {

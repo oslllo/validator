@@ -11,19 +11,20 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is an arraylike object, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.arrayLike(undefined); // => False
 		 * is.arrayLike(false); // => False
 		 * is.arrayLike({ length: -1 }); // => False
-		 * 
+		 *
 		 * is.arrayLike([]); // => True
 		 * is.arrayLike({ length: 0 }); // => True
 		 * is.arrayLike({ length: 1 }); // => True
-		 * 
+		 *
 		 */
 		arrayLike: function (value) {
+            /*eslint no-magic-numbers: "off"*/
 			return (
-				!!value &&
+				Boolean(value) &&
 				!this.bool(value) &&
 				this._hasOwnProperty(value, "length") &&
 				isFinite(value.length) &&

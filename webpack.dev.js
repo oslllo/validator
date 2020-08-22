@@ -1,14 +1,16 @@
+"use strict";
+
 const pkg = require("./package.json");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
-	mode: "development",
+    mode: "development",
     devtool: "inline-source-map",
     output: {
-        filename: `${pkg.name}.js`
+        filename: `${pkg.name}.js`,
     },
-	devServer: {
-		contentBase: "./dist/browser",
-	},
+    devServer: {
+        contentBase: "./dist/browser",
+    },
 });

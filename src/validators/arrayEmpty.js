@@ -11,11 +11,12 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is an empty array, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.arrayEmpty([]) // => True
 		 * is.arrayEmpty([1, 2, 3]) // => False
 		 */
 		arrayEmpty: function (value) {
+            /*eslint no-magic-numbers: "off"*/
 			return this.array(value) && value.length === 0;
 		},
 	});

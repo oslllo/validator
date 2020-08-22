@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { is, assert, inputs } = require("../helper");
+const { is, assert } = require("../helper");
 
 describe("is.pathToFile", () => {
 	var valid = [

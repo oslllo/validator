@@ -14,10 +14,10 @@ module.exports = function (v) {
 		 *
 		 * var valid = (function(){ return arguments })();
 		 * var invalid = Object({ arguments: 1 });
-		 * 
+		 *
 		 * is.args(valid); // => True
 		 * is.args(invalid); // => False
-		 * 
+		 *
 		 */
 		args: function (value) {
 			var isStandardArguments =
@@ -27,7 +27,8 @@ module.exports = function (v) {
 				this.arrayLike(value) &&
 				this.object(value) &&
 				this.fn(value.callee);
-			return isStandardArguments || isOldArguments;
+
+return isStandardArguments || isOldArguments;
 		},
 	});
 };

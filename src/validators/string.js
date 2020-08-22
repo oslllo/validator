@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is a string, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.string("abc"); // => True
 		 * is.string(123); // => False
-		 * 
+		 *
 		 */
 		string: function (value) {
 			return this._getObjectType(value) === "[object String]";

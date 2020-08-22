@@ -10,19 +10,19 @@ module.exports = function (v) {
 		 * @param {*} value `value` to test
 		 * @param {String} version ip version to test with
 		 * @return {Boolean} true if `value` is an IP (version 4 or 6), otherwise false.
-         * @throws {TypeError} if `value` is not a `string`
+		 * @throws {TypeError} if `value` is not a `string`
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.IP("127.0.0.1"); // => True
 		 * is.IP("0200.200.200.20"); // => False
-		 * 
+		 *
 		 * is.IP("127.0.0.1", 4); // => True
 		 * is.IP("::1", 4); // => False
-		 * 
+		 *
 		 */
 		IP: function (value, version) {
-            return this.validator.isIP(...arguments)
+            return this.validator.isIP(...arguments);
         }
 	});
 };

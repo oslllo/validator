@@ -11,12 +11,13 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is a decimal number, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.decimal(1.1); // => True
 		 * is.decimal(123); // => False
-		 * 
+		 *
 		 */
 		decimal: function (value) {
+            /*eslint no-magic-numbers: "off"*/
 			return (
 				this.number(value) &&
 				!this.actualNaN(value) &&

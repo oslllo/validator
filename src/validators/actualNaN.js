@@ -11,14 +11,15 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is actual NaN, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.actualNaN(NaN); // => True
 		 * is.actualNaN(null); // => False
 		 * is.actualNaN(undefined); // => False
 		 * is.actualNaN(0); // => False
-		 * 
+		 *
 		 */
 		actualNaN: function (value) {
+            /*eslint no-self-compare: "off"*/
 			return value !== value;
 		},
 	});

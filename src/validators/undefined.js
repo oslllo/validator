@@ -11,11 +11,11 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is undefined, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.undefined(undefined); // => True
 		 * is.undefined(null); // => False
 		 * is.undefined(0); // => False
-		 * 
+		 *
 		 */
          undefined: function (value) {
 			return typeof value === 'undefined';

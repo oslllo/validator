@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is false, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.false(false); // => True
 		 * is.false(0); // => False
-		 * 
+		 *
 		 */
 		false: function (value) {
 			return this.bool(value) && Boolean(Number(value)) === false;

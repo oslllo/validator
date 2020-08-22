@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is an object, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.object({}); // => True
 		 * is.object(new Array()); // => False
-		 * 
+		 *
 		 */
 		object: function (value) {
 			return this._getObjectType(value) === "[object Object]";

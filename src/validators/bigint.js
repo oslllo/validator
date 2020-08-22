@@ -11,16 +11,17 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is a BigInt, false otherise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.bigint(BigInt(42)); // => True
 		 * is.bigint(123); // => False
-		 * 
+		 *
 		 */
 
 		bigint: function (value) {
             // eslint-disable-next-line valid-typeof
             var bigIntValueOf = BigInt.prototype.valueOf;
-			return (
+
+return (
 				typeof BigInt === "function" &&
 				this._getObjectType(value) === "[object BigInt]" &&
 				typeof bigIntValueOf.call(value) === "bigint"

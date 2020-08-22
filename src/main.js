@@ -1,6 +1,6 @@
 "use strict";
 
-var fs, env, window, document, DOM, JSDOM;
+var fs, window, document, DOM, JSDOM;
 
 const isBrowser =
 	typeof window !== "undefined" && typeof window.document !== "undefined";
@@ -15,8 +15,8 @@ const isNode =
  */
 if (typeof process.env.NODE_ENV === "undefined" && isNode && !isBrowser) {
 	fs = require("fs");
-	var { JSDOM } = require("jsdom");
-	var DOM = new JSDOM(`<!DOCTYPE html></html>`);
+	JSDOM = require("jsdom").JSDOM;
+	DOM = new JSDOM(`<!DOCTYPE html></html>`);
 	window = DOM.window;
 } else {
 	window = global.window;

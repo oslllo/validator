@@ -11,10 +11,10 @@ module.exports = function (v) {
 		 * @return {Boolean} true if `value` is an array, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.array([1, 2, 3]); // => True
 		 * is.array(true); // => False
-		 * 
+		 *
 		 */
 
 		array: function (value) {

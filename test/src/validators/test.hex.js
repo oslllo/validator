@@ -1,6 +1,6 @@
 "use strict";
 
-const { is, assert, inputs } = require("../helper");
+const { is, assert } = require("../helper");
 
 describe("is.hex", () => {
 	it(`can validate that abcdABCD1234 is hex encoded`, () => {

@@ -12,19 +12,20 @@ module.exports = function (v) {
 		 * @return {Boolean}  true if `value` is greater than `other`, false otherwise
 		 * @access public
 		 * @example
-		 * 
+		 *
 		 * is.greaterThan(3, 2); // => True
 		 * is.greaterThan("abc", "a"); // => True
-		 * 
+		 *
 		 * is.greaterThan(3, 3); // => False
 		 * is.greaterThan("a", "abc"); // => False
-		 * 
+		 *
 		 */
 		greaterThan: function (value, other) {
 			if (this.actualNaN(value) || this.actualNaN(other)) {
 				throw new TypeError("NaN is not a valid value");
 			}
-			return !this.infinite(value) && !this.infinite(other) && value > other;
+
+return !this.infinite(value) && !this.infinite(other) && value > other;
 		},
 	});
 };

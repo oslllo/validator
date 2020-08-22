@@ -1,6 +1,6 @@
 "use strict";
 
-const { is, assert, inputs } = require("../helper");
+const { is, assert } = require("../helper");
 
 describe("is.ISO31661Alpha3", () => {
 	it(`works`, () => {

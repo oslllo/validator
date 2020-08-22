@@ -16,9 +16,7 @@ if (typeof Symbol === "function") {
 			"for",
 			"keyFor",
 		];
-		var symbolKeys = Object.getOwnPropertyNames(Symbol).filter(function (name) {
-			return notKnownSymbols.indexOf(name) < 0;
-		});
+		var symbolKeys = Object.getOwnPropertyNames(Symbol).filter((name) => notKnownSymbols.indexOf(name) < 0);
 		symbolKeys.forEach((symbolKey) => {
 			it(`can validate that ${symbolKey} is a symbol`, () => {
 				assert.isTrue(is.symbol(Symbol[symbolKey]));
