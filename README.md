@@ -11,11 +11,11 @@ See the full installation and usage documentation [HERE](https://docs.oslllo.com
 
 ## The Objective
 
-Create an all in one Javascript validator for my application.
+Create an all in one Javascript validator for my application(s).
 
 ## The Problem / Why
 
-Validating data in JS requires too much code repetition or for you to install multiple packages that either validate one thing, or just a few things. This can be fine if you only have one or two projects to maintain or you just don't care/mind coding this way, but thing can get real messy quick when you have multiple packages that all share the same validation requirements.
+I wanted an all in one JS validator.
 
 ### Usage Examples
 
