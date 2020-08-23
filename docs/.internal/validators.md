@@ -1,6 +1,6 @@
 <a name="actualNaN"></a>
 
-## actualNaN(value) ⇒ <code>Boolean</code>
+### actualNaN(value) ⇒ <code>Boolean</code>
 Test if `value` is actual NaN.
 
 **Kind**: global function  
@@ -24,7 +24,7 @@ is.actualNaN(0); // => False
 
 <a name="alpha"></a>
 
-## alpha(value, [locale]) ⇒ <code>Boolean</code>
+### alpha(value, [locale]) ⇒ <code>Boolean</code>
 Test if `value` contains only letters (a-zA-Z).
 
 **Kind**: global function  
@@ -54,7 +54,7 @@ is.alpha("abc1", "bg-BG"); // => False
 
 <a name="alphanumeric"></a>
 
-## alphanumeric(value, [locale]) ⇒ <code>Boolean</code>
+### alphanumeric(value, [locale]) ⇒ <code>Boolean</code>
 Test if `value` contains only letters and numbers.
 
 **Kind**: global function  
@@ -84,7 +84,7 @@ is.alphanumeric("foo!!", "en-GB"); // => False
 
 <a name="args"></a>
 
-## args(value) ⇒ <code>Boolean</code>
+### args(value) ⇒ <code>Boolean</code>
 Test if `value` is an arguments object.
 
 **Kind**: global function  
@@ -109,7 +109,7 @@ is.args(invalid); // => False
 
 <a name="argsEmpty"></a>
 
-## argsEmpty(value) ⇒ <code>Boolean</code>
+### argsEmpty(value) ⇒ <code>Boolean</code>
 Test if `value` is an empty arguments object.
 
 **Kind**: global function  
@@ -134,7 +134,7 @@ is.argsEmpty(notEmptyArgs); // => False
 
 <a name="array"></a>
 
-## array(value) ⇒ <code>Boolean</code>
+### array(value) ⇒ <code>Boolean</code>
 Test if `value` is an array.
 
 **Kind**: global function  
@@ -156,7 +156,7 @@ is.array(true); // => False
 
 <a name="arrayEmpty"></a>
 
-## arrayEmpty(value) ⇒ <code>Boolean</code>
+### arrayEmpty(value) ⇒ <code>Boolean</code>
 Test if `value` is an empty array.
 
 **Kind**: global function  
@@ -178,7 +178,7 @@ is.arrayEmpty([1, 2, 3]) // => False
 
 <a name="arrayLike"></a>
 
-## arrayLike(value) ⇒ <code>Boolean</code>
+### arrayLike(value) ⇒ <code>Boolean</code>
 Test if `value` is an arraylike object.
 
 **Kind**: global function  
@@ -205,7 +205,7 @@ is.arrayLike({ length: 1 }); // => True
 
 <a name="ascii"></a>
 
-## ascii(value) ⇒ <code>Boolean</code>
+### ascii(value) ⇒ <code>Boolean</code>
 Test if `value` contains ASCII chars only.
 
 **Kind**: global function  
@@ -234,7 +234,7 @@ is.ascii("ｘｙｚ０９８"); // => False
 
 <a name="base32"></a>
 
-## base32(value) ⇒ <code>Boolean</code>
+### base32(value) ⇒ <code>Boolean</code>
 Test if `value` is base32 encoded.
 
 **Kind**: global function  
@@ -260,7 +260,7 @@ is.base32("12345") // => False
 
 <a name="base64"></a>
 
-## base64(value, [options]) ⇒ <code>Boolean</code>
+### base64(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is base64 encoded.
 
 **Kind**: global function  
@@ -290,7 +290,7 @@ is.base64("This+isa/bad+base64Url==", { urlSafe: true }) // => False
 
 <a name="BIC"></a>
 
-## BIC(value) ⇒ <code>Boolean</code>
+### BIC(value) ⇒ <code>Boolean</code>
 Test if `value` is a BIC (Bank Identification Code) or SWIFT code.
 
 **Kind**: global function  
@@ -316,7 +316,7 @@ is.BIC("S23CKENXXXX"); // => False
 
 <a name="bigint"></a>
 
-## bigint(value) ⇒ <code>Boolean</code>
+### bigint(value) ⇒ <code>Boolean</code>
 Test if `value` is an ES-proposed BigInt
 
 **Kind**: global function  
@@ -338,7 +338,7 @@ is.bigint(123); // => False
 
 <a name="bool"></a>
 
-## bool(value) ⇒ <code>Boolean</code>
+### bool(value) ⇒ <code>Boolean</code>
 Test if `value` is a boolean.
 
 **Kind**: global function  
@@ -360,7 +360,7 @@ is.bool(1); // => False
 
 <a name="btcAddress"></a>
 
-## btcAddress(value) ⇒ <code>Boolean</code>
+### btcAddress(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid BTC address.
 
 **Kind**: global function  
@@ -386,7 +386,7 @@ is.btcAddress("4J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy"); // => False
 
 <a name="buffer"></a>
 
-## buffer(value) ⇒ <code>Boolean</code>
+### buffer(value) ⇒ <code>Boolean</code>
 Test if the 'value is a buffer.
 
 **Kind**: global function  
@@ -408,7 +408,7 @@ is.buffer(new Object(123)); // => False
 
 <a name="byteLength"></a>
 
-## byteLength(value, [options]) ⇒ <code>Boolean</code>
+### byteLength(value, [options]) ⇒ <code>Boolean</code>
 Test if `value`'s length (in UTF-8 bytes) falls in a range.
 
 **Kind**: global function  
@@ -438,7 +438,7 @@ is.byteLength("a", { min: 2, max: 3 }); // => False
 
 <a name="creditCard"></a>
 
-## creditCard(value) ⇒ <code>Boolean</code>
+### creditCard(value) ⇒ <code>Boolean</code>
 Test if `value`is a credit card.
 
 **Kind**: global function  
@@ -465,7 +465,7 @@ is.creditCard("foo"); // => False
 
 <a name="currency"></a>
 
-## currency(value, [options]) ⇒ <code>Boolean</code>
+### currency(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is a valid currency amount.
 
 **Kind**: global function  
@@ -495,7 +495,7 @@ is.currency("'-$10,123.45", { allow_decimal: false }); // => False
 
 <a name="dataURI"></a>
 
-## dataURI(value) ⇒ <code>Boolean</code>
+### dataURI(value) ⇒ <code>Boolean</code>
 Test if `value` is a data uri format.
 
 **Kind**: global function  
@@ -521,7 +521,7 @@ is.dataURI("data:,A%20brief%20invalid%20[note"); // => False
 
 <a name="date"></a>
 
-## date(value, [format]) ⇒ <code>Boolean</code>
+### date(value, [format]) ⇒ <code>Boolean</code>
 Test if `value` is a valid date. e.g. [2002-07-15, new Date()].
 
 **Kind**: global function  
@@ -551,7 +551,7 @@ is.date("15/7/2002", "DD/MM/YY"); // => False
 
 <a name="dateAfter"></a>
 
-## dateAfter(value, [date]) ⇒ <code>Boolean</code>
+### dateAfter(value, [date]) ⇒ <code>Boolean</code>
 Test if `value` is a date that's after the specified date (defaults to now).
 
 **Kind**: global function  
@@ -578,7 +578,7 @@ is.dateAfter("2010-07-02", "2011-08-03"); // False
 
 <a name="dateBefore"></a>
 
-## dateBefore(value, date) ⇒ <code>Boolean</code>
+### dateBefore(value, date) ⇒ <code>Boolean</code>
 Test if `value` is a date that's before the specified date.
 
 **Kind**: global function  
@@ -605,7 +605,7 @@ is.dateBefore('08/04/2011', new Date(2011, 7, 4).toString()); // False
 
 <a name="dateValid"></a>
 
-## dateValid(value) ⇒ <code>Boolean</code>
+### dateValid(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid date.
 
 **Kind**: global function  
@@ -627,7 +627,7 @@ is.dateValid({}); // => False
 
 <a name="decimal"></a>
 
-## decimal(value) ⇒ <code>Boolean</code>
+### decimal(value) ⇒ <code>Boolean</code>
 Test if `value` is a decimal number.
 
 **Kind**: global function  
@@ -649,7 +649,7 @@ is.decimal(123); // => False
 
 <a name="defined"></a>
 
-## defined(value) ⇒ <code>Boolean</code>
+### defined(value) ⇒ <code>Boolean</code>
 Test if `value` is defined.
 
 **Kind**: global function  
@@ -671,7 +671,7 @@ is.defined(undefined); // => False
 
 <a name="divisibleBy"></a>
 
-## divisibleBy(value, n) ⇒ <code>Boolean</code>
+### divisibleBy(value, n) ⇒ <code>Boolean</code>
 Test if `value` is divisible by `n`.
 
 **Kind**: global function  
@@ -694,7 +694,7 @@ is.divisibleBy(1, 0); // => False
 
 <a name="EAN"></a>
 
-## EAN(value) ⇒ <code>Boolean</code>
+### EAN(value) ⇒ <code>Boolean</code>
 Test if `value` is an EAN (European Article Number).
 
 **Kind**: global function  
@@ -716,7 +716,7 @@ is.EAN("079777681629"); // => False
 
 <a name="element"></a>
 
-## element(value) ⇒ <code>Boolean</code>
+### element(value) ⇒ <code>Boolean</code>
 Test if `value` is an html element.
 
 **Kind**: global function  
@@ -739,7 +739,7 @@ is.element({ nodeType: 1 }); // => False
 
 <a name="email"></a>
 
-## email(value, [options]) ⇒ <code>Boolean</code>
+### email(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is an email.
 
 **Kind**: global function  
@@ -769,7 +769,7 @@ is.email("test@gmail.com", { domain_specific_validation: true }); // => False
 
 <a name="empty"></a>
 
-## empty(value) ⇒ <code>Boolean</code>
+### empty(value) ⇒ <code>Boolean</code>
 Test if `value` is empty.
 
 **Kind**: global function  
@@ -791,7 +791,7 @@ is.empty([1, 2, 3]); // => False
 
 <a name="equal"></a>
 
-## equal(value, other) ⇒ <code>Boolean</code>
+### equal(value, other) ⇒ <code>Boolean</code>
 Test if `value` is equal to `other`.
 
 **Kind**: global function  
@@ -813,7 +813,7 @@ is.equal([1, 2, 3], [2, 3]); // => False
 
 <a name="error"></a>
 
-## error(value) ⇒ <code>Boolean</code>
+### error(value) ⇒ <code>Boolean</code>
 Test if `value` is an error object.
 
 **Kind**: global function  
@@ -835,7 +835,7 @@ is.error({ error: true }); // => False
 
 <a name="ethereumAddress"></a>
 
-## ethereumAddress(value) ⇒ <code>Boolean</code>
+### ethereumAddress(value) ⇒ <code>Boolean</code>
 Test if `value` is an Ethereum address using basic regex.
 Does not validate address checksums.
 
@@ -862,7 +862,7 @@ is.ethereumAddress("1C6o5CDkLxjsVpnLSuqRs1UBFozXLEwYvU"); // => False
 
 <a name="even"></a>
 
-## even(value) ⇒ <code>Boolean</code>
+### even(value) ⇒ <code>Boolean</code>
 Test if `value` is an even number.
 
 **Kind**: global function  
@@ -884,7 +884,7 @@ is.even(7.1); // => False
 
 <a name="false"></a>
 
-## false(value) ⇒ <code>Boolean</code>
+### false(value) ⇒ <code>Boolean</code>
 Test if `value` is false.
 
 **Kind**: global function  
@@ -906,7 +906,7 @@ is.false(0); // => False
 
 <a name="float"></a>
 
-## float(value, options) ⇒ <code>Boolean</code>
+### float(value, options) ⇒ <code>Boolean</code>
 Test if `value` is is a float.
 
 **Kind**: global function  
@@ -932,7 +932,7 @@ is.float(('123,123', { locale: "en-AU" }); // => False
 
 <a name="fn"></a>
 
-## fn(value) ⇒ <code>Boolean</code>
+### fn(value) ⇒ <code>Boolean</code>
 Test if `value` is a function.
 
 **Kind**: global function  
@@ -954,7 +954,7 @@ is.fn({}); // => False
 
 <a name="FQDN"></a>
 
-## FQDN(value, [options]) ⇒ <code>Boolean</code>
+### FQDN(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is a fully qualified domain name (e.g. domain.com).
 
 **Kind**: global function  
@@ -983,7 +983,7 @@ is.FQDN("example.com.", { allow_trailing_dot: true }); // True
 
 <a name="fullWidth"></a>
 
-## fullWidth(value) ⇒ <code>Boolean</code>
+### fullWidth(value) ⇒ <code>Boolean</code>
 Test if `value` contains any full-width chars.
 
 **Kind**: global function  
@@ -1009,7 +1009,7 @@ is.fullWidth("abc123"); // => False
 
 <a name="greaterThan"></a>
 
-## greaterThan(value, other) ⇒ <code>Boolean</code>
+### greaterThan(value, other) ⇒ <code>Boolean</code>
 Test if `value` is greater than `other`.
 
 **Kind**: global function  
@@ -1035,7 +1035,7 @@ is.greaterThan("a", "abc"); // => False
 
 <a name="greaterThanOrEqualTo"></a>
 
-## greaterThanOrEqualTo(value, other) ⇒ <code>Boolean</code>
+### greaterThanOrEqualTo(value, other) ⇒ <code>Boolean</code>
 Test if `value` is greater than or equal to `other`.
 
 **Kind**: global function  
@@ -1061,7 +1061,7 @@ is.greaterThanOrEqualTo("abc", "a"); // => False
 
 <a name="halfWidth"></a>
 
-## halfWidth(value) ⇒ <code>Boolean</code>
+### halfWidth(value) ⇒ <code>Boolean</code>
 Test if `value` contains any half-width chars.
 
 **Kind**: global function  
@@ -1087,7 +1087,7 @@ is.halfWidth("あいうえお"); // => False
 
 <a name="hash"></a>
 
-## hash(value, algorithm) ⇒ <code>Boolean</code>
+### hash(value, algorithm) ⇒ <code>Boolean</code>
 Test if `value` is a hash of type algorithm.
 
 **Kind**: global function  
@@ -1114,7 +1114,7 @@ is.hash("q94375dj93458w34", "md5"); // => False
 
 <a name="hex"></a>
 
-## hex(value) ⇒ <code>Boolean</code>
+### hex(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid hex encoded string.
 
 **Kind**: global function  
@@ -1136,7 +1136,7 @@ is.hex("wxyzWXYZ1234/+=="); // => False
 
 <a name="hexadecimal"></a>
 
-## hexadecimal(value) ⇒ <code>Boolean</code>
+### hexadecimal(value) ⇒ <code>Boolean</code>
 Test if `value` is a hexadecimal number.
 
 **Kind**: global function  
@@ -1162,7 +1162,7 @@ is.hexadecimal("abcdefg"); // => False
 
 <a name="hexColor"></a>
 
-## hexColor(value) ⇒ <code>Boolean</code>
+### hexColor(value) ⇒ <code>Boolean</code>
 Test if `value`  is a hex color.
 
 **Kind**: global function  
@@ -1188,7 +1188,7 @@ is.hexColor("#ff"); // => False
 
 <a name="hosted"></a>
 
-## hosted(value, host) ⇒ <code>Boolean</code>
+### hosted(value, host) ⇒ <code>Boolean</code>
 Test if `value` is hosted by `host`.
 
 **Kind**: global function  
@@ -1211,7 +1211,7 @@ is.hosted("a", { a: 3 }); // => False
 
 <a name="HSL"></a>
 
-## HSL(value) ⇒ <code>Boolean</code>
+### HSL(value) ⇒ <code>Boolean</code>
 Test if `value` is an HSL (hue, saturation,
 lightness, optional alpha) color based on CSS Colors Level 4 specification.
 Comma-separated format supported. Space-separated format
@@ -1240,7 +1240,7 @@ is.HSL("hsl(0260, 100 %, 100%)"); // => False
 
 <a name="IBAN"></a>
 
-## IBAN(value) ⇒ <code>Boolean</code>
+### IBAN(value) ⇒ <code>Boolean</code>
 IBAN
 Test if `value` is a IBAN (International Bank Account Number).
 
@@ -1267,7 +1267,7 @@ is.IBAN("XX22YYY1234567890123"); // => False
 
 <a name="identityCard"></a>
 
-## identityCard(value, locale) ⇒ <code>Boolean</code>
+### identityCard(value, locale) ⇒ <code>Boolean</code>
 Defaults to 'any'.
 
 **Kind**: global function  
@@ -1294,7 +1294,7 @@ is.identityCard("X431071923", "zh-TW"); // => False
 
 <a name="IMEI"></a>
 
-## IMEI(value, options) ⇒ <code>Boolean</code>
+### IMEI(value, options) ⇒ <code>Boolean</code>
 Test if `value` is is a valid IMEI number.
 Imei should be of format ############### or ##-######-######-#.
 
@@ -1325,7 +1325,7 @@ is.IMEI("49-015420-323751-7", { allow_hyphens: true }); // => False
 
 <a name="infinite"></a>
 
-## infinite(value) ⇒ <code>Boolean</code>
+### infinite(value) ⇒ <code>Boolean</code>
 Test if `value` is positive or negative infinity.
 
 **Kind**: global function  
@@ -1349,7 +1349,7 @@ is.infinite(9999999999); // => False
 
 <a name="instance"></a>
 
-## instance(value, constructor) ⇒ <code>Boolean</code>
+### instance(value, constructor) ⇒ <code>Boolean</code>
 Test if `value` is an instance of `constructor`.
 
 **Kind**: global function  
@@ -1376,7 +1376,7 @@ is.instance(new F(), F); // => True
 
 <a name="integer"></a>
 
-## integer(value) ⇒ <code>Boolean</code>
+### integer(value) ⇒ <code>Boolean</code>
 Test if `value` is an integer.
 
 **Kind**: global function  
@@ -1398,7 +1398,7 @@ is.integer("0"); // => False
 
 <a name="IP"></a>
 
-## IP(value, version) ⇒ <code>Boolean</code>
+### IP(value, version) ⇒ <code>Boolean</code>
 Test if `value` is an IP (version 4 or 6).
 
 **Kind**: global function  
@@ -1428,7 +1428,7 @@ is.IP("::1", 4); // => False
 
 <a name="IPRange"></a>
 
-## IPRange(value) ⇒ <code>Boolean</code>
+### IPRange(value) ⇒ <code>Boolean</code>
 Test if `value` is an IP Range(version 4 only).
 
 **Kind**: global function  
@@ -1454,7 +1454,7 @@ is.IPRange("127.200.230.1/35"); // => False
 
 <a name="ISBN"></a>
 
-## ISBN(value, version) ⇒ <code>Boolean</code>
+### ISBN(value, version) ⇒ <code>Boolean</code>
 Test if `value` is an ISBN (version 10 or 13).
 
 **Kind**: global function  
@@ -1481,7 +1481,7 @@ is.ISBN("9783836221190", 13); // => False
 
 <a name="ISIN"></a>
 
-## ISIN(value) ⇒ <code>Boolean</code>
+### ISIN(value) ⇒ <code>Boolean</code>
 Test if `value` is an ISIN (stock/security identifier).
 
 **Kind**: global function  
@@ -1507,7 +1507,7 @@ is.ISIN("DE000BAY0018"); // => False
 
 <a name="ISO31661Alpha2"></a>
 
-## ISO31661Alpha2(value) ⇒ <code>Boolean</code>
+### ISO31661Alpha2(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid ISO 3166-1 alpha-2 officially assigned country code.
 
 **Kind**: global function  
@@ -1533,7 +1533,7 @@ is.ISO31661Alpha2("FRA"); // => False
 
 <a name="ISO31661Alpha3"></a>
 
-## ISO31661Alpha3(value) ⇒ <code>Boolean</code>
+### ISO31661Alpha3(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid ISO 3166-1 alpha-3 officially assigned country code.
 
 **Kind**: global function  
@@ -1559,7 +1559,7 @@ is.ISO31661Alpha3("FR"); // => False
 
 <a name="ISO8601"></a>
 
-## ISO8601(value) ⇒ <code>Boolean</code>
+### ISO8601(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid ISO 8601 date; for additional checks for valid dates, e.g. invalidates dates like 2009-02-29, pass options object as a second parameter with options.strict = true.
 
 **Kind**: global function  
@@ -1588,7 +1588,7 @@ is.ISO8601("2010-02-30", { strict: true }); // => False
 
 <a name="ISRC"></a>
 
-## ISRC(value) ⇒ <code>Boolean</code>
+### ISRC(value) ⇒ <code>Boolean</code>
 Test if `value` is a ISRC.
 
 **Kind**: global function  
@@ -1614,7 +1614,7 @@ is.ISRC("SRC15705223"); // => False
 
 <a name="ISSN"></a>
 
-## ISSN(value, [options]) ⇒ <code>Boolean</code>
+### ISSN(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is an ISSN.
 
 **Kind**: global function  
@@ -1644,7 +1644,7 @@ is.ISSN("2434561x", { case_sensitive: true }); // => False
 
 <a name="JSON"></a>
 
-## JSON(value, [options]) ⇒ <code>Boolean</code>
+### JSON(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is valid JSON (note: uses JSON.parse).
 
 **Kind**: global function  
@@ -1674,7 +1674,7 @@ is.JSON(`1234`, { allow_primitives: true }); // => False
 
 <a name="JWT"></a>
 
-## JWT(value) ⇒ <code>Boolean</code>
+### JWT(value) ⇒ <code>Boolean</code>
 Test if `value` is valid JWT token.
 
 **Kind**: global function  
@@ -1700,7 +1700,7 @@ is.JWT("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"); // => False
 
 <a name="latLong"></a>
 
-## latLong(value, [options]) ⇒ <code>Boolean</code>
+### latLong(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is a valid latitude-longitude coordinate
 in the format lat,long or lat, long.
 
@@ -1730,7 +1730,7 @@ is.latLong("100° 26′ 46″ N, 79° 58′ 56″ W", { checkDMS: true }); // =>
 
 <a name="lessThan"></a>
 
-## lessThan(value, other) ⇒ <code>Boolean</code>
+### lessThan(value, other) ⇒ <code>Boolean</code>
 Test if `value` is less than `other`.
 
 **Kind**: global function  
@@ -1755,7 +1755,7 @@ is.lessThan("abc", "abc"); // => False
 
 <a name="lessThanOrEqualTo"></a>
 
-## lessThanOrEqualTo(value, other) ⇒ <code>Boolean</code>
+### lessThanOrEqualTo(value, other) ⇒ <code>Boolean</code>
 Test if `value` is less than or equal to `other`.
 
 **Kind**: global function  
@@ -1781,7 +1781,7 @@ is.lessThanOrEqualTo(3, 2); // => False
 
 <a name="locale"></a>
 
-## locale(value) ⇒ <code>Boolean</code>
+### locale(value) ⇒ <code>Boolean</code>
 Test if `value` is a locale.
 
 **Kind**: global function  
@@ -1807,7 +1807,7 @@ is.locale("lo_POP"); // => False
 
 <a name="lowercase"></a>
 
-## lowercase(value) ⇒ <code>Boolean</code>
+### lowercase(value) ⇒ <code>Boolean</code>
 Test if `value` is lowercase.
 
 **Kind**: global function  
@@ -1833,7 +1833,7 @@ is.lowercase("123A"); // => True
 
 <a name="MACAddress"></a>
 
-## MACAddress(value, [options]) ⇒ <code>Boolean</code>
+### MACAddress(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is a MACAddress.
 
 **Kind**: global function  
@@ -1862,7 +1862,7 @@ is.MACAddress("abc", { no_colons: true }); // False
 
 <a name="magnetURI"></a>
 
-## magnetURI(value) ⇒ <code>Boolean</code>
+### magnetURI(value) ⇒ <code>Boolean</code>
 Test if `value` is a magnet uri format.
 
 **Kind**: global function  
@@ -1888,7 +1888,7 @@ is.magnetURI(":?xt=urn:btih:06E2A9683BF4DA92C73A661AC56F0ECC9C63C5B4&dn=hellowor
 
 <a name="maximum"></a>
 
-## maximum(value, others) ⇒ <code>Boolean</code>
+### maximum(value, others) ⇒ <code>Boolean</code>
 Test if `value` is greater than 'others' values.
 
 **Kind**: global function  
@@ -1914,7 +1914,7 @@ is.maximum("b", ["a", "b", "c"]); // => False
 
 <a name="MD5"></a>
 
-## MD5(value) ⇒ <code>Boolean</code>
+### MD5(value) ⇒ <code>Boolean</code>
 Test if `value` is a MD5 hash. Please note that you
 can also use the isHash(str, 'md5') function. Keep in mind that
 MD5 has some collision weaknesses compared to other algorithms (e.g., SHA).
@@ -1942,7 +1942,7 @@ is.MD5("KYT0bf1c35032a71a14c2f719e5a14c1"); // => False
 
 <a name="mimeType"></a>
 
-## mimeType(value) ⇒ <code>Boolean</code>
+### mimeType(value) ⇒ <code>Boolean</code>
 Test if `value` matches to a valid MIME type format.
 
 **Kind**: global function  
@@ -1968,7 +1968,7 @@ is.mimeType("application"); // => False
 
 <a name="minimum"></a>
 
-## minimum(value, others) ⇒ <code>Boolean</code>
+### minimum(value, others) ⇒ <code>Boolean</code>
 Test if `value` is less than `others` values.
 
 **Kind**: global function  
@@ -1994,7 +1994,7 @@ is.minimum("c", ["a", "b", "c"]); // => False
 
 <a name="mobilePhone"></a>
 
-## mobilePhone(value, [locale], options) ⇒ <code>Boolean</code>
+### mobilePhone(value, [locale], options) ⇒ <code>Boolean</code>
 Test if `value` is a mobile phone number.
 
 **Kind**: global function  
@@ -2022,7 +2022,7 @@ is.mobilePhone("08212312345", 'en-ZA'); // => False
 
 <a name="mongoId"></a>
 
-## mongoId(value) ⇒ <code>Boolean</code>
+### mongoId(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid hex-encoded representation of a
 MongoDB ObjectId.
 
@@ -2050,7 +2050,7 @@ s.mongoId("507f1f77bcf86cd7994390"); // => False
 
 <a name="multibyte"></a>
 
-## multibyte(value) ⇒ <code>Boolean</code>
+### multibyte(value) ⇒ <code>Boolean</code>
 Test if `value` contains one or more multibyte chars.
 
 **Kind**: global function  
@@ -2076,7 +2076,7 @@ is.multibyte("abc"); // => False
 
 <a name="nan"></a>
 
-## nan(value) ⇒ <code>Boolean</code>
+### nan(value) ⇒ <code>Boolean</code>
 Test if `value` is not a number.
 
 **Kind**: global function  
@@ -2098,7 +2098,7 @@ is.nan({ a: 1 }); // => True
 
 <a name="null"></a>
 
-## null(value) ⇒ <code>Boolean</code>
+### null(value) ⇒ <code>Boolean</code>
 Test if `value` is null.
 
 **Kind**: global function  
@@ -2120,7 +2120,7 @@ s.null(0); // => False
 
 <a name="number"></a>
 
-## number(value) ⇒ <code>Boolean</code>
+### number(value) ⇒ <code>Boolean</code>
 Test if `value` is a number.
 
 **Kind**: global function  
@@ -2142,7 +2142,7 @@ is.number("123"); // => False
 
 <a name="object"></a>
 
-## object(value) ⇒ <code>Boolean</code>
+### object(value) ⇒ <code>Boolean</code>
 Test if `value` is an object.
 
 **Kind**: global function  
@@ -2164,7 +2164,7 @@ is.object(new Array()); // => False
 
 <a name="objectLiteral"></a>
 
-## objectLiteral(value) ⇒ <code>Boolean</code>
+### objectLiteral(value) ⇒ <code>Boolean</code>
 Test if `value` is a hash / a plain object literal.
 
 **Kind**: global function  
@@ -2186,7 +2186,7 @@ is.objectLiteral(Object(42)); // => False
 
 <a name="octal"></a>
 
-## octal(value) ⇒ <code>Boolean</code>
+### octal(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid octal number.
 
 **Kind**: global function  
@@ -2212,7 +2212,7 @@ is.octal("abcdefg"); // => False
 
 <a name="odd"></a>
 
-## odd(value) ⇒ <code>Boolean</code>
+### odd(value) ⇒ <code>Boolean</code>
 Test if `value` is an odd number.
 
 **Kind**: global function  
@@ -2234,7 +2234,7 @@ is.odd(2); // => False
 
 <a name="passportNumber"></a>
 
-## passportNumber(value, countryCode) ⇒ <code>Boolean</code>
+### passportNumber(value, countryCode) ⇒ <code>Boolean</code>
 Test if `value` is a valid passport number.
 
 **Kind**: global function  
@@ -2261,7 +2261,7 @@ is.passportNumber("A1054935", "AM"); // => False
 
 <a name="pathToDir"></a>
 
-## pathToDir(value) ⇒ <code>Boolean</code>
+### pathToDir(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid path to a directory.
 
 **Kind**: global function  
@@ -2287,7 +2287,7 @@ is.pathToDir("test/src/validators"); // => True
 
 <a name="pathToFile"></a>
 
-## pathToFile(value) ⇒ <code>Boolean</code>
+### pathToFile(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid path to a file.
 
 **Kind**: global function  
@@ -2313,7 +2313,7 @@ is.pathToFile("test/src/validators"); // => False
 
 <a name="portNumber"></a>
 
-## portNumber(value) ⇒ <code>Boolean</code>
+### portNumber(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid port number.
 
 **Kind**: global function  
@@ -2335,7 +2335,7 @@ is.portNumber(-1); // => False
 
 <a name="postalCode"></a>
 
-## postalCode(value, locale) ⇒ <code>Boolean</code>
+### postalCode(value, locale) ⇒ <code>Boolean</code>
 Test if `value` is a postal code.
 
 **Kind**: global function  
@@ -2362,7 +2362,7 @@ is.postalCode("78908", "BR"); // => False
 
 <a name="primitive"></a>
 
-## primitive(value) ⇒ <code>Boolean</code>
+### primitive(value) ⇒ <code>Boolean</code>
 Test if `value` is a primitive.
 
 **Kind**: global function  
@@ -2384,7 +2384,7 @@ is.primitive(new Object()); // => False
 
 <a name="regexp"></a>
 
-## regexp(value) ⇒ <code>Boolean</code>
+### regexp(value) ⇒ <code>Boolean</code>
 Test if `value` is a regular expression.
 
 **Kind**: global function  
@@ -2406,7 +2406,7 @@ is.regexp([]); // => False
 
 <a name="RFC3339"></a>
 
-## RFC3339(value) ⇒ <code>Boolean</code>
+### RFC3339(value) ⇒ <code>Boolean</code>
 Test if `value` is a valid RFC 3339 date.
 
 **Kind**: global function  
@@ -2432,7 +2432,7 @@ is.RFC3339("2010-02-18t00:23:32.33+24:00"); // => False
 
 <a name="rgbColor"></a>
 
-## rgbColor(value, includePercentValues) ⇒ <code>Boolean</code>
+### rgbColor(value, includePercentValues) ⇒ <code>Boolean</code>
 Test if `value` is a rgb or rgba color.
 
 **Kind**: global function  
@@ -2460,7 +2460,7 @@ is.rgbColor("rgb(4,4,5%)", false); // => False
 
 <a name="semVer"></a>
 
-## semVer(value) ⇒ <code>Boolean</code>
+### semVer(value) ⇒ <code>Boolean</code>
 Test if `value` is a Semantic Versioning Specification (SemVer).
 
 **Kind**: global function  
@@ -2486,7 +2486,7 @@ is.semVer("beta"); // => False
 
 <a name="slug"></a>
 
-## slug(value, options) ⇒ <code>Boolean</code>
+### slug(value, options) ⇒ <code>Boolean</code>
 Test if `value` is of type slug.
 
 **Kind**: global function  
@@ -2513,7 +2513,7 @@ is.slug("not-----------slug", "cs_67CZ"); // => False
 
 <a name="string"></a>
 
-## string(value) ⇒ <code>Boolean</code>
+### string(value) ⇒ <code>Boolean</code>
 Test if `value` is a string.
 
 **Kind**: global function  
@@ -2535,7 +2535,7 @@ is.string(123); // => False
 
 <a name="stringBool"></a>
 
-## stringBool(value) ⇒ <code>Boolean</code>
+### stringBool(value) ⇒ <code>Boolean</code>
 Test if `value` is a boolean.
 
 **Kind**: global function  
@@ -2561,7 +2561,7 @@ is.stringBool("1.0"); // => False
 
 <a name="stringContains"></a>
 
-## stringContains(value, seed, [options]) ⇒ <code>Boolean</code>
+### stringContains(value, seed, [options]) ⇒ <code>Boolean</code>
 Test if `value` contains the seed.
 
 **Kind**: global function  
@@ -2592,7 +2592,7 @@ is.stringContains("baxoof", "foo", { ignoreCase: true,}); // => False
 
 <a name="stringDecimal"></a>
 
-## stringDecimal(value, [options]) ⇒ <code>Boolean</code>
+### stringDecimal(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` represents a decimal string, such as 0.1, .3, 1.1, 1.00003, 4.0, etc.
 
 **Kind**: global function  
@@ -2618,7 +2618,7 @@ is.stringDecimal("1,0", { locale: "en-AU" }); // => False
 
 <a name="stringEmpty"></a>
 
-## stringEmpty(value, options) ⇒ <code>Boolean</code>
+### stringEmpty(value, options) ⇒ <code>Boolean</code>
 Test if `value` is an empty string.
 
 **Kind**: global function  
@@ -2648,7 +2648,7 @@ is.stringEmpty("foo", { ignore_whitespace: true }); // => False
 
 <a name="stringEquals"></a>
 
-## stringEquals(value, comparison) ⇒ <code>Boolean</code>
+### stringEquals(value, comparison) ⇒ <code>Boolean</code>
 Test if `value` matches the comparison.
 
 **Kind**: global function  
@@ -2675,7 +2675,7 @@ is.stringEquals("abc", "Abc"); // => False
 
 <a name="stringIn"></a>
 
-## stringIn(value, arr) ⇒ <code>Boolean</code>
+### stringIn(value, arr) ⇒ <code>Boolean</code>
 Test if `value` is in an array of allowed values.
 
 **Kind**: global function  
@@ -2702,7 +2702,7 @@ is.stringIn("barfoo", "foobar"); // => False
 
 <a name="stringInteger"></a>
 
-## stringInteger(value, options) ⇒ <code>Boolean</code>
+### stringInteger(value, options) ⇒ <code>Boolean</code>
 Test if `value` is a string integer.
 
 **Kind**: global function  
@@ -2731,7 +2731,7 @@ is.stringInteger("-01", { allow_leading_zeroes: false }); // => False
 
 <a name="stringLength"></a>
 
-## stringLength(value, options) ⇒ <code>Boolean</code>
+### stringLength(value, options) ⇒ <code>Boolean</code>
 Test if `value's length falls in a range.
 
 **Kind**: global function  
@@ -2758,7 +2758,7 @@ is.stringLength("a", { min: 2 }); // => False
 
 <a name="stringMatches"></a>
 
-## stringMatches(value, pattern, modifiers) ⇒ <code>Boolean</code>
+### stringMatches(value, pattern, modifiers) ⇒ <code>Boolean</code>
 Either matches('foo', /foo/i) or matches('foo', 'foo', 'i').
 
 **Kind**: global function  
@@ -2789,7 +2789,7 @@ is.stringMatches("acb", "abc", "i") // => False
 
 <a name="stringNumeric"></a>
 
-## stringNumeric(value, options, locale) ⇒ <code>Boolean</code>
+### stringNumeric(value, options, locale) ⇒ <code>Boolean</code>
 Test if `value` contains only numbers.
 
 **Kind**: global function  
@@ -2819,7 +2819,7 @@ is.stringNumeric("-0", { no_symbols: true }); // => False
 
 <a name="surrogatePair"></a>
 
-## surrogatePair(value) ⇒ <code>Boolean</code>
+### surrogatePair(value) ⇒ <code>Boolean</code>
 Test if `value` contains any surrogate pairs chars.
 
 **Kind**: global function  
@@ -2845,7 +2845,7 @@ is.surrogatePair("鮪"); // => False
 
 <a name="svg"></a>
 
-## svg(value) ⇒ <code>Boolean</code>
+### svg(value) ⇒ <code>Boolean</code>
 Test if the string is a valid SVG.
 
 **Kind**: global function  
@@ -2871,7 +2871,7 @@ is.svg("<div><svg></svg></div>"); // => False
 
 <a name="symbol"></a>
 
-## symbol(value) ⇒ <code>Boolean</code>
+### symbol(value) ⇒ <code>Boolean</code>
 Test if `value` is an ES6 Symbol
 
 **Kind**: global function  
@@ -2894,7 +2894,7 @@ is.symbol(new Object()); // => False
 
 <a name="taxID"></a>
 
-## taxID(value, [locale]) ⇒ <code>Boolean</code>
+### taxID(value, [locale]) ⇒ <code>Boolean</code>
 Test if `value` is a valid Tax Identification Number.
 
 **Kind**: global function  
@@ -2921,7 +2921,7 @@ is.taxID("0-11234567"); // => False
 
 <a name="true"></a>
 
-## true(value) ⇒ <code>Boolean</code>
+### true(value) ⇒ <code>Boolean</code>
 Test if `value` is true.
 
 **Kind**: global function  
@@ -2943,7 +2943,7 @@ is.true(1); // => False
 
 <a name="type"></a>
 
-## type(value, type) ⇒ <code>Boolean</code>
+### type(value, type) ⇒ <code>Boolean</code>
 Test if `value` is a type of `type`.
 
 **Kind**: global function  
@@ -2966,7 +2966,7 @@ is.type(1, "boolean"); // => False
 
 <a name="undefined"></a>
 
-## undefined(value) ⇒ <code>Boolean</code>
+### undefined(value) ⇒ <code>Boolean</code>
 Test if `value` is undefined.
 
 **Kind**: global function  
@@ -2989,7 +2989,7 @@ is.undefined(0); // => False
 
 <a name="uppercase"></a>
 
-## uppercase(value) ⇒ <code>Boolean</code>
+### uppercase(value) ⇒ <code>Boolean</code>
 Test if `value` is uppercase.
 
 **Kind**: global function  
@@ -3015,7 +3015,7 @@ is.uppercase("abc"); // => False
 
 <a name="URL"></a>
 
-## URL(value, [options]) ⇒ <code>Boolean</code>
+### URL(value, [options]) ⇒ <code>Boolean</code>
 Test if `value` is an URL.
 require_protocol - if set as true isURL will return false if protocol
 is not present in the URL.
@@ -3052,7 +3052,7 @@ is.URL("foobar.com", { protocols: ["rtmp"] }); // => False
 
 <a name="UUID"></a>
 
-## UUID(value, version) ⇒ <code>Boolean</code>
+### UUID(value, version) ⇒ <code>Boolean</code>
 Test if `value` is a UUID (version 3, 4 or 5).
 
 **Kind**: global function  
@@ -3081,7 +3081,7 @@ is.UUID("xxxA987FBC9-4BED-3078-CF07-9141BA07C9F3", 3); // => False
 
 <a name="variableWidth"></a>
 
-## variableWidth(value) ⇒ <code>Boolean</code>
+### variableWidth(value) ⇒ <code>Boolean</code>
 Test if `value` contains a mixture of full and half-width chars.
 
 **Kind**: global function  
@@ -3106,7 +3106,7 @@ is.variableWidth("ひらがなカタカナ漢字ABCDE"); // => True
 
 <a name="whitelisted"></a>
 
-## whitelisted(value, chars) ⇒ <code>Boolean</code>
+### whitelisted(value, chars) ⇒ <code>Boolean</code>
 Test if `value` characters appear in the whitelist.
 
 **Kind**: global function  
@@ -3133,7 +3133,7 @@ is.whitelisted("foo bar", "abcdefghijklmnopqrstuvwxyz"); // => False
 
 <a name="within"></a>
 
-## within(value, start, finish) ⇒ <code>Boolean</code>
+### within(value, start, finish) ⇒ <code>Boolean</code>
 Test if `value` is within `start` and `finish`.
 
 **Kind**: global function  
