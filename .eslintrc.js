@@ -11,30 +11,17 @@ module.exports = {
         es6: true,
     },
     globals: {
-        BigInt: true
+        BigInt: true,
     },
     extends: "eslint:recommended",
     parserOptions: {
         ecmaVersion: 11,
     },
     rules: {
-        "indent": [
-            "error",
-            4,
-            { "SwitchCase": 1 }
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
+        indent: ["error", 4, { SwitchCase: 1 }],
+        "linebreak-style": ["off"],
+        quotes: ["error", "double"],
+        semi: ["error", "always"],
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
         "array-bracket-spacing": "error",
@@ -284,7 +271,7 @@ module.exports = {
             files: ["src/validators/*.js"],
             rules: {
                 "prefer-rest-params": "off",
-                "no-unused-vars": ["error", { args: "none" }]
+                "no-unused-vars": ["error", { args: "none" }],
             },
         },
         {
@@ -299,7 +286,7 @@ module.exports = {
                 "no-empty-function": "off",
                 "prefer-rest-params": "off",
                 "require-unicode-regexp": "off",
-                "prefer-regex-literals": "off"
+                "prefer-regex-literals": "off",
             },
         },
     ],
