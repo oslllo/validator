@@ -25,11 +25,11 @@ before((done) => {
 });
 
 describe("test.browser", () => {
-    it(`loads validator into DOM`, () => {
-        assert.isTrue(typeof is !== "undefined", `validator was not loaded into the DOM`);
-        assert.isTrue(typeof is === "object", `validator is not an object`);
+    it("loads validator into DOM", () => {
+        assert.isTrue(typeof is !== "undefined", "validator was not loaded into the DOM");
+        assert.isTrue(typeof is === "object", "validator is not an object");
     });
-    it(`can validate stuff in DOM`, () => {
+    it("can validate stuff in DOM", () => {
         assert.isTrue(is.string("123"));
         assert.isTrue(is.fn(window.alert));
         assert.isTrue(is.element(window.document.createElement("div")));

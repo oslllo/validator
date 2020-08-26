@@ -3,8 +3,8 @@
 const { is, assert } = require("../helper");
 
 describe("is.locale", () => {
-	it(`works`, () => {
+    it("works", () => {
         assert.isTrue(is.locale("uz_Latn_UZ"));
         assert.isFalse(is.locale("lo_POP"));
-	});
+    });
 });

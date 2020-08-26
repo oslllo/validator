@@ -3,8 +3,8 @@
 const { is, assert } = require("../helper");
 
 describe("is.ISBN", () => {
-	it(`works`, () => {
+    it("works", () => {
         assert.isTrue(is.ISBN("9783836221191", 13));
         assert.isFalse(is.ISBN("9783836221190", 13));
-	});
+    });
 });

@@ -1,5 +1,7 @@
 "use strict";
 
+/*eslint no-magic-numbers: "off"*/
+
 module.exports = {
     env: {
         mocha: true,
@@ -16,6 +18,23 @@ module.exports = {
         ecmaVersion: 11,
     },
     rules: {
+        "indent": [
+            "error",
+            4,
+            { "SwitchCase": 1 }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
         "array-bracket-spacing": "error",
@@ -67,7 +86,6 @@ module.exports = {
         "id-length": "off",
         "id-match": "error",
         "implicit-arrow-linebreak": "error",
-        indent: "off",
         "indent-legacy": "off",
         "init-declarations": "off",
         "jsx-quotes": "error",
@@ -80,7 +98,6 @@ module.exports = {
             },
         ],
         "line-comment-position": "error",
-        "linebreak-style": ["off"],
         "lines-around-comment": "off",
         "lines-around-directive": "error",
         "lines-between-class-members": "error",
@@ -232,14 +249,12 @@ module.exports = {
         "prefer-spread": "error",
         "prefer-template": "error",
         "quote-props": "off",
-        quotes: "off",
         radix: "error",
         "require-atomic-updates": "error",
         "require-await": "error",
         "require-jsdoc": "error",
         "require-unicode-regexp": "error",
         "rest-spread-spacing": "error",
-        semi: "error",
         "semi-spacing": "error",
         "semi-style": ["error", "last"],
         "sort-imports": "error",

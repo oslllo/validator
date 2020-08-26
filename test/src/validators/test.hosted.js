@@ -3,25 +3,25 @@
 const { is, assert, type } = require("../helper");
 
 describe("is.hosted", () => {
-	var hosted = {
-		valid: [{ a: {} }, { a: [] }, { a: function () {} }],
-		invalid: [
-			{ a: true },
-			{ a: false },
-			{ a: 3 },
-			{ a: undefined },
-			{ a: "abc" },
-			{ a: null },
-		],
-	};
-	hosted.valid.forEach((host) => {
-		it(`can validate that ${type(host.a)} is hosted`, () => {
-			assert.isTrue(is.hosted("a", host));
-		});
+    var hosted = {
+        valid: [{ a: {} }, { a: [] }, { a: function () {} }],
+        invalid: [
+            { a: true },
+            { a: false },
+            { a: 3 },
+            { a: undefined },
+            { a: "abc" },
+            { a: null },
+        ],
+    };
+    hosted.valid.forEach((host) => {
+        it(`can validate that ${type(host.a)} is hosted`, () => {
+            assert.isTrue(is.hosted("a", host));
+        });
     });
     hosted.invalid.forEach((host) => {
-		it(`can validate that ${type(host.a)} is NOT hosted`, () => {
-			assert.isFalse(is.hosted("a", host));
-		});
-	});
+        it(`can validate that ${type(host.a)} is NOT hosted`, () => {
+            assert.isFalse(is.hosted("a", host));
+        });
+    });
 });

@@ -3,8 +3,8 @@
 const { is, assert } = require("../helper");
 
 describe("is.whitelisted", () => {
-	it(`works`, () => {
+    it("works", () => {
         assert.isTrue(is.whitelisted("foo", "abcdefghijklmnopqrstuvwxyz"));
         assert.isFalse(is.whitelisted("foo bar", "abcdefghijklmnopqrstuvwxyz"));
-	});
+    });
 });

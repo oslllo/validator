@@ -3,10 +3,10 @@
 const { is, assert } = require("../helper");
 
 describe("is.stringNumeric", () => {
-    it(`works`, () => {
+    it("works", () => {
         assert.isTrue(is.stringNumeric("123"));
     });
-    it(`works with arguments`, () => {
+    it("works with arguments", () => {
         assert.isTrue(
             is.stringNumeric("123", {
                 no_symbols: true,
