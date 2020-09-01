@@ -1,5 +1,10 @@
 "use strict";
 
+/**
+ * If you feel a rule dosen't make sense feel free to change it
+ * and explain why the commit message.
+ */
+
 /*eslint no-magic-numbers: "off"*/
 
 module.exports = {
@@ -61,12 +66,12 @@ module.exports = {
         "func-call-spacing": "error",
         "func-name-matching": "error",
         "func-names": "off",
-        "func-style": ["error", "expression"],
+        "func-style": ["off"],
         "function-paren-newline": "off",
         "generator-star-spacing": "error",
         "global-require": "off",
         "grouped-accessor-pairs": "error",
-        "guard-for-in": "error",
+        "guard-for-in": "off",
         "handle-callback-err": "error",
         "id-blacklist": "error",
         "id-denylist": "error",
@@ -90,7 +95,7 @@ module.exports = {
         "lines-between-class-members": "error",
         "max-classes-per-file": "error",
         "max-depth": "error",
-        "max-len": ["error", { code: 90, comments: 1000 }],
+        "max-len": ["error", { code: 90, ignoreComments: true }],
         "max-lines": "off",
         "max-lines-per-function": ["off"],
         "max-nested-callbacks": "off",
@@ -144,7 +149,7 @@ module.exports = {
         "no-lonely-if": "error",
         "no-loop-func": "error",
         "no-loss-of-precision": "error",
-        "no-magic-numbers": "error",
+        "no-magic-numbers": ["error", { ignore: [0] }],
         "no-mixed-operators": "error",
         "no-mixed-requires": "error",
         "no-multi-assign": "error",
@@ -222,7 +227,7 @@ module.exports = {
         "operator-linebreak": "error",
         "padded-blocks": "off",
         "padding-line-between-statements": "error",
-        "prefer-arrow-callback": "error",
+        "prefer-arrow-callback": "off",
         "prefer-const": "error",
         "prefer-destructuring": "off",
         "prefer-exponentiation-operator": "error",
