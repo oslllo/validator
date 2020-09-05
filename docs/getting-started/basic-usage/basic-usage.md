@@ -1,14 +1,24 @@
-# Browser / Client-side
+# Basic Usage
+
+---
+
+## Node / Bundler
+
+```js
+const is = require("oslllo-validator");
+```
+
+## Browser / Client-side
 
 Both `minified` and `full` versions are available.
 
 > You can fetch the already built files via the `jsdelivr` CDN or by building them `locally`
 
-## CDN
+### CDN
 
 * [**jsdelivr**](https://www.jsdelivr.com/package/npm/oslllo-validator?path=dist%2Fbrowser)
 
-## Usage
+### Usage
 
 ```js
 <script type="text/javascript" src="oslllo-validator.min.js"></script>
@@ -17,7 +27,7 @@ Both `minified` and `full` versions are available.
 </script>
 ```
 
-# Build
+## Build
 
 1. Clone the [repository](https://github.com/oslllo/validator) to your local machine.
 2. Run `npm install --dev`.
