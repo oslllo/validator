@@ -3,9 +3,9 @@
 
 # Validator
 
-[![Travis (.org)](https://img.shields.io/travis/oslllo/validator?label=Travis%20CI)](https://travis-ci.org/github/oslllo/validator)
+[![build](https://img.shields.io/travis/oslllo/validator)](https://travis-ci.org/github/oslllo/validator)
 [![npm](https://img.shields.io/npm/v/oslllo-validator)](https://www.npmjs.com/package/oslllo-validator)
-[![Coverage Status](https://coveralls.io/repos/github/oslllo/validator/badge.svg?branch=master)](https://coveralls.io/github/oslllo/validator?branch=master)
+[![Coverage Status](https://img.shields.io/coveralls/github/oslllo/validator)](https://coveralls.io/github/oslllo/validator?branch=master)
 
 > All in one Javascript validator
 
