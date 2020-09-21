@@ -1,6 +1,6 @@
 "use strict";
 
-const { is, assert, inputs, window } = require("../helper");
+const { is, assert, inputs, internal } = require("../helper");
 
 describe("is.fn", () => {
     var data = ["function () {}"];
@@ -10,7 +10,7 @@ describe("is.fn", () => {
         });
     });
     it("can validate that (function) window.alert is a function", () => {
-        assert.isTrue(is.fn(window.alert));
+        assert.isTrue(is.fn(internal._window.alert));
     });
     inputs.invalid(data).forEach((invalid) => {
         it(`can validate that ${invalid.description} is NOT a function`, () => {
