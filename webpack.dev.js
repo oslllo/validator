@@ -11,6 +11,6 @@ module.exports = merge(common, {
         filename: `${pkg.name}.js`,
     },
     devServer: {
-        contentBase: "./dist/browser",
+        contentBase: "./dist",
     },
 });

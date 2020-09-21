@@ -2,6 +2,11 @@
 
 const is = require("../../");
 const { assert } = require("chai");
+const { JSDOM } = require("jsdom");
+const internal = require("../../src/internal");
+
+var DOM = new JSDOM("<!DOCTYPE html></html>");
+var { window } = DOM;
 
 const type = function (value) {
     return Object.prototype.toString
@@ -17,7 +22,7 @@ const inputs = {
 
         return this.data.filter((value) => {
             let inputType;
-            if (!is._hasOwnProperty(value, "data")) {
+            if (!internal._hasOwnProperty(value, "data")) {
                 throw new Error(`${value.name} input does not have the 'data' property`);
             }
             var data = value.data;
@@ -297,4 +302,6 @@ module.exports = {
     type,
     assert,
     inputs,
+    window,
+    internal
 };

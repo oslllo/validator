@@ -1,17 +1,34 @@
 "use strict";
 
-const main = require("./main");
-const validator = require("validator");
 const assertString = require("validator/lib/util/assertString");
 
-const Validator = function () {
-    this._fs = main.fs;
-    this.validator = validator;
-    this._window = main.window;
-    this._document = main.document;
-};
+var fs, window, document, DOM, JSDOM;
 
-Validator.prototype = {
+const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined";
+
+const isNode =
+    typeof process !== "undefined" &&
+    process.versions != null &&
+    process.versions.node != null;
+
+/**
+ * Try to detect if node or browser build in webpack
+ */
+if (typeof process.env.NODE_ENV === "undefined" && isNode && !isBrowser) {
+    fs = require("fs");
+    JSDOM = require("jsdom").JSDOM;
+    DOM = new JSDOM("<!DOCTYPE html></html>");
+    window = DOM.window;
+} else {
+    window = global.window;
+}
+
+document = window.document;
+
+module.exports = {
+    _fs: fs,
+    _window: window,
+    _document: document,
     /**
      * _getObjectType
      *
@@ -44,7 +61,3 @@ Validator.prototype = {
         assertString(value);
     },
 };
-
-Validator.JSDOM = main.JSDOM;
-
-module.exports = Validator;
