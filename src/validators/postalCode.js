@@ -1,25 +1,24 @@
 "use strict";
 
-module.exports = function (v) {
-    Object.assign(v.prototype, {
-        /**
-         * postalCode
-         * @description Test if `value` is a postal code.
-         *
-         * @since 0.0.1
-         * @param {String} value `value` to test
-         * @param {String} locale one of [ 'AD', 'AT', 'AU', 'BE', 'BG', 'BR', 'CA', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI', 'LT', 'LU', 'LV', 'MT', 'MX', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO', 'RU', 'SA', 'SE', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'.
-         * @return {Boolean} true if `value is a valid postal code, otherwise false.
-         * @throws {TypeError} if `value` is not a `string`
-         * @access public
-         * @example
-         *
-         * is.postalCode("39100-000", "BR"); // => True
-         * is.postalCode("78908", "BR"); // => False
-         *
-         */
-        postalCode: function (value, locale) {
-            return this.validator.isPostalCode(...arguments);
-        },
-    });
+const validator = require("validator");
+
+/**
+ * postalCode
+ * @description Test if `value` is a postal code.
+ *
+ * @since 0.0.1
+ * @param {String} value `value` to test
+ * @param {String} locale one of [ 'AD', 'AT', 'AU', 'BE', 'BG', 'BR', 'CA', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI', 'LT', 'LU', 'LV', 'MT', 'MX', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO', 'RU', 'SA', 'SE', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'.
+ * @return {Boolean} true if `value is a valid postal code, otherwise false.
+ * @throws {TypeError} if `value` is not a `string`
+ * @access public
+ * @example
+ *
+ * is.postalCode("39100-000", "BR"); // => True
+ * is.postalCode("78908", "BR"); // => False
+ *
+ */
+
+module.exports = function (value, locale) {
+    return validator.isPostalCode(...arguments);
 };

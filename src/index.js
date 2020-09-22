@@ -1,150 +1,304 @@
 "use strict";
 
-var Validator = require("./constructor");
+const _actualNaN = require("./validators/actualNaN");
+const _alpha = require("./validators/alpha");
+const _alphanumeric = require("./validators/alphanumeric");
+const _args = require("./validators/args");
+const _argsEmpty = require("./validators/argsEmpty");
+const _array = require("./validators/array");
+const _arrayEmpty = require("./validators/arrayEmpty");
+const _arrayLike = require("./validators/arrayLike");
+const _ascii = require("./validators/ascii");
 
-require("./validators/actualNaN")(Validator);
-require("./validators/alpha")(Validator);
-require("./validators/alphanumeric")(Validator);
-require("./validators/args")(Validator);
-require("./validators/argsEmpty")(Validator);
-require("./validators/array")(Validator);
-require("./validators/arrayEmpty")(Validator);
-require("./validators/arrayLike")(Validator);
-require("./validators/ascii")(Validator);
+const _base32 = require("./validators/base32");
+const _base64 = require("./validators/base64");
+const _BIC = require("./validators/BIC");
+const _bigint = require("./validators/bigint");
+const _bool = require("./validators/bool");
+const _btcAddress = require("./validators/btcAddress");
+const _buffer = require("./validators/buffer");
+const _byteLength = require("./validators/byteLength");
 
-require("./validators/base32")(Validator);
-require("./validators/base64")(Validator);
-require("./validators/BIC")(Validator);
-require("./validators/bigint")(Validator);
-require("./validators/bool")(Validator);
-require("./validators/btcAddress")(Validator);
-require("./validators/buffer")(Validator);
-require("./validators/byteLength")(Validator);
+const _creditCard = require("./validators/creditCard");
+const _currency = require("./validators/currency");
 
-require("./validators/creditCard")(Validator);
-require("./validators/currency")(Validator);
+const _dataURI = require("./validators/dataURI");
+const _date = require("./validators/date");
+const _dateAfter = require("./validators/dateAfter");
+const _dateBefore = require("./validators/dateBefore");
+const _dateValid = require("./validators/dateValid");
+const _decimal = require("./validators/decimal");
+const _defined = require("./validators/defined");
+const _divisibleBy = require("./validators/divisibleBy");
 
-require("./validators/dataURI")(Validator);
-require("./validators/date")(Validator);
-require("./validators/dateAfter")(Validator);
-require("./validators/dateBefore")(Validator);
-require("./validators/dateValid")(Validator);
-require("./validators/decimal")(Validator);
-require("./validators/defined")(Validator);
-require("./validators/divisibleBy")(Validator);
+const _EAN = require("./validators/EAN");
+const _element = require("./validators/element");
+const _email = require("./validators/email");
+const _empty = require("./validators/empty");
+const _equal = require("./validators/equal");
+const _error = require("./validators/error");
+const _ethereumAddress = require("./validators/ethereumAddress");
+const _even = require("./validators/even");
 
-require("./validators/EAN")(Validator);
-require("./validators/element")(Validator);
-require("./validators/email")(Validator);
-require("./validators/empty")(Validator);
-require("./validators/equal")(Validator);
-require("./validators/error")(Validator);
-require("./validators/ethereumAddress")(Validator);
-require("./validators/even")(Validator);
+const _false = require("./validators/false");
+const _float = require("./validators/float");
+const _fn = require("./validators/fn");
+const _FQDN = require("./validators/FQDN");
+const _fullWidth = require("./validators/fullWidth");
 
-require("./validators/false")(Validator);
-require("./validators/float")(Validator);
-require("./validators/fn")(Validator);
-require("./validators/FQDN")(Validator);
-require("./validators/fullWidth")(Validator);
+const _greaterThan = require("./validators/greaterThan");
+const _greaterThanOrEqualTo = require("./validators/greaterThanOrEqualTo");
 
-require("./validators/greaterThan")(Validator);
-require("./validators/greaterThanOrEqualTo")(Validator);
+const _halfWidth = require("./validators/halfWidth");
+const _hash = require("./validators/hash");
+const _hex = require("./validators/hex");
+const _hexadecimal = require("./validators/hexadecimal");
+const _hexColor = require("./validators/hexColor");
+const _hosted = require("./validators/hosted");
+const _HSL = require("./validators/HSL");
 
-require("./validators/halfWidth")(Validator);
-require("./validators/hash")(Validator);
-require("./validators/hex")(Validator);
-require("./validators/hexadecimal")(Validator);
-require("./validators/hexColor")(Validator);
-require("./validators/hosted")(Validator);
-require("./validators/HSL")(Validator);
+const _IBAN = require("./validators/IBAN");
+const _identityCard = require("./validators/identityCard");
+const _IMEI = require("./validators/IMEI");
 
-require("./validators/IBAN")(Validator);
-require("./validators/identityCard")(Validator);
-require("./validators/IMEI")(Validator);
+const _infinite = require("./validators/infinite");
+const _instance = require("./validators/instance");
+const _integer = require("./validators/integer");
+const _IP = require("./validators/IP");
+const _IPRange = require("./validators/IPRange");
+const _ISBN = require("./validators/ISBN");
+const _ISIN = require("./validators/ISIN");
+const _ISO8601 = require("./validators/ISO8601");
+const _ISO31661Alpha2 = require("./validators/ISO31661Alpha2");
+const _ISO31661Alpha3 = require("./validators/ISO31661Alpha3");
+const _ISRC = require("./validators/ISRC");
+const _ISSN = require("./validators/ISSN");
 
-require("./validators/infinite")(Validator);
-require("./validators/instance")(Validator);
-require("./validators/integer")(Validator);
-require("./validators/IP")(Validator);
-require("./validators/IPRange")(Validator);
-require("./validators/ISBN")(Validator);
-require("./validators/ISIN")(Validator);
-require("./validators/ISO8601")(Validator);
-require("./validators/ISO31661Alpha2")(Validator);
-require("./validators/ISO31661Alpha3")(Validator);
-require("./validators/ISRC")(Validator);
-require("./validators/ISSN")(Validator);
+const _JSON = require("./validators/JSON");
+const _JWT = require("./validators/JWT");
 
-require("./validators/JSON")(Validator);
-require("./validators/JWT")(Validator);
+const _latLong = require("./validators/latLong");
+const _lessThan = require("./validators/lessThan");
+const _lessThanOrEqualTo = require("./validators/lessThanOrEqualTo");
 
-require("./validators/latLong")(Validator);
-require("./validators/lessThan")(Validator);
-require("./validators/lessThanOrEqualTo")(Validator);
+const _locale = require("./validators/locale");
+const _lowercase = require("./validators/lowercase");
 
-require("./validators/locale")(Validator);
-require("./validators/lowercase")(Validator);
+const _MACAddress = require("./validators/MACAddress");
+const _magnetURI = require("./validators/magnetURI");
+const _maximum = require("./validators/maximum");
+const _MD5 = require("./validators/MD5");
+const _mimeType = require("./validators/mimeType");
+const _minimum = require("./validators/minimum");
+const _mobilePhone = require("./validators/mobilePhone");
+const _mongoId = require("./validators/mongoId");
+const _multibyte = require("./validators/multibyte");
 
-require("./validators/MACAddress")(Validator);
-require("./validators/magnetURI")(Validator);
-require("./validators/maximum")(Validator);
-require("./validators/MD5")(Validator);
-require("./validators/mimeType")(Validator);
-require("./validators/minimum")(Validator);
-require("./validators/mobilePhone")(Validator);
-require("./validators/mongoId")(Validator);
-require("./validators/multibyte")(Validator);
+const _nan = require("./validators/nan");
+const _null = require("./validators/null");
+const _number = require("./validators/number");
 
-require("./validators/nan")(Validator);
-require("./validators/null")(Validator);
-require("./validators/number")(Validator);
+const _object = require("./validators/object");
+const _objectLiteral = require("./validators/objectLiteral");
+const _octal = require("./validators/octal");
+const _odd = require("./validators/odd");
 
-require("./validators/object")(Validator);
-require("./validators/objectLiteral")(Validator);
-require("./validators/octal")(Validator);
-require("./validators/odd")(Validator);
+const _passportNumber = require("./validators/passportNumber");
+const _pathToDir = require("./validators/pathToDir");
+const _pathToFile = require("./validators/pathToFile");
+const _portNumber = require("./validators/portNumber");
+const _postalCode = require("./validators/postalCode");
+const _primitive = require("./validators/primitive");
 
-require("./validators/passportNumber")(Validator);
-require("./validators/pathToDir")(Validator);
-require("./validators/pathToFile")(Validator);
-require("./validators/portNumber")(Validator);
-require("./validators/postalCode")(Validator);
-require("./validators/primitive")(Validator);
+const _regexp = require("./validators/regexp");
+const _RFC3339 = require("./validators/RFC3339");
+const _rgbColor = require("./validators/rgbColor");
 
-require("./validators/regexp")(Validator);
-require("./validators/RFC3339")(Validator);
-require("./validators/rgbColor")(Validator);
+const _semVer = require("./validators/semVer");
+const _slug = require("./validators/slug");
+const _string = require("./validators/string");
+const _stringBool = require("./validators/stringBool");
+const _stringContains = require("./validators/stringContains");
+const _stringDecimal = require("./validators/stringDecimal");
+const _stringEmpty = require("./validators/stringEmpty");
+const _stringEquals = require("./validators/stringEquals");
+const _stringIn = require("./validators/stringIn");
+const _stringInteger = require("./validators/stringInteger");
+const _stringLength = require("./validators/stringLength");
+const _stringMatches = require("./validators/stringMatches");
+const _stringNumeric = require("./validators/stringNumeric");
+const _surrogatePair = require("./validators/surrogatePair");
+const _svg = require("./validators/svg");
+const _symbol = require("./validators/symbol");
 
-require("./validators/semVer")(Validator);
-require("./validators/slug")(Validator);
-require("./validators/string")(Validator);
-require("./validators/stringBool")(Validator);
-require("./validators/stringContains")(Validator);
-require("./validators/stringDecimal")(Validator);
-require("./validators/stringEmpty")(Validator);
-require("./validators/stringEquals")(Validator);
-require("./validators/stringIn")(Validator);
-require("./validators/stringInteger")(Validator);
-require("./validators/stringLength")(Validator);
-require("./validators/stringMatches")(Validator);
-require("./validators/stringNumeric")(Validator);
-require("./validators/surrogatePair")(Validator);
-require("./validators/svg")(Validator);
-require("./validators/symbol")(Validator);
+const _taxID = require("./validators/taxID");
+const _true = require("./validators/true");
+const _type = require("./validators/type");
 
-require("./validators/taxID")(Validator);
-require("./validators/true")(Validator);
-require("./validators/type")(Validator);
+const _undefined = require("./validators/undefined");
+const _uppercase = require("./validators/uppercase");
+const _URL = require("./validators/URL");
+const _UUID = require("./validators/UUID");
 
-require("./validators/undefined")(Validator);
-require("./validators/uppercase")(Validator);
-require("./validators/URL")(Validator);
-require("./validators/UUID")(Validator);
+const _variableWidth = require("./validators/variableWidth");
 
-require("./validators/variableWidth")(Validator);
+const _whitelisted = require("./validators/whitelisted");
+const _within = require("./validators/within");
 
-require("./validators/whitelisted")(Validator);
-require("./validators/within")(Validator);
+const internal = require("./internal");
 
-module.exports = new Validator();
+var validator = Object.defineProperties({}, {
+    _internal: {
+        writable: false,
+        value: internal
+    }
+});
+
+Object.assign(validator, {
+    actualNaN: _actualNaN,
+    alpha: _alpha,
+    alphanumeric: _alphanumeric,
+    args: _args,
+    argsEmpty: _argsEmpty,
+    array: _array,
+    arrayEmpty: _arrayEmpty,
+    arrayLike: _arrayLike,
+    ascii: _ascii,
+
+    base32: _base32,
+    base64: _base64,
+    BIC: _BIC,
+    bigint: _bigint,
+    bool: _bool,
+    btcAddress: _btcAddress,
+    buffer: _buffer,
+    byteLength: _byteLength,
+
+    creditCard: _creditCard,
+    currency: _currency,
+
+    dataURI: _dataURI,
+    date: _date,
+    dateAfter: _dateAfter,
+    dateBefore: _dateBefore,
+    dateValid: _dateValid,
+    decimal: _decimal,
+    defined: _defined,
+    divisibleBy: _divisibleBy,
+
+    EAN: _EAN,
+    element: _element,
+    email: _email,
+    empty: _empty,
+    equal: _equal,
+    error: _error,
+    ethereumAddress: _ethereumAddress,
+    even: _even,
+
+    false: _false,
+    float: _float,
+    fn: _fn,
+    FQDN: _FQDN,
+    fullWidth: _fullWidth,
+
+    greaterThan: _greaterThan,
+    greaterThanOrEqualTo: _greaterThanOrEqualTo,
+
+    halfWidth: _halfWidth,
+    hash: _hash,
+    hex: _hex,
+    hexadecimal: _hexadecimal,
+    hexColor: _hexColor,
+    hosted: _hosted,
+    HSL: _HSL,
+
+    IBAN: _IBAN,
+    identityCard: _identityCard,
+    IMEI: _IMEI,
+
+    infinite: _infinite,
+    instance: _instance,
+    integer: _integer,
+    IP: _IP,
+    IPRange: _IPRange,
+    ISBN: _ISBN,
+    ISIN: _ISIN,
+    ISO8601: _ISO8601,
+    ISO31661Alpha2: _ISO31661Alpha2,
+    ISO31661Alpha3: _ISO31661Alpha3,
+    ISRC: _ISRC,
+    ISSN: _ISSN,
+
+    JSON: _JSON,
+    JWT: _JWT,
+
+    latLong: _latLong,
+    lessThan: _lessThan,
+    lessThanOrEqualTo: _lessThanOrEqualTo,
+
+    locale: _locale,
+    lowercase: _lowercase,
+
+    MACAddress: _MACAddress,
+    magnetURI: _magnetURI,
+    maximum: _maximum,
+    MD5: _MD5,
+    mimeType: _mimeType,
+    minimum: _minimum,
+    mobilePhone: _mobilePhone,
+    mongoId: _mongoId,
+    multibyte: _multibyte,
+
+    nan: _nan,
+    null: _null,
+    number: _number,
+
+    object: _object,
+    objectLiteral: _objectLiteral,
+    octal: _octal,
+    odd: _odd,
+
+    passportNumber: _passportNumber,
+    pathToDir: _pathToDir,
+    pathToFile: _pathToFile,
+    portNumber: _portNumber,
+    postalCode: _postalCode,
+    primitive: _primitive,
+
+    regexp: _regexp,
+    RFC3339: _RFC3339,
+    rgbColor: _rgbColor,
+
+    semVer: _semVer,
+    slug: _slug,
+    string: _string,
+    stringBool: _stringBool,
+    stringContains: _stringContains,
+    stringDecimal: _stringDecimal,
+    stringEmpty: _stringEmpty,
+    stringEquals: _stringEquals,
+    stringIn: _stringIn,
+    stringInteger: _stringInteger,
+    stringLength: _stringLength,
+    stringMatches: _stringMatches,
+    stringNumeric: _stringNumeric,
+    surrogatePair: _surrogatePair,
+    svg: _svg,
+    symbol: _symbol,
+
+    taxID: _taxID,
+    true: _true,
+    type: _type,
+
+    undefined: _undefined,
+    uppercase: _uppercase,
+    URL: _URL,
+    UUID: _UUID,
+
+    variableWidth: _variableWidth,
+
+    whitelisted: _whitelisted,
+    within: _within,
+});
+
+module.exports = validator;

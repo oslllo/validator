@@ -2,14 +2,15 @@
     "name": "oslllo-validator",
     "version": "0.0.1",
     "description": "All in one Javascript validator",
-    "main": "dist/node/index.js",
+    "main": "src/index.js",
     "scripts": {
         "eslint": "node_modules/.bin/eslint",
         "lint": "npm run eslint -- src test",
         "lint:fix": "npm run eslint -- --fix src test",
         "test": "npm run test:code && npm run lint",
-        "test:code": "npm run build && nyc node_modules/.bin/mocha",
-        "build": "npm run node:build && npm run browser:build && npm run docs:build",
+        "test:code": "npm run build && npm run test:only",
+        "test:only": "nyc node_modules/.bin/mocha",
+        "build": "npm run browser:build && npm run docs:build",
         "docs:build": "node scripts/docs.build.js",
         "node:build": "node_modules/.bin/babel src --out-dir dist/node",
         "browser:build": "npm run browser:build.prod && npm run browser:build.dev",
@@ -19,6 +20,7 @@
         "coverage": "nyc report --reporter=text-lcov | coveralls"
     },
     "files": [
+        "src",
         "docs",
         "dist",
         "LICENCE",
@@ -26,8 +28,7 @@
     ],
     "sideEffects": false,
     "author": "Ghustavh Ehm <https://github.com/Ghustavh97>",
-    "contributors": [
-        {
+    "contributors": [{
             "name": "Ghustavh Ehm",
             "email": "Ghustavh97@gmail.com",
             "url": "https://github.com/Ghustavh97"
@@ -70,5 +71,8 @@
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12",
         "webpack-merge": "^5.1.2"
+    },
+    "engines": {
+        "node": ">= 10.0"
     }
 }
