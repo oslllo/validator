@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringEquals
+ * @name stringEquals
  * @description Test if `value` matches the comparison.
  *
  * @since 0.0.1

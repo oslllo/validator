@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ISRC
+ * @name ISRC
  * @description Test if `value` is a ISRC.
  *
  * @since 0.0.1

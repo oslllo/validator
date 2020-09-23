@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * UUID
+ * @name UUID
  * @description Test if `value` is a UUID (version 3, 4 or 5).
  *
  * @since 0.0.1

@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * EAN
+ * @name EAN
  * @description Test if `value` is an EAN (European Article Number).
  *
  * @since 0.0.1

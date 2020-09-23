@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * primitive
+ * @name primitive
  * @description Test if `value` is a primitive.
  *
  * @since 0.0.1

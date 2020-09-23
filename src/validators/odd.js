@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * odd
+ * @name odd
  * @description Test if `value` is an odd number.
  *
  * @since 0.0.1

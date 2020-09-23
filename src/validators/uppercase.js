@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * taxID
+ * @name uppercase
  * @description Test if `value` is uppercase.
  *
  * @since 0.0.1

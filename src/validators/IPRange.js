@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * IPRange
+ * @name IPRange
  * @description Test if `value` is an IP Range(version 4 only).
  *
  * @since 0.0.1

@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * IP
+ * @name IP
  * @description Test if `value` is an IP (version 4 or 6).
  *
  * @since 0.0.1

@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * integer
+ * @name integer
  * @description Test if `value` is an integer.
  *
  * @since 0.0.1

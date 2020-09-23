@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * hash
+ * @name hash
  * @description Test if `value` is a hash of type algorithm.
  *
  * @since 0.0.1

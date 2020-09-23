@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * objectLiteral
+ * @name objectLiteral
  * @description Test if `value` is a hash / a plain object literal.
  *
  * @since 0.0.1

@@ -3,7 +3,7 @@
 const assertString = require("validator/lib/util/assertString");
 
 /**
- * symbol
+ * @name svg
  * @description Test if the string is a valid SVG.
  *
  * @since 0.0.1

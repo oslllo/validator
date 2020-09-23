@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * undefined
+ * @name undefined
  * @description Test if `value` is undefined.
  *
  * @since 0.0.1

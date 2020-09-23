@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * object
+ * @name object
  * @description Test if `value` is an object.
  *
  * @since 0.0.1

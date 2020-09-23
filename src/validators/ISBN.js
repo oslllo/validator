@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ISBN
+ * @name ISBN
  * @description Test if `value` is an ISBN (version 10 or 13).
  *
  * @since 0.0.1

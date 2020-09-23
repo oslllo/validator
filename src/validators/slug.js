@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * slug
+ * @name slug
  * @description Test if `value` is of type slug.
  *
  * @since 0.0.1

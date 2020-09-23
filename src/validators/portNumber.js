@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * portNumber
+ * @name portNumber
  * @description Test if `value` is a valid port number.
  *
  * @since 0.0.1

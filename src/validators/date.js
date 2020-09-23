@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * date
+ * @name date
  * @description Test if `value` is a valid date. e.g. [2002-07-15, new Date()].
  *
  * @since 0.0.1

@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * divisibleBy
+ * @name divisibleBy
  * @description Test if `value` is divisible by `n`.
  *
  * @since 0.0.1

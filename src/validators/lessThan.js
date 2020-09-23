@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * lessThan
+ * @name lessThan
  * @description Test if `value` is less than `other`.
  *
  * @since 0.0.1

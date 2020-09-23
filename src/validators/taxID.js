@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * taxID
+ * @name taxID
  * @description Test if `value` is a valid Tax Identification Number.
  *
  * @since 0.0.1

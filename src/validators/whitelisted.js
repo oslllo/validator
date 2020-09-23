@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * whitelisted
+ * @name whitelisted
  * @description Test if `value` characters appear in the whitelist.
  *
  * @since 0.0.1

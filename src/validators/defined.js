@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * defined
+ * @name defined
  * @description Test if `value` is defined.
  *
  * @since 0.0.1

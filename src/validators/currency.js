@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * currency
+ * @name currency
  * @description Test if `value` is a valid currency amount.
  *
  * @since 0.0.1

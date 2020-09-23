@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ethereumAddress
+ * @name ethereumAddress
  * @description Test if `value` is an Ethereum address using basic regex.
  * Does not validate address checksums.
  *

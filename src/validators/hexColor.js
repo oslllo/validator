@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * hexColor
+ * @name hexColor
  * @description Test if `value`  is a hex color.
  *
  * @since 0.0.1

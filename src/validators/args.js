@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * args
+ * @name args
  * @description Test if `value` is an arguments object.
  *
  * @since 0.0.1

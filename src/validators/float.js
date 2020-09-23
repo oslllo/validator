@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * float
+ * @name float
  * @description Test if `value` is is a float.
  *
  * @since 0.0.1

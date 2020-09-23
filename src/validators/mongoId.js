@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * mongoId
+ * @name mongoId
  * @description Test if `value` is a valid hex-encoded representation of a
  * MongoDB ObjectId.
  *

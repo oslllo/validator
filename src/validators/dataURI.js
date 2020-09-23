@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * dataURI
+ * @name dataURI
  * @description Test if `value` is a data uri format.
  *
  * @since 0.0.1

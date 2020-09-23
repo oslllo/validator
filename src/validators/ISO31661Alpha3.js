@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ISO31661Alpha3
+ * @name ISO31661Alpha3
  * @description Test if `value` is a valid ISO 3166-1 alpha-3 officially assigned country code.
  *
  * @since 0.0.1

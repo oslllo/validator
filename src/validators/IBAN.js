@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * IBAN
+ * @name IBAN
  * Test if `value` is a IBAN (International Bank Account Number).
  *
  * @since 0.0.1

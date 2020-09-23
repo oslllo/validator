@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * arrayEmpty
+ * @name arrayEmpty
  * @description Test if `value` is an empty array.
  *
  * @since 0.0.1

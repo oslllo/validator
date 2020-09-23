@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * equal
+ * @name equal
  * @description Test if `value` is equal to `other`.
  *
  * @since 0.0.1

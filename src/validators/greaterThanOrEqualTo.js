@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * greaterThanOrEqualTo
+ * @name greaterThanOrEqualTo
  * @description Test if `value` is greater than or equal to `other`.
  *
  * @since 0.0.1

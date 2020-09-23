@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * within
+ * @name within
  * @description Test if `value` is within `start` and `finish`.
  *
  * @since 0.0.1

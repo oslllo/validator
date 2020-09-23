@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * infinite
+ * @name infinite
  * @description Test if `value` is positive or negative infinity.
  *
  * @since 0.0.1

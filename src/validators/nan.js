@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * nan
+ * @name nan
  * @description Test if `value` is not a number.
  *
  * @since 0.0.1

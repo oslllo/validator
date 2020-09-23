@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * btcAddress
+ * @name btcAddress
  * @description Test if `value` is a valid BTC address.
  *
  * @since 0.0.1

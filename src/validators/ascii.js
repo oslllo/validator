@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ascii
+ * @name ascii
  * @description Test if `value` contains ASCII chars only.
  *
  * @since 0.0.1

@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * surrogatePair
+ * @name surrogatePair
  * @description Test if `value` contains any surrogate pairs chars.
  *
  * @since 0.0.1

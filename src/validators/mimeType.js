@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * mimeType
+ * @name mimeType
  * @description Test if `value` matches to a valid MIME type format.
  *
  * @since 0.0.1

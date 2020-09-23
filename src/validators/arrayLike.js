@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * arraylike
+ * @name arraylike
  * @description Test if `value` is an arraylike object.
  *
  * @since 0.0.1

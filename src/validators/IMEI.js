@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * IMEI
+ * @name IMEI
  * @description Test if `value` is is a valid IMEI number.
  * Imei should be of format ############### or ##-######-######-#.
  *

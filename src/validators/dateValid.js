@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * dateValid
+ * @name dateValid
  * @description Test if `value` is a valid date.
  *
  * @since 0.0.1

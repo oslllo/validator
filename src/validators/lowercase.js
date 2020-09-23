@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * lowercase
+ * @name lowercase
  * @description Test if `value` is lowercase.
  *
  * @since 0.0.1

@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * element
+ * @name element
  * @description Test if `value` is an html element.
  *
  * @since 0.0.1

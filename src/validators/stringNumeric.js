@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringNumeric
+ * @name stringNumeric
  * @description Test if `value` contains only numbers.
  *
  * @since 0.0.1

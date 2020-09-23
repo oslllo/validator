@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * locale
+ * @name locale
  * @description Test if `value` is a locale.
  *
  * @since 0.0.1

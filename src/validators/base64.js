@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * base64
+ * @name base64
  * @description Test if `value` is base64 encoded.
  *
  * @since 0.0.1

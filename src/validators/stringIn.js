@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringIn
+ * @name stringIn
  * @description Test if `value` is in an array of allowed values.
  *
  * @since 0.0.1

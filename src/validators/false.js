@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * false
+ * @name false
  * @description Test if `value` is false.
  *
  * @since 0.0.1

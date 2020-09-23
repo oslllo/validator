@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * halfWidth
+ * @name halfWidth
  * @description Test if `value` contains any half-width chars.
  *
  * @since 0.0.1

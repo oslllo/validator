@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * semVer
+ * @name semVer
  * @description Test if `value` is a Semantic Versioning Specification (SemVer).
  *
  * @since 0.0.1

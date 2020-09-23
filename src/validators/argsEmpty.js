@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * argsEmpty
+ * @name argsEmpty
  * @description Test if `value` is an empty arguments object.
  *
  * @since 0.0.1

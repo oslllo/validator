@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * creditCard
+ * @name creditCard
  * @description Test if `value`is a credit card.
  *
  * @since 0.0.1

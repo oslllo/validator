@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * greaterThan
+ * @name greaterThan
  * @description Test if `value` is greater than `other`.
  *
  * @since 0.0.1

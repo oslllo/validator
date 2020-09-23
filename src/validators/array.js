@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * array
+ * @name array
  * @description Test if `value` is an array.
  *
  * @since 0.0.1

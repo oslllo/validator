@@ -3,12 +3,13 @@
 const validator = require("validator");
 
 /**
- * latLong
+ * @name latLong
  * @description Test if `value` is a valid latitude-longitude coordinate
  * in the format lat,long or lat, long.
  *
  * @param {String} value `value` to test
- * @param {Object} [options = { checkDMS: false }]  Pass checkDMS as true to validate
+ * @param {Object} [options = { checkDMS: false }] is an object that defaults to `{ checkDMS: false }`.
+ * Pass `checkDMS` as `true` to validate
  * DMS(degrees, minutes, and seconds) latitude-longitude format.
  * @return {Boolean} true if `value` is valid latitude-longitude coordinate, otherwise false.
  * @throws {TypeError} if `value` is not a `string`

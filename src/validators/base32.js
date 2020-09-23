@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * base32
+ * @name base32
  * @description Test if `value` is base32 encoded.
  *
  * @since 0.0.1

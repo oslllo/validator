@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * byteLength
+ * @name byteLength
  * @description Test if `value`'s length (in UTF-8 bytes) falls in a range.
  *
  * @since 0.0.1

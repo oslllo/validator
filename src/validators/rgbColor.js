@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * rgbColor
+ * @name rgbColor
  * @description Test if `value` is a rgb or rgba color.
  *
  * @since 0.0.1

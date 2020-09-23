@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * type
+ * @name type
  * @description Test if `value` is a type of `type`.
  *
  * @since 0.0.1

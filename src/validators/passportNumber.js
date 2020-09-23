@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * passportNumber
+ * @name passportNumber
  * @description Test if `value` is a valid passport number.
  *
  * @since 0.0.1

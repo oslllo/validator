@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * octal
+ * @name octal
  * @description Test if `value` is a valid octal number.
  *
  * @since 0.0.1

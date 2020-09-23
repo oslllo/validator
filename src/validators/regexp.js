@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * regexp
+ * @name regexp
  * @description Test if `value` is a regular expression.
  *
  * @since 0.0.1

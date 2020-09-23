@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * fullWidth
+ * @name fullWidth
  * @description Test if `value` contains any full-width chars.
  *
  * @since 0.0.1

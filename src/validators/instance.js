@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * instance
+ * @name instance
  * @description Test if `value` is an instance of `constructor`.
  *
  * @since 0.0.1

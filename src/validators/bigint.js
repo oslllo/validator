@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * bigint
+ * @name bigint
  * @description Test if `value` is an ES-proposed BigInt
  *
  * @since 0.0.1

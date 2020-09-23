@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ISSN
+ * @name ISSN
  * @description Test if `value` is an ISSN.
  *
  * @since 0.0.1

@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * maximum
+ * @name maximum
  * @description Test if `value` is greater than 'others' values.
  *
  * @since 0.0.1

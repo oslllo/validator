@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * bool
+ * @name bool
  * @description Test if `value` is a boolean.
  *
  * @since 0.0.1

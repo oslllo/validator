@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * ISIN
+ * @name ISIN
  * @description Test if `value` is an ISIN (stock/security identifier).
  *
  * @since 0.0.1

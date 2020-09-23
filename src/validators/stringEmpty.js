@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringEmpty
+ * @name stringEmpty
  * @description Test if `value` is an empty string.
  *
  * @since 0.0.1

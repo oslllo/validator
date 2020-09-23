@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * BIC
+ * @name BIC
  * @description Test if `value` is a BIC (Bank Identification Code) or SWIFT code.
  *
  * @since 0.0.1

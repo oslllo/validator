@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * JSON
+ * @name JSON
  * @description Test if `value` is valid JSON (note: uses JSON.parse).
  *
  * @since 0.0.1

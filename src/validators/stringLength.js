@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringLength
+ * @name stringLength
  * @description Test if `value's length falls in a range.
  *
  * @since 0.0.1

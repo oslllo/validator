@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * HSL
+ * @name HSL
  * @description Test if `value` is an HSL (hue, saturation,
  * lightness, optional alpha) color based on CSS Colors Level 4 specification.
  * Comma-separated format supported. Space-separated format

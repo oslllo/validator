@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * bool
+ * @name stringBool
  * @description Test if `value` is a boolean.
  *
  * @since 0.0.1

@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringMatches
+ * @name stringMatches
  * @description Test if `value` matches the pattern.
  *
  * @description Either matches('foo', /foo/i) or matches('foo', 'foo', 'i').

@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * hexadecimal
+ * @name hexadecimal
  * @description Test if `value` is a hexadecimal number.
  *
  * @since 0.0.1

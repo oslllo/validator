@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * FQDN
+ * @name FQDN
  * @description Test if `value` is a fully qualified domain name (e.g. domain.com).
  *
  * @since 0.0.1

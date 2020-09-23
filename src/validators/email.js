@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * email
+ * @name email
  * @description Test if `value` is an email.
  *
  * @since 0.0.1

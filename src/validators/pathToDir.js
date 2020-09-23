@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * pathToDir
+ * @name pathToDir
  * @description Test if `value` is a valid path to a directory.
  *
  * @since 0.0.1

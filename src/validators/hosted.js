@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * hosted
+ * @name hosted
  * @description Test if `value` is hosted by `host`.
  *
  * @since 0.0.1

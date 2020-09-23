@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * multibyte
+ * @name multibyte
  * @description Test if `value` contains one or more multibyte chars.
  *
  * @since 0.0.1

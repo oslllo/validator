@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * actualNaN
+ * @name actualNaN
  * @description Test if `value` is actual NaN.
  *
  * @since 0.0.1

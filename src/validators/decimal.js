@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * decimal
+ * @name decimal
  * @description Test if `value` is a decimal number.
  *
  * @since 0.0.1

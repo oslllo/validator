@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringInteger
+ * @name stringInteger
  * @description Test if `value` is a string integer.
  *
  * @since 0.0.1

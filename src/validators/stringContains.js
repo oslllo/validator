@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringContains
+ * @name stringContains
  * @description Test if `value` contains the seed.
  *
  * @since 0.0.1

@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * even
+ * @name even
  * @description Test if `value` is an even number.
  *
  * @since 0.0.1

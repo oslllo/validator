@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * stringDecimal
+ * @name stringDecimal
  * @description Test if `value` represents a decimal string, such as 0.1, .3, 1.1, 1.00003, 4.0, etc.
  *
  * @param {String} value `value` to test

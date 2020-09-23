@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * RFC3339
+ * @name RFC3339
  * @description Test if `value` is a valid RFC 3339 date.
  *
  * @since 0.0.1

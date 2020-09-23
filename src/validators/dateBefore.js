@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * dateBefore
+ * @name dateBefore
  * @description Test if `value` is a date that's before the specified date.
  *
  * @since 0.0.1

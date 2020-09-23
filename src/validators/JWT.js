@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * JWT
+ * @name JWT
  * @description Test if `value` is valid JWT token.
  *
  * @since 0.0.1

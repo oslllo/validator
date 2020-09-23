@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * hex
+ * @name hex
  * @description Test if `value` is a valid hex encoded string.
  *
  * @since 0.0.1

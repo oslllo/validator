@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * MACAddress
+ * @name MACAddress
  * @description Test if `value` is a MACAddress.
  *
  * @param {String} value `value` to test

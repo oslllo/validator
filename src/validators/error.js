@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * error
+ * @name error
  * @description Test if `value` is an error object.
  *
  * @since 0.0.1

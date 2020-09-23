@@ -3,7 +3,7 @@
 const validator = require("validator");
 
 /**
- * magnetURI
+ * @name magnetURI
  * @description Test if `value` is a magnet uri format.
  *
  * @since 0.0.1

@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * fn
+ * @name fn
  * @description Test if `value` is a function.
  *
  * @since 0.0.1

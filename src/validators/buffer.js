@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * symbol
+ * @name buffer
  * @description Test if the 'value is a buffer.
  *
  * @since 0.0.1

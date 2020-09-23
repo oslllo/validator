@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * symbol
+ * @name symbol
  * @description Test if `value` is an ES6 Symbol
  *
  * @since 0.0.1
