@@ -8,6 +8,6 @@ describe("is.taxID", () => {
         assert.isFalse(is.taxID("0-11234567"));
     });
     it("works with arguments", () => {
-        assert.throws(() => is.taxID("01-1234567", "is-NOT"), TypeError);
+        assert.throws(() => is.taxID("01-1234567", "is-NOT"), Error);
     });
 });
