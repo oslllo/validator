@@ -16,7 +16,19 @@ Both `minified` and `unminified` versions are available.
 
 ### CDN
 
-* [**jsdelivr**](https://www.jsdelivr.com/package/npm/oslllo-validator?path=dist)
+- [**jsdelivr**](https://www.jsdelivr.com/package/npm/oslllo-validator?path=dist)
+
+Minified
+
+```txt
+https://cdn.jsdelivr.net/npm/oslllo-validator@latest/dist/oslllo-validator.min.js
+```
+
+Un-minified
+
+```txt
+https://cdn.jsdelivr.net/npm/oslllo-validator@latest/dist/oslllo-validator.js
+```
 
 ### Usage
 
