@@ -43,7 +43,7 @@ Test if `valu1e` contains only letters (a-zA-Z).
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [locale] | <code>String</code> | <code>en-US</code> | `locale` is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fa', 'fa-AF', 'fa-IR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US |
+| [locale] | <code>String</code> | <code>en-US</code> | Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fa', 'fa-AF', 'fa-IR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. |
 
 **Example**  
 ```js
@@ -73,7 +73,7 @@ Test if `value` contains only letters and numbers.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [locale] | <code>String</code> | <code>en-US</code> | `locale` value is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fa', 'fa-AF', 'fa-IR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. |
+| [locale] | <code>String</code> | <code>en-US</code> | Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fa', 'fa-AF', 'fa-IR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. |
 
 **Example**  
 ```js
@@ -1285,7 +1285,7 @@ Defaults to 'any'.
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>String</code> | `value` to test |
-| locale | <code>String</code> | one of ['ES', 'IN', 'IT', 'NO', 'zh-TW', 'he-IL', 'ar-TN', 'zh-CN'] OR 'any'. If 'any' is used, function will check if any of the locals match. |
+| locale | <code>String</code> | locale is one of ['ES', 'IN', 'IT', 'NO', 'zh-TW', 'he-IL', 'ar-TN', 'zh-CN'] OR 'any'. If 'any' is used, function will check if any of the locals match. |
 
 **Example**  
 ```js
@@ -2012,7 +2012,7 @@ Test if `value` is a mobile phone number.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [locale] | <code>Array</code> \| <code>String</code> | <code>&quot;any&quot;</code> | (locale is either an array of locales (e.g ['sk-SK', 'sr-RS']) OR one of ['sk-SK', 'sr-RS']`) OR one of `['am-Am', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', ar-JO', 'ar-KW', 'ar-SA', 'ar-SY', 'ar-TN', 'az-AZ', 'bs-BA', 'be-BY', 'bg-BG', 'bn-BD', 'cs-CZ', 'da-DK', 'de-DE', 'de-AT', 'de-CH', 'el-GR', 'en-AU', 'en-CA', 'en-GB', 'en-GG', 'en-GH', 'en-HK', 'en-MO', 'en-IE', 'en-IN',  'en-KE', 'en-MT', 'en-MU', 'en-NG', 'en-NZ', 'en-PK', 'en-PH', 'en-RW', 'en-SG', 'en-SL', 'en-UG', 'en-US', 'en-TZ', 'en-ZA', 'en-ZM', 'en-ZW' , 'es-CL', 'es-CO', 'es-CR', 'es-EC', 'es-ES', 'es-MX', 'es-PA', 'es-PY', 'es-UY', 'et-EE', 'fa-IR', 'fi-FI', 'fj-FJ', 'fo-FO', 'fr-BE', 'fr-FR', 'fr-GF', 'fr-GP', 'fr-MQ', 'fr-RE', 'he-IL', 'hu-HU', 'id-ID', 'it-IT', 'ja-JP', 'kk-KZ', 'kl-GL', 'ko-KR', 'lt-LT', 'ms-MY', 'nb-NO', 'ne-NP', 'nl-BE', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ro-RO', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sv-SE', 'th-TH', 'tr-TR', 'uk-UA', 'uz-UZ', 'vi-VN', 'zh-CN', 'zh-HK', 'zh-MO', 'zh-TW'] OR defaults to 'any'. If 'any' or a falsey value is used, function will check if any of the locales match. |
+| [locale] | <code>Array</code> \| <code>String</code> | <code>&quot;any&quot;</code> | (locale is either an array of locales (e.g ['sk-SK', 'sr-RS']) OR one of ['am-Am', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', ar-JO', 'ar-KW', 'ar-SA', 'ar-SY', 'ar-TN', 'az-AZ', 'bs-BA', 'be-BY', 'bg-BG', 'bn-BD', 'cs-CZ', 'da-DK', 'de-DE', 'de-AT', 'de-CH', 'el-GR', 'en-AU', 'en-CA', 'en-GB', 'en-GG', 'en-GH', 'en-HK', 'en-MO', 'en-IE', 'en-IN', 'en-KE', 'en-MT', 'en-MU', 'en-NG', 'en-NZ', 'en-PK', 'en-PH', 'en-RW', 'en-SG', 'en-SL', 'en-UG', 'en-US', 'en-TZ', 'en-ZA', 'en-ZM', 'en-ZW', 'es-AR', 'es-CL', 'es-CO', 'es-CR', 'es-EC', 'es-ES', 'es-MX', 'es-PA', 'es-PY', 'es-UY', 'et-EE', 'fa-IR', 'fi-FI', 'fj-FJ', 'fo-FO', 'fr-BE', 'fr-FR', 'fr-GF', 'fr-GP', 'fr-MQ', 'fr-RE', 'he-IL', 'hu-HU', 'id-ID', 'it-IT', 'ja-JP', 'kk-KZ', 'kl-GL', 'ko-KR', 'lt-LT', 'ms-MY', 'nb-NO', 'ne-NP', 'nl-BE', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ro-RO', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sv-SE', 'th-TH', 'tr-TR', 'uk-UA', 'uz-UZ', 'vi-VN', 'zh-CN', 'zh-HK', 'zh-MO', 'zh-TW'] OR defaults to 'any'.  If 'any' or a falsey value is used, function will check if any of the locales match). |
 | options | <code>Object</code> |  | can be supplied with the following keys: strictMode, if this is set to true, the mobile phone number must be supplied with  the country code and therefore must start with +. Locale list is validator.isMobilePhoneLocales. |
 
 **Example**  
@@ -2353,7 +2353,7 @@ Test if `value` is a postal code.
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>String</code> | `value` to test |
-| locale | <code>String</code> | one of [ 'AD', 'AT', 'AU', 'AZ', 'BE', 'BG', 'BR', 'CA', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI', 'LT', 'LU', 'LV', 'MT', 'MX', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO', 'RU', 'SA', 'SE', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'. |
+| locale | <code>String</code> | (locale is one of [ 'AD', 'AT', 'AU', 'AZ', 'BE', 'BG', 'BR', 'CA', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI', 'LT', 'LU', 'LV', 'MT', 'MX', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO', 'RU', 'SA', 'SE', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'. If 'any' is used, function will check if any of the locals match. |
 
 **Example**  
 ```js
@@ -3020,15 +3020,13 @@ is.uppercase("abc"); // => False
 
 ### URL ⇒ <code>Boolean</code>
 Test if `value` is an URL.
-require_protocol - if set as true isURL will return false if protocol
-is not present in the URL.
-require_valid_protocol - isURL will check if the URL's protocol is present in
-the protocols option.
+require_protocol - if set as true isURL will return false if protocol is not present in the URL.
+require_valid_protocol - isURL will check if the URL's protocol is present in the protocols option.
 protocols - valid protocols can be modified with this option.
 require_host - if set as false isURL will not check if host is present in the URL.
+require_port - if set as true isURL will check if port is present in the URL.
 allow_protocol_relative_urls - if set as true protocol relative URLs will be allowed.
-validate_length - if set as false isURL will skip string length validation
-(2083 characters is IE max URL length).
+validate_length - if set as false isURL will skip string length validation (2083 characters is IE max URL length).
 
 **Kind**: global variable  
 **Returns**: <code>Boolean</code> - true if `value' is an URL, otherwise false.  
@@ -3042,7 +3040,7 @@ validate_length - if set as false isURL will skip string length validation
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>String</code> | `value` to test |
-| options | <code>Object</code> | i`options` is an object which defaults to `{ protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, require_host: true, require_valid_protocol: true, allow_underscores: false, host_whitelist: false, host_blacklist: false, allow_trailing_dot: false, allow_protocol_relative_urls: false, disallow_auth: false }`.<br/><br/>require_protocol - if set as true isURL will return false if protocol is not present in the URL.<br/>require_valid_protocol - isURL will check if the URL's protocol is present in the protocols option.<br/>protocols - valid protocols can be modified with this option.<br/>require_host - if set as false isURL will not check if host is present in the URL.<br/>allow_protocol_relative_urls - if set as true protocol relative URLs will be allowed.<br/>validate_length - if set as false isURL will skip string length validation (2083 characters is IE max URL length). |
+| options | <code>Object</code> | is an object which defaults to { protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, require_host: true, require_valid_protocol: true, allow_underscores: false, host_whitelist: false, host_blacklist: false, allow_trailing_dot: false, allow_protocol_relative_urls: false, disallow_auth: false }. |
 
 **Example**  
 ```js
