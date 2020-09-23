@@ -9,4 +9,5 @@ const docs = jsdoc2md.renderSync({
     "heading-depth": 3,
     separators: true,
 });
-fs.writeFileSync("docs/.internal/validators.md", docs);
+var header = fs.readFileSync("docs/.internal/validators/header.md", "utf-8");
+fs.writeFileSync("docs/getting-started/basic-usage/validators.md", header + docs);
