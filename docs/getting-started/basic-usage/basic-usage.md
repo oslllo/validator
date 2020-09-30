@@ -3,7 +3,7 @@
 ---
 
 
-### Validator - If you are using [`oslllo-validator`](https://www.npmjs.com/package/oslllo-validator)
+### **Validator** - If you are using | [`oslllo-validator`](https://www.npmjs.com/package/oslllo-validator)
 
 ![](../../images/cover-small.png)
 
@@ -48,7 +48,7 @@ https://cdn.jsdelivr.net/npm/oslllo-validator@latest/dist/oslllo-validator.js
 
 ---
 
-### Validator Exception - If you are using [`oslllo-validator-exception`](https://www.npmjs.com/package/oslllo-validator-exception)
+### **Validator Exception** - If you are using | [`oslllo-validator-exception`](https://www.npmjs.com/package/oslllo-validator-exception)
 
 ![](../../images/cover-exception-small.png)
 
