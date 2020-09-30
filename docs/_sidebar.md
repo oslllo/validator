@@ -127,6 +127,7 @@
             * [`variableWidth()`](#variableWidth)
             * [`whitelisted()`](#whitelisted)
             * [`within()`](#within)
+        * [Exceptions](getting-started/basic-usage/exceptions.md)
 
 * Miscellaneous
 
