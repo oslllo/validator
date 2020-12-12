@@ -11,6 +11,7 @@ const _arrayLike = require("./validators/arrayLike");
 const _ascii = require("./validators/ascii");
 
 const _base32 = require("./validators/base32");
+const _base58 = require("./validators/base58");
 const _base64 = require("./validators/base64");
 const _BIC = require("./validators/BIC");
 const _bigint = require("./validators/bigint");
@@ -127,6 +128,7 @@ const _stringInteger = require("./validators/stringInteger");
 const _stringLength = require("./validators/stringLength");
 const _stringMatches = require("./validators/stringMatches");
 const _stringNumeric = require("./validators/stringNumeric");
+const _strongPassword = require("./validators/strongPassword");
 const _surrogatePair = require("./validators/surrogatePair");
 const _svg = require("./validators/svg");
 const _symbol = require("./validators/symbol");
@@ -141,18 +143,22 @@ const _URL = require("./validators/URL");
 const _UUID = require("./validators/UUID");
 
 const _variableWidth = require("./validators/variableWidth");
+const _vat = require("./validators/vat");
 
 const _whitelisted = require("./validators/whitelisted");
 const _within = require("./validators/within");
 
 const internal = require("./internal");
 
-var validator = Object.defineProperties({}, {
-    _internal: {
-        writable: false,
-        value: internal
+var validator = Object.defineProperties(
+    {},
+    {
+        _internal: {
+            writable: false,
+            value: internal,
+        },
     }
-});
+);
 
 Object.assign(validator, {
     actualNaN: _actualNaN,
@@ -166,6 +172,7 @@ Object.assign(validator, {
     ascii: _ascii,
 
     base32: _base32,
+    base58: _base58,
     base64: _base64,
     BIC: _BIC,
     bigint: _bigint,
@@ -282,6 +289,7 @@ Object.assign(validator, {
     stringLength: _stringLength,
     stringMatches: _stringMatches,
     stringNumeric: _stringNumeric,
+    strongPassword: _strongPassword,
     surrogatePair: _surrogatePair,
     svg: _svg,
     symbol: _symbol,
@@ -296,6 +304,7 @@ Object.assign(validator, {
     UUID: _UUID,
 
     variableWidth: _variableWidth,
+    vat: _vat,
 
     whitelisted: _whitelisted,
     within: _within,

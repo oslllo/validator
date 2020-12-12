@@ -43,7 +43,8 @@ Test if `valu1e` contains only letters (a-zA-Z).
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [locale] | <code>String</code> | <code>en-US</code> | Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fa', 'fa-AF', 'fa-IR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. |
+| [locale] | <code>String</code> | <code>en-US</code> | Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES' ,'fr-CA', 'fr-FR' 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']) and defaults to en-US. |
+| [options] | <code>Object</code> |  | options is an optional object that can be supplied with the following key(s): ignore which can either be a String or RegExp of characters to be ignored e.g. " -" will ignore spaces and -'s. |
 
 **Example**  
 ```js
@@ -73,7 +74,7 @@ Test if `value` contains only letters and numbers.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [locale] | <code>String</code> | <code>en-US</code> | Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fa', 'fa-AF', 'fa-IR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. |
+| [locale] | <code>String</code> | <code>en-US</code> | Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fa', 'fa-AF', 'fa-IR', 'fr-CA', 'fr-FR', 'he', 'hu-HU', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sk-SK', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']) and defaults to en-US. |
 
 **Example**  
 ```js
@@ -258,6 +259,32 @@ Test if `value` is base32 encoded.
 ```js
 is.base32("ZG======") // => True
 is.base32("12345") // => False
+```
+
+* * *
+
+<a name="base58"></a>
+
+### base58 ⇒ <code>Boolean</code>
+Test if `value` is base58 encoded.
+
+**Kind**: global variable  
+**Returns**: <code>Boolean</code> - true if `value` is a base58 encoded string, false otherwise  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
+**Access**: public  
+**Since**: 1.1.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> | `value` to test |
+
+**Example**  
+```js
+is.base58("91GHkLMNtyo98") // => True
+is.base58("LL1l1985hG") // => False
 ```
 
 * * *
@@ -537,10 +564,10 @@ Test if `value` is a valid date. e.g. [2002-07-15, new Date()].
 **Access**: public  
 **Since**: 0.0.1  
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| value | <code>String</code> |  | `value` to test |
-| [format] | <code>String</code> | <code>&quot;YYYY/MM/DD&quot;</code> | date format to check with |
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> | `value` to test |
+| [options] | <code>String</code> | `options` is an object which can contain the keys `format`, `strictMode` and/or `delimiters`<br/><br/>`format` is a string and defaults to `YYYY/MM/DD`.<br/><br/>`strictMode` is a boolean and defaults to `false`. If `strictMode` is set to true, the validator will reject inputs different from `format`.<br/><br/> `delimiters` is an array of allowed date delimiters and defaults to `['/', '-']`. |
 
 **Example**  
 ```js
@@ -549,6 +576,18 @@ is.date(Object(42)); // => False
 
 is.date("15-07-02", "DD/MM/YY"); // => True
 is.date("15/7/2002", "DD/MM/YY"); // => False
+
+is.date("15-07-02", { format: 'DD/MM/YYYY' }); // => True
+is.date("15/7/2002", { format: 'DD/MM/YYYY' }); // => False
+
+is.date("15/07/2002", { format: 'DD/MM/YYYY', strictMode: true }); // => True
+is.date("15/7/02", { format: 'DD/MM/YYYY', strictMode: true }); // => False
+
+is.date("2020/01/15", { strictMode: true }); // => True
+is.date(new Date(), { strictMode: true }); // => False
+
+is.date("2020/02/29", { delimiters: ['/', ' '] }); // => True
+is.date("2020-02-29", { delimiters: ['/', ' '] }); // => False
 ```
 
 * * *
@@ -632,7 +671,7 @@ is.dateValid({}); // => False
 <a name="decimal"></a>
 
 ### decimal ⇒ <code>Boolean</code>
-Test if `value` is a decimal number.
+Test if `value` represents a decimal number, such as 0.1, .3, 1.1, 1.00003, 4.0, etc..
 
 **Kind**: global variable  
 **Returns**: <code>Boolean</code> - true if `value` is a decimal number, false otherwise  
@@ -642,6 +681,7 @@ Test if `value` is a decimal number.
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>\*</code> | `value` to test |
+| options | <code>Object</code> | `options` is an object which defaults to `{force_decimal: false, decimal_digits: '1,', locale: 'en-US'}`<br/><br/> `locale` determine the decimal separator and is one of `['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fa', 'fa-AF', 'fa-IR', 'fr-FR', 'fr-CA', 'hu-HU', 'id-ID', 'it-IT', 'ku-IQ', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pl-Pl', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA', 'vi-VN']`.<br/>**Note:** `decimal_digits` is given as a range like '1,3', a specific value like '3' or min like '1,'. |
 
 **Example**  
 ```js
@@ -758,7 +798,7 @@ Test if `value` is an email.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [options] | <code>Object</code> | <code>{ allow_display_name: false, require_display_name: false, allow_utf8_local_part: true, require_tld: true, allow_ip_domain: false, domain_specific_validation: false }</code> | options object. If allow_display_name is set to true, the validator will also match Display Name <email-address>. If require_display_name is set to true, the validator will reject strings without the format Display Name <email-address>. If allow_utf8_local_part is set to false, the validator  will not allow any non-English UTF8 character in email address' local part. If require_tld is set to false, e-mail addresses without having TLD in their domain will also be matched. If ignore_max_length is set to true, the validator will not check for the standard max length of an email. If allow_ip_domain is set to true, the validator will allow IP addresses in the host part. If domain_specific_validation is true, some additional validation will be enabled, e.g. disallowing certain syntactically valid email addresses that are rejected by GMail. |
+| [options] | <code>Object</code> | <code>{ allow_display_name: false, require_display_name: false, allow_utf8_local_part: true, require_tld: true, allow_ip_domain: false, domain_specific_validation: false, blacklisted_chars: &#x27;&#x27; }</code> | If allow_display_name is set to true, the validator will also match Display Name <email-address>. If require_display_name is set to true, the validator will reject strings without the format Display Name <email-address>. If allow_utf8_local_part is set to false, the validator  will not allow any non-English UTF8 character in email address' local part. If require_tld is set to false, e-mail addresses without having TLD in their domain will also be matched. If ignore_max_length is set to true, the validator will not check for the standard max length of an email. If allow_ip_domain is set to true, the validator will allow IP addresses in the host part. If domain_specific_validation is true, some additional validation will be enabled, e.g. disallowing certain syntactically valid email addresses that are rejected by GMail. If `blacklisted_chars` recieves a string,then the validator will reject emails that include any of the characters in the string, in the name part. |
 
 **Example**  
 ```js
@@ -921,7 +961,7 @@ Test if `value` is is a float.
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>\*</code> | `value` to test |
-| options | <code>Object</code> | options object. contains the keys min, max, gt, and/or lt to validate the float is within boundaries (e.g. { min: 7.22, max: 9.55 }) it also has locale as an option. min and max are equivalent to 'greater or equal' and 'less or equal', respectively while gt and lt are their strict counterparts. locale determines the decimal separator and is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA'] |
+| options | <code>Object</code> | options object. contains the keys min, max, gt, and/or lt to validate the float is within boundaries (e.g. { min: 7.22, max: 9.55 }) it also has locale as an option. min and max are equivalent to 'greater or equal' and 'less or equal', respectively while gt and lt are their strict counterparts. locale determines the decimal separator and is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES','fr-CA', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA'] |
 
 **Example**  
 ```js
@@ -973,7 +1013,7 @@ Test if `value` is a fully qualified domain name (e.g. domain.com).
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [options] | <code>Object</code> | <code>{ require_tld: true, allow_underscores: false, allow_trailing_dot: false }</code> | options object |
+| [options] | <code>Object</code> | <code>{ require_tld: true, allow_underscores: false, allow_trailing_dot: false, , allow_numeric_tld: false  }</code> | options object |
 
 **Example**  
 ```js
@@ -1577,6 +1617,7 @@ Test if `value` is a valid ISO 8601 date; for additional checks for valid dates,
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>String</code> | `value` to test |
+| options | <code>Object</code> | `options` is an object which defaults to `{ strict: false, strictSeparator: false }`. If `strict` is true, date strings with invalid dates like `2009-02-29` will be invalid. If `strictSeparator` is true, date strings with date and time separated by anything other than a T will be invalid. |
 
 **Example**  
 ```js
@@ -1585,6 +1626,9 @@ is.ISO8601("200905"); // => False
 
 is.ISO8601("2000-02-29", { strict: true }); // => True
 is.ISO8601("2010-02-30", { strict: true }); // => False
+
+is.ISO8601("2009-12T12:34", { strictSeparator: true }); // => True
+is.ISO8601("200905", { strictSeparator: true }); // => False
 ```
 
 * * *
@@ -2252,7 +2296,7 @@ Test if `value` is a valid passport number.
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>String</code> | `value` to test |
-| countryCode | <code>Object</code> | one of [ 'AM', 'AR', 'AT', 'AU', 'BE', 'BG', 'CA', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE' 'IN', 'IS', 'IT', 'JP', 'KR', 'LT', 'LU', 'LV', 'MT', 'NL', 'PO', 'PT', 'RO', 'SE', 'SL', 'SK', 'TR', 'UA', 'US' ]. |
+| countryCode | <code>Object</code> | one of [ 'AM', 'AR', 'AT', 'AU', 'BE', 'BG', 'BY', 'CA', 'CH', 'CN', 'CY', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE' 'IN', 'IS', 'IT', 'JP', 'KR', 'LT', 'LU', 'LV', 'MT', 'NL', 'PO', 'PT', 'RO', 'RU', 'SE', 'SL', 'SK', 'TR', 'UA', 'US' ]. |
 
 **Example**  
 ```js
@@ -2353,7 +2397,7 @@ Test if `value` is a postal code.
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>String</code> | `value` to test |
-| locale | <code>String</code> | (locale is one of [ 'AD', 'AT', 'AU', 'AZ', 'BE', 'BG', 'BR', 'CA', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI', 'LT', 'LU', 'LV', 'MT', 'MX', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO', 'RU', 'SA', 'SE', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'. If 'any' is used, function will check if any of the locals match. |
+| locale | <code>String</code> | (locale is one of [ 'AD', 'AT', 'AU', 'AZ', 'BE', 'BG', 'BR', 'BY', 'CA', 'CH', 'CN', 'CZ', 'DE', 'DK', 'DO', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HT', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI', 'LT', 'LU', 'LV', 'MT', 'MX', 'MY', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO', 'RU', 'SA', 'SE', 'SG', 'SI', 'TH', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'. If 'any' is used, function will check if any of the locals match. |
 
 **Example**  
 ```js
@@ -2808,7 +2852,7 @@ Test if `value` contains only numbers.
 | --- | --- | --- |
 | value | <code>\*</code> | `value` to test |
 | options | <code>Object</code> | {no_symbols: false} it also has locale as an option. If no_symbols is true, the validator will reject numeric strings that feature a symbol (e.g. +, -, or .). |
-| locale | <code>String</code> | determine the decimal separator and is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']. |
+| locale | <code>String</code> | determine the decimal separator and is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE', 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM', 'es-ES', 'fr-FR', 'fr-CA', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sl-SI', 'sr-RS', 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']. |
 
 **Example**  
 ```js
@@ -2816,6 +2860,33 @@ is.stringNumeric("123"); // => True
 
 is.stringNumeric("123", { no_symbols: true }); // => True
 is.stringNumeric("-0", { no_symbols: true }); // => False
+```
+
+* * *
+
+<a name="strongPassword"></a>
+
+### strongPassword ⇒ <code>Boolean</code>
+Test if `value` is a password is strong or not. Allows for custom requirements or scoring rules. If `returnScore` is true, then the function returns an integer score for the password rather than a boolean.
+
+**Kind**: global variable  
+**Returns**: <code>Boolean</code> - true if `value` is a strong password, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
+**Access**: public  
+**Since**: 1.1.0  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| value | <code>\*</code> |  | `value` to test |
+| [options] | <code>Object</code> | <code>{ minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, returnScore: false, pointsPerUnique: 1, pointsPerRepeat: 0.5, pointsForContainingLower: 10, pointsForContainingUpper: 10, pointsForContainingNumber: 10, pointsForContainingSymbol: 10 }</code> |  |
+
+**Example**  
+```js
+is.strongPassword(`%2%k{7BsL"M%Kd6e`, { minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, }); // => True
+is.strongPassword("hunter2", { minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, }); // => False
 ```
 
 * * *
@@ -2912,7 +2983,7 @@ Test if `value` is a valid Tax Identification Number.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | value | <code>String</code> |  | `value` to test |
-| [locale] | <code>String</code> | <code>&quot;en-US&quot;</code> | default locale is en-US |
+| [locale] | <code>String</code> | <code>&quot;en-US&quot;</code> | default locale is en-US Supported locales: `[ 'bg-BG', 'cs-CZ', 'de-AT', 'de-DE', 'dk-DK', 'el-CY', 'el-GR', 'en-GB', 'en-IE', 'en-US', 'es-ES', 'et-EE', 'fi-FI', 'fr-BE', 'fr-FR', 'fr-LU', 'hr-HR', 'hu-HU', 'it-IT', 'lb-LU', 'lt-LT', 'lv-LV' 'mt-MT', 'nl-BE', 'nl-NL', 'pl-PL', 'pt-PT', 'ro-RO', 'sk-SK', 'sl-SI', 'sv-SE' ]` |
 
 **Example**  
 ```js
@@ -3101,6 +3172,33 @@ Test if `value` contains a mixture of full and half-width chars.
 **Example**  
 ```js
 is.variableWidth("ひらがなカタカナ漢字ABCDE"); // => True
+```
+
+* * *
+
+<a name="vat"></a>
+
+### vat ⇒ <code>Boolean</code>
+Test if `value` is a [valid VAT number](https://en.wikipedia.org/wiki/VAT_identification_number) if validation is available for the given country code matching [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+
+**Kind**: global variable  
+**Returns**: <code>Boolean</code> - true if `value` is a valid VAT, otherwise false.  
+**Throws**:
+
+- <code>TypeError</code> if `value` is not a `string`
+
+**Access**: public  
+**Since**: 1.1.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>\*</code> | `value` to test |
+| countryCode | <code>String</code> | available country codes: `[ 'GB' ]`. |
+
+**Example**  
+```js
+is.vat("GB999 9999 00", "GB"); // => True
+is.vat("GB999 9999 97", "GB"); // => False
 ```
 
 * * *

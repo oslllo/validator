@@ -9,10 +9,11 @@ const validator = require("validator");
  * @since 0.0.1
  * @param {String} value `value` to test
  * @param {String} locale (locale is one of [ 'AD', 'AT', 'AU', 'AZ', 'BE',
- * 'BG', 'BR', 'CA', 'CH', 'CZ', 'DE', 'DK', 'DZ', 'EE', 'ES', 'FI', 'FR', 'GB',
- * 'GR', 'HR', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI',
- * 'LT', 'LU', 'LV', 'MT', 'MX', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO',
- * 'RU', 'SA', 'SE', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'.
+ * 'BG', 'BR', 'BY', 'CA', 'CH', 'CN', 'CZ', 'DE', 'DK', 'DO', 'DZ', 'EE', 'ES',
+ * 'FI', 'FR', 'GB',
+ * 'GR', 'HR', 'HT', 'HU', 'ID', 'IE' 'IL', 'IN', 'IR', 'IS', 'IT', 'JP', 'KE', 'LI',
+ * 'LT', 'LU', 'LV', 'MT', 'MX', 'MY', 'NL', 'NO', 'NP', 'NZ', 'PL', 'PR', 'PT', 'RO',
+ * 'RU', 'SA', 'SE', 'SG', 'SI', 'TH', 'SI', 'TN', 'TW', 'UA', 'US', 'ZA', 'ZM' ] OR 'any'.
  * If 'any' is used, function will check if any of the locals match.
  * @return {Boolean} true if `value is a valid postal code, otherwise false.
  * @throws {TypeError} if `value` is not a `string`

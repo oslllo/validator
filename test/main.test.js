@@ -11,6 +11,7 @@ require("./src/validators/test.arrayLike");
 require("./src/validators/test.ascii");
 
 require("./src/validators/test.base32");
+require("./src/validators/test.base58");
 require("./src/validators/test.base64");
 require("./src/validators/test.BIC");
 require("./src/validators/test.bigint");
@@ -124,6 +125,7 @@ require("./src/validators/test.stringInteger");
 require("./src/validators/test.stringLength");
 require("./src/validators/test.stringMatches");
 require("./src/validators/test.stringNumeric");
+require("./src/validators/test.strongPassword");
 require("./src/validators/test.surrogatePair");
 require("./src/validators/test.svg");
 require("./src/validators/test.symbol");
@@ -138,6 +140,7 @@ require("./src/validators/test.URL");
 require("./src/validators/test.UUID");
 
 require("./src/validators/test.variableWidth");
+require("./src/validators/test.vat");
 
 require("./src/validators/test.whitelisted");
 require("./src/validators/test.within");
