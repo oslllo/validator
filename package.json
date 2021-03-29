@@ -57,7 +57,7 @@
     },
     "homepage": "https://docs.oslllo.com/validator/master",
     "dependencies": {
-        "jsdom": "^16.4.0",
+        "jsdom": "^16.5.0",
         "validator": "^13.5.2"
     },
     "devDependencies": {
