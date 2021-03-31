@@ -1,82 +1,81 @@
 {
-    "name": "oslllo-validator",
-    "version": "1.1.0",
-    "description": "All in one Javascript validator",
-    "main": "src/index.js",
-    "scripts": {
-        "eslint": "node_modules/.bin/eslint",
-        "lint": "npm run eslint -- src test",
-        "lint:fix": "npm run eslint -- --fix src test",
-        "test": "npm run test:code && npm run lint",
-        "test:code": "npm run build && npm run test:only",
-        "test:only": "nyc node_modules/.bin/mocha",
-        "build": "npm run browser:build && npm run docs:build",
-        "docs:build": "node scripts/docs.build.js",
-        "node:build": "node_modules/.bin/babel src --out-dir dist/node",
-        "browser:build": "npm run browser:build.prod && npm run browser:build.dev",
-        "browser:build.dev": "npm run webpack -- --config webpack.dev.js",
-        "browser:build.prod": "npm run webpack -- --config webpack.prod.js",
-        "webpack": "node_modules/.bin/webpack",
-        "coverage": "nyc report --reporter=text-lcov | coveralls"
+  "name": "oslllo-validator",
+  "version": "1.1.0",
+  "description": "All in one Javascript validator",
+  "main": "src/index.js",
+  "scripts": {
+    "eslint": "node_modules/.bin/eslint",
+    "lint": "npm run eslint -- src test",
+    "lint:fix": "npm run eslint -- --fix src test",
+    "test": "npm run test:code && npm run lint",
+    "test:code": "npm run build && npm run test:only",
+    "test:only": "nyc node_modules/.bin/mocha",
+    "build": "npm run browser:build && npm run docs:build",
+    "docs:build": "node scripts/docs.build.js",
+    "node:build": "node_modules/.bin/babel src --out-dir dist/node",
+    "browser:build": "npm run browser:build.prod && npm run browser:build.dev",
+    "browser:build.dev": "npm run webpack -- --config webpack.dev.js",
+    "browser:build.prod": "npm run webpack -- --config webpack.prod.js",
+    "webpack": "node_modules/.bin/webpack",
+    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov"
+  },
+  "files": [
+    "src",
+    "docs",
+    "dist",
+    "LICENCE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "author": "Ghustavh Ehm <https://github.com/Ghustavh97>",
+  "contributors": [{
+      "name": "Ghustavh Ehm",
+      "email": "Ghustavh97@gmail.com",
+      "url": "https://github.com/Ghustavh97"
     },
-    "files": [
-        "src",
-        "docs",
-        "dist",
-        "LICENCE",
-        "README.md"
-    ],
-    "sideEffects": false,
-    "author": "Ghustavh Ehm <https://github.com/Ghustavh97>",
-    "contributors": [
-        {
-            "name": "Ghustavh Ehm",
-            "email": "Ghustavh97@gmail.com",
-            "url": "https://github.com/Ghustavh97"
-        },
-        {
-            "name": "oslllo",
-            "email": "oslllo.com@gmail.com",
-            "url": "https://github.com/oslllo"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/oslllo/validator.git"
-    },
-    "keywords": [
-        "oslllo",
-        "validator",
-        "javascript",
-        "all-in-one-validator",
-        "all-in-one"
-    ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/oslllo/validator/issues"
-    },
-    "homepage": "https://docs.oslllo.com/validator/master",
-    "dependencies": {
-        "jsdom": "^16.4.0",
-        "validator": "^13.5.2"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.12.10",
-        "@babel/core": "^7.12.10",
-        "@babel/preset-env": "^7.12.10",
-        "chai": "^4.2.0",
-        "clean-webpack-plugin": "^3.0.0",
-        "coveralls": "^3.1.0",
-        "eslint": "^7.15.0",
-        "jsdoc-to-markdown": "^6.0.1",
-        "mocha": "^8.2.1",
-        "mocha-lcov-reporter": "^1.3.0",
-        "nyc": "^15.1.0",
-        "webpack": "^5.10.1",
-        "webpack-cli": "^4.2.0",
-        "webpack-merge": "^5.7.0"
-    },
-    "engines": {
-        "node": ">= 10.0"
+    {
+      "name": "oslllo",
+      "email": "oslllo.com@gmail.com",
+      "url": "https://github.com/oslllo"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oslllo/validator.git"
+  },
+  "keywords": [
+    "oslllo",
+    "validator",
+    "javascript",
+    "all-in-one-validator",
+    "all-in-one"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oslllo/validator/issues"
+  },
+  "homepage": "https://docs.oslllo.com/validator/master",
+  "dependencies": {
+    "jsdom": "^16.4.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.15.0",
+    "jsdoc-to-markdown": "^6.0.1",
+    "mocha": "^8.2.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-merge": "^5.7.0"
+  },
+  "engines": {
+    "node": ">= 10.0"
+  }
 }
