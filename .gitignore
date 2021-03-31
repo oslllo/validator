@@ -5,3 +5,4 @@ temp
 node_modules
 docs/index.html
 *debug.log
+coverage

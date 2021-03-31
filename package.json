@@ -17,7 +17,7 @@
     "browser:build.dev": "npm run webpack -- --config webpack.dev.js",
     "browser:build.prod": "npm run webpack -- --config webpack.prod.js",
     "webpack": "node_modules/.bin/webpack",
-    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov"
+    "coverage": "node_modules/.bin/nyc report --reporter=lcovonly"
   },
   "files": [
     "src",
