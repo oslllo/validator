@@ -57,7 +57,7 @@
   "homepage": "https://docs.oslllo.com/validator/master",
   "dependencies": {
     "jsdom": "^16.5.2",
-    "validator": "^13.5.2"
+    "validator": "^13.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
