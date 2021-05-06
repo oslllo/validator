@@ -12,23 +12,20 @@
     "test:only": "nyc node_modules/.bin/mocha",
     "build": "npm run browser:build && npm run docs:build",
     "docs:build": "node scripts/docs.build.js",
-    "node:build": "node_modules/.bin/babel src --out-dir dist/node",
-    "browser:build": "npm run browser:build.prod && npm run browser:build.dev",
-    "browser:build.dev": "npm run webpack -- --config webpack.dev.js",
-    "browser:build.prod": "npm run webpack -- --config webpack.prod.js",
+    "browser:build": "npm run webpack -- --config webpack.dev.js",
     "webpack": "node_modules/.bin/webpack",
     "coverage": "node_modules/.bin/nyc report --reporter=lcovonly"
   },
   "files": [
     "src",
     "docs",
-    "dist",
     "LICENCE",
     "README.md"
   ],
   "sideEffects": false,
   "author": "Ghustavh Ehm <https://github.com/Ghustavh97>",
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Ghustavh Ehm",
       "email": "Ghustavh97@gmail.com",
       "url": "https://github.com/Ghustavh97"
