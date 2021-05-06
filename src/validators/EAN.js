@@ -18,5 +18,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isEAN(...arguments);
+  return validator.isEAN(...arguments);
 };

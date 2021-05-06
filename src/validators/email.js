@@ -36,5 +36,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isEmail(...arguments);
+  return validator.isEmail(...arguments);
 };

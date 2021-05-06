@@ -23,5 +23,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isEmpty(...arguments);
+  return validator.isEmpty(...arguments);
 };

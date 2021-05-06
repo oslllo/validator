@@ -23,5 +23,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isByteLength(...arguments);
+  return validator.isByteLength(...arguments);
 };

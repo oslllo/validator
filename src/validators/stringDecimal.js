@@ -26,5 +26,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isDecimal(...arguments);
+  return validator.isDecimal(...arguments);
 };

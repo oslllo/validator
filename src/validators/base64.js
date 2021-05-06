@@ -24,5 +24,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isBase64(...arguments);
+  return validator.isBase64(...arguments);
 };

@@ -28,5 +28,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isInt(...arguments);
+  return validator.isInt(...arguments);
 };

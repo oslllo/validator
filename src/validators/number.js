@@ -16,5 +16,5 @@
  */
 
 module.exports = function (value) {
-    return this._internal._getObjectType(value) === "[object Number]";
+  return this._internal._getObjectType(value) === "[object Number]";
 };

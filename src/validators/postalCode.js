@@ -26,5 +26,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, locale) {
-    return validator.isPostalCode(...arguments);
+  return validator.isPostalCode(...arguments);
 };

@@ -26,11 +26,11 @@
  */
 
 module.exports = function (value, options) {
-    /*eslint no-magic-numbers: "off"*/
-    return (
-        this.number(value) &&
+  /*eslint no-magic-numbers: "off"*/
+  return (
+    this.number(value) &&
         !this.actualNaN(value) &&
         !this.infinite(value) &&
         value % 1 !== 0
-    );
+  );
 };

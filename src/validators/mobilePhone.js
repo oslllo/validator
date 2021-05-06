@@ -36,5 +36,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, locale, options) {
-    return validator.isMobilePhone(...arguments);
+  return validator.isMobilePhone(...arguments);
 };

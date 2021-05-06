@@ -23,5 +23,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, version) {
-    return validator.isIP(...arguments);
+  return validator.isIP(...arguments);
 };

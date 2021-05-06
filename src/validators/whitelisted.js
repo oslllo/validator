@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, chars) {
-    return validator.isWhitelisted(...arguments);
+  return validator.isWhitelisted(...arguments);
 };

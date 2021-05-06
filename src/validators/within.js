@@ -21,15 +21,15 @@
  */
 
 module.exports = function (value, start, finish) {
-    if (this.actualNaN(value) || this.actualNaN(start) || this.actualNaN(finish)) {
-        throw new TypeError("NaN is not a valid value");
-    } else if (!this.number(value) || !this.number(start) || !this.number(finish)) {
-        throw new TypeError("all arguments must be numbers");
-    }
-    var isAnyInfinite =
+  if (this.actualNaN(value) || this.actualNaN(start) || this.actualNaN(finish)) {
+    throw new TypeError("NaN is not a valid value");
+  } else if (!this.number(value) || !this.number(start) || !this.number(finish)) {
+    throw new TypeError("all arguments must be numbers");
+  }
+  var isAnyInfinite =
         this.infinite(value) || this.infinite(start) || this.infinite(finish);
 
-    var isWithin = value >= start && value <= finish;
+  var isWithin = value >= start && value <= finish;
 
-    return isAnyInfinite || isWithin;
+  return isAnyInfinite || isWithin;
 };

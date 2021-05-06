@@ -40,5 +40,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isDate(...arguments);
+  return validator.isDate(...arguments);
 };

@@ -16,5 +16,5 @@
  */
 
 module.exports = function (value) {
-    return this.date(value) && !isNaN(Number(value));
+  return this.date(value) && !isNaN(Number(value));
 };

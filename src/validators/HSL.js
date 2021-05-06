@@ -22,5 +22,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isHSL(...arguments);
+  return validator.isHSL(...arguments);
 };

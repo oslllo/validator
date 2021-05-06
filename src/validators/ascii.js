@@ -22,5 +22,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isAscii(...arguments);
+  return validator.isAscii(...arguments);
 };

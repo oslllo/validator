@@ -26,5 +26,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, pattern, modifiers) {
-    return validator.matches(...arguments);
+  return validator.matches(...arguments);
 };

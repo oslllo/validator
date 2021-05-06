@@ -24,5 +24,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, locale) {
-    return validator.isTaxID(...arguments);
+  return validator.isTaxID(...arguments);
 };

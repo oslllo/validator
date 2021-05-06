@@ -19,13 +19,13 @@
  */
 
 module.exports = function (value) {
-    var isStandardArguments =
+  var isStandardArguments =
         this._internal._getObjectType(value) === "[object Arguments]";
-    var isOldArguments =
+  var isOldArguments =
         !this.array(value) &&
         this.arrayLike(value) &&
         this.object(value) &&
         this.fn(value.callee);
 
-    return isStandardArguments || isOldArguments;
+  return isStandardArguments || isOldArguments;
 };

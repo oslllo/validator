@@ -16,5 +16,5 @@
  */
 
 module.exports = function (value) {
-    return value instanceof Buffer;
+  return value instanceof Buffer;
 };

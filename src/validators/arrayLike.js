@@ -21,13 +21,13 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    return (
-        Boolean(value) &&
+  /*eslint no-magic-numbers: "off"*/
+  return (
+    Boolean(value) &&
         !this.bool(value) &&
         this._internal._hasOwnProperty(value, "length") &&
         isFinite(value.length) &&
         this.number(value.length) &&
         value.length >= 0
-    );
+  );
 };

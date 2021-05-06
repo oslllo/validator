@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isSlug(...arguments);
+  return validator.isSlug(...arguments);
 };

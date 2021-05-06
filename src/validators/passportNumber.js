@@ -23,5 +23,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, countryCode) {
-    return validator.isPassportNumber(...arguments);
+  return validator.isPassportNumber(...arguments);
 };

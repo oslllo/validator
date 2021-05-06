@@ -24,5 +24,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isISSN(...arguments);
+  return validator.isISSN(...arguments);
 };

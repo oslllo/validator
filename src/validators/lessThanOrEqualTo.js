@@ -20,9 +20,9 @@
  */
 
 module.exports = function (value, other) {
-    if (this.actualNaN(value) || this.actualNaN(other)) {
-        throw new TypeError("NaN is not a valid value");
-    }
+  if (this.actualNaN(value) || this.actualNaN(other)) {
+    throw new TypeError("NaN is not a valid value");
+  }
 
-    return !this.infinite(value) && !this.infinite(other) && value <= other;
+  return !this.infinite(value) && !this.infinite(other) && value <= other;
 };

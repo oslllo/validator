@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isBase58(...arguments);
+  return validator.isBase58(...arguments);
 };

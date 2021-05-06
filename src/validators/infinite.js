@@ -18,5 +18,5 @@
  */
 
 module.exports = function (value) {
-    return value === Infinity || value === -Infinity;
+  return value === Infinity || value === -Infinity;
 };

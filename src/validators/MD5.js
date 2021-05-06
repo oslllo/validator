@@ -21,5 +21,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isMD5(...arguments);
+  return validator.isMD5(...arguments);
 };

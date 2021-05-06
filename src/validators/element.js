@@ -17,13 +17,13 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    var htmlelement = this._internal._window.HTMLElement;
+  /*eslint no-magic-numbers: "off"*/
+  var htmlelement = this._internal._window.HTMLElement;
 
-    return (
-        value !== undefined &&
+  return (
+    value !== undefined &&
         typeof htmlelement !== "undefined" &&
         value instanceof htmlelement &&
         value.nodeType === 1
-    );
+  );
 };

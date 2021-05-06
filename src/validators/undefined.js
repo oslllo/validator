@@ -17,5 +17,5 @@
  */
 
 module.exports = function (value) {
-    return typeof value === "undefined";
+  return typeof value === "undefined";
 };

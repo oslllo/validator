@@ -31,5 +31,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options, locale) {
-    return validator.isNumeric(...arguments);
+  return validator.isNumeric(...arguments);
 };

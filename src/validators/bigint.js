@@ -16,12 +16,12 @@
  */
 
 module.exports = function (value) {
-    // eslint-disable-next-line valid-typeof
-    var bigIntValueOf = BigInt.prototype.valueOf;
+  // eslint-disable-next-line valid-typeof
+  var bigIntValueOf = BigInt.prototype.valueOf;
 
-    return (
-        typeof BigInt === "function" &&
+  return (
+    typeof BigInt === "function" &&
         this._internal._getObjectType(value) === "[object BigInt]" &&
         typeof bigIntValueOf.call(value) === "bigint"
-    );
+  );
 };

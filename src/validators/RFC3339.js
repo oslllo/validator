@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isRFC3339(...arguments);
+  return validator.isRFC3339(...arguments);
 };

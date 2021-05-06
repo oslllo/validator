@@ -16,6 +16,6 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    return this.number(value) && !this.actualNaN(value) && value % 1 === 0;
+  /*eslint no-magic-numbers: "off"*/
+  return this.number(value) && !this.actualNaN(value) && value % 1 === 0;
 };

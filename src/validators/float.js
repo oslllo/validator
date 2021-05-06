@@ -30,8 +30,8 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    /*eslint no-magic-numbers: "off"*/
-    arguments[0] = arguments[0].toString();
+  /*eslint no-magic-numbers: "off"*/
+  arguments[0] = arguments[0].toString();
 
-    return validator.isFloat(...arguments);
+  return validator.isFloat(...arguments);
 };

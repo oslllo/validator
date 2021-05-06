@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, date) {
-    return validator.isBefore(...arguments);
+  return validator.isBefore(...arguments);
 };

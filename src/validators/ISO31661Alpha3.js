@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isISO31661Alpha3(...arguments);
+  return validator.isISO31661Alpha3(...arguments);
 };

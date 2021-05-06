@@ -22,5 +22,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, version) {
-    return validator.isUUID(...arguments);
+  return validator.isUUID(...arguments);
 };

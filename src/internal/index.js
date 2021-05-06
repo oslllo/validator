@@ -15,47 +15,47 @@ const isNode =
  * ! it will break the script if its set and in a node enviroment.
  */
 if (typeof __webpack_require__ === "undefined" && isNode && !isBrowser) {
-    fs = require("fs");
-    JSDOM = require("jsdom").JSDOM;
-    DOM = new JSDOM("<!DOCTYPE html></html>");
-    window = DOM.window;
+  fs = require("fs");
+  JSDOM = require("jsdom").JSDOM;
+  DOM = new JSDOM("<!DOCTYPE html></html>");
+  window = DOM.window;
 }
 
 document = window.document;
 
 module.exports = {
-    _fs: fs,
-    _window: window,
-    _document: document,
-    /**
-     * _getObjectType
-     *
-     * @param {*} value
-     * @return {String}
-     * @api private
-     */
-    _getObjectType: function (value) {
-        return Object.prototype.toString.call(value);
-    },
-    /**
-     * _hasOwnProperty
-     *
-     * @param {Object} obj
-     * @param {String} prop
-     * @return {Boolean}
-     * @api private
-     */
-    _hasOwnProperty: function (obj, prop) {
-        return Object.hasOwnProperty.call(obj, prop);
-    },
-    /**
-     * _assertString
-     *
-     * @param {*} value `value` to assert
-     * @throws {TypeError} if value is not a string
-     * @api private
-     */
-    _assertString: function (value) {
-        assertString(value);
-    },
+  _fs: fs,
+  _window: window,
+  _document: document,
+  /**
+   * _getObjectType
+   *
+   * @param {*} value
+   * @return {String}
+   * @api private
+   */
+  _getObjectType: function (value) {
+    return Object.prototype.toString.call(value);
+  },
+  /**
+   * _hasOwnProperty
+   *
+   * @param {Object} obj
+   * @param {String} prop
+   * @return {Boolean}
+   * @api private
+   */
+  _hasOwnProperty: function (obj, prop) {
+    return Object.hasOwnProperty.call(obj, prop);
+  },
+  /**
+   * _assertString
+   *
+   * @param {*} value `value` to assert
+   * @throws {TypeError} if value is not a string
+   * @api private
+   */
+  _assertString: function (value) {
+    assertString(value);
+  },
 };

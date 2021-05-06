@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, date) {
-    return validator.isAfter(...arguments);
+  return validator.isAfter(...arguments);
 };

@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isFullWidth(...arguments);
+  return validator.isFullWidth(...arguments);
 };

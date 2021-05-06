@@ -16,10 +16,10 @@
  */
 
 module.exports = function (value) {
-    return (
-        this.object(value) &&
+  return (
+    this.object(value) &&
         value.constructor === Object &&
         !value.nodeType &&
         !value.setInterval
-    );
+  );
 };

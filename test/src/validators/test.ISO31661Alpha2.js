@@ -3,8 +3,8 @@
 const { is, assert } = require("../helper");
 
 describe("is.ISO31661Alpha2", () => {
-    it("works", () => {
-        assert.isTrue(is.ISO31661Alpha2("FR"));
-        assert.isFalse(is.ISO31661Alpha2("FRA"));
-    });
+  it("works", () => {
+    assert.isTrue(is.ISO31661Alpha2("FR"));
+    assert.isFalse(is.ISO31661Alpha2("FRA"));
+  });
 });

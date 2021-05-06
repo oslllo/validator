@@ -3,8 +3,8 @@
 const { is, assert } = require("../helper");
 
 describe("is.postalCode", () => {
-    it("works", () => {
-        assert.isTrue(is.postalCode("39100-000", "BR"));
-        assert.isFalse(is.postalCode("78908", "BR"));
-    });
+  it("works", () => {
+    assert.isTrue(is.postalCode("39100-000", "BR"));
+    assert.isFalse(is.postalCode("78908", "BR"));
+  });
 });

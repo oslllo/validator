@@ -31,5 +31,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, locale, options) {
-    return validator.isAlpha(...arguments);
+  return validator.isAlpha(...arguments);
 };

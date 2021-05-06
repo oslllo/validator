@@ -17,10 +17,10 @@
  */
 
 module.exports = function (value) {
-    this._internal._assertString(value);
+  this._internal._assertString(value);
 
-    return (
-        this._internal._fs.existsSync(value) &&
+  return (
+    this._internal._fs.existsSync(value) &&
         this._internal._fs.lstatSync(value).isFile()
-    );
+  );
 };

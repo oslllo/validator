@@ -21,5 +21,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, algorithm) {
-    return validator.isHash(...arguments);
+  return validator.isHash(...arguments);
 };

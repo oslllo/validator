@@ -16,53 +16,53 @@
  */
 
 module.exports = function (value, other) {
-    if (value === other) {
-        return true;
-    }
+  if (value === other) {
+    return true;
+  }
 
-    var type = this._internal._getObjectType(value);
-    var key;
+  var type = this._internal._getObjectType(value);
+  var key;
 
-    if (type !== this._internal._getObjectType(other)) {
-        return false;
-    }
-
-    if (type === "[object Object]") {
-        for (key in value) {
-            if (!this.equal(value[key], other[key]) || !(key in other)) {
-                return false;
-            }
-        }
-        for (key in other) {
-            if (!this.equal(value[key], other[key]) || !(key in value)) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    if (type === "[object Array]") {
-        key = value.length;
-        if (key !== other.length) {
-            return false;
-        }
-        while (key--) {
-            if (!this.equal(value[key], other[key])) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    if (type === "[object Function]") {
-        return value.prototype === other.prototype;
-    }
-
-    if (type === "[object Date]") {
-        return value.getTime() === other.getTime();
-    }
-
+  if (type !== this._internal._getObjectType(other)) {
     return false;
+  }
+
+  if (type === "[object Object]") {
+    for (key in value) {
+      if (!this.equal(value[key], other[key]) || !(key in other)) {
+        return false;
+      }
+    }
+    for (key in other) {
+      if (!this.equal(value[key], other[key]) || !(key in value)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  if (type === "[object Array]") {
+    key = value.length;
+    if (key !== other.length) {
+      return false;
+    }
+    while (key--) {
+      if (!this.equal(value[key], other[key])) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  if (type === "[object Function]") {
+    return value.prototype === other.prototype;
+  }
+
+  if (type === "[object Date]") {
+    return value.getTime() === other.getTime();
+  }
+
+  return false;
 };

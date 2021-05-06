@@ -17,14 +17,14 @@
  */
 
 module.exports = function (value, host) {
-    /*eslint no-magic-numbers: "off"*/
-    var NON_HOST_TYPES = {
-        boolean: 1,
-        number: 1,
-        string: 1,
-        undefined: 1,
-    };
-    var type = typeof host[value];
+  /*eslint no-magic-numbers: "off"*/
+  var NON_HOST_TYPES = {
+    boolean: 1,
+    number: 1,
+    string: 1,
+    undefined: 1,
+  };
+  var type = typeof host[value];
 
-    return type === "object" ? Boolean(host[value]) : !NON_HOST_TYPES[type];
+  return type === "object" ? Boolean(host[value]) : !NON_HOST_TYPES[type];
 };

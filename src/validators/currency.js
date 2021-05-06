@@ -24,5 +24,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isCurrency(...arguments);
+  return validator.isCurrency(...arguments);
 };

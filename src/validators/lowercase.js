@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isLowercase(...arguments);
+  return validator.isLowercase(...arguments);
 };

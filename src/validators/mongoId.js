@@ -21,5 +21,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isMongoId(...arguments);
+  return validator.isMongoId(...arguments);
 };

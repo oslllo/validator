@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isCreditCard(...arguments);
+  return validator.isCreditCard(...arguments);
 };

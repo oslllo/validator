@@ -19,6 +19,6 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    return this.args(value) && value.length === 0;
+  /*eslint no-magic-numbers: "off"*/
+  return this.args(value) && value.length === 0;
 };

@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isBase32(...arguments);
+  return validator.isBase32(...arguments);
 };

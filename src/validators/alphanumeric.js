@@ -29,5 +29,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, locale) {
-    return validator.isAlphanumeric(...arguments);
+  return validator.isAlphanumeric(...arguments);
 };

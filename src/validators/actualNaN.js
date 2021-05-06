@@ -18,6 +18,6 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-self-compare: "off"*/
-    return value !== value;
+  /*eslint no-self-compare: "off"*/
+  return value !== value;
 };

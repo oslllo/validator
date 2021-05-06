@@ -16,25 +16,25 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    var type = this._internal._getObjectType(value);
-    if (
-        type === "[object Array]" ||
+  /*eslint no-magic-numbers: "off"*/
+  var type = this._internal._getObjectType(value);
+  if (
+    type === "[object Array]" ||
         type === "[object Arguments]" ||
         type === "[object String]"
-    ) {
-        return value.length === 0;
+  ) {
+    return value.length === 0;
+  }
+
+  if (type === "[object Object]") {
+    for (var key in value) {
+      if (this._internal._hasOwnProperty(value, key)) {
+        return false;
+      }
     }
 
-    if (type === "[object Object]") {
-        for (var key in value) {
-            if (this._internal._hasOwnProperty(value, key)) {
-                return false;
-            }
-        }
+    return true;
+  }
 
-        return true;
-    }
-
-    return !value;
+  return !value;
 };

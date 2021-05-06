@@ -23,5 +23,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, locale) {
-    return validator.isIdentityCard(...arguments);
+  return validator.isIdentityCard(...arguments);
 };

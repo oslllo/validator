@@ -18,8 +18,8 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    arguments[0] = arguments[0].toString();
+  /*eslint no-magic-numbers: "off"*/
+  arguments[0] = arguments[0].toString();
 
-    return validator.isPort(...arguments);
+  return validator.isPort(...arguments);
 };

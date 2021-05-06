@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isStrongPassword(...arguments);
+  return validator.isStrongPassword(...arguments);
 };

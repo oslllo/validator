@@ -21,5 +21,5 @@
  */
 
 module.exports = function (value, constructor) {
-    return value instanceof constructor;
+  return value instanceof constructor;
 };

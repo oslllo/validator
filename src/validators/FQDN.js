@@ -22,5 +22,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isFQDN(...arguments);
+  return validator.isFQDN(...arguments);
 };

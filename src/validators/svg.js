@@ -19,16 +19,16 @@ const assertString = require("validator/lib/util/assertString");
  */
 
 module.exports = function (value) {
-    assertString(value);
-    /*eslint prefer-named-capture-group: "off"*/
-    const htmlCommentRegex = /<!--([\s\S]*?)-->/gu;
-    const cleanEntities = (val) => {
-        const entityRegex = /\s*<!Entity\s+\S*\s*(?:"|')[^"]+(?:"|')\s*>/gimu;
+  assertString(value);
+  /*eslint prefer-named-capture-group: "off"*/
+  const htmlCommentRegex = /<!--([\s\S]*?)-->/gu;
+  const cleanEntities = (val) => {
+    const entityRegex = /\s*<!Entity\s+\S*\s*(?:"|')[^"]+(?:"|')\s*>/gimu;
 
-        return val.replace(entityRegex, "");
-    };
+    return val.replace(entityRegex, "");
+  };
     /*eslint max-len: "off"*/
-    const regex = /^\s*(?:<\?xml[^>]*>\s*)?(?:<!doctype svg[^>]*\s*(?:\[?(?:\s*<![^>]*>\s*)*\]?)*[^>]*>\s*)?(?:<svg[^>]*>[^]*<\/svg>|<svg[^/>]*\/\s*>)\s*$/iu;
+  const regex = /^\s*(?:<\?xml[^>]*>\s*)?(?:<!doctype svg[^>]*\s*(?:\[?(?:\s*<![^>]*>\s*)*\]?)*[^>]*>\s*)?(?:<svg[^>]*>[^]*<\/svg>|<svg[^/>]*\/\s*>)\s*$/iu;
 
-    return regex.test(cleanEntities(value.toString()).replace(htmlCommentRegex, ""));
+  return regex.test(cleanEntities(value.toString()).replace(htmlCommentRegex, ""));
 };

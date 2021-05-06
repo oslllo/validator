@@ -16,7 +16,7 @@
  */
 
 module.exports = function (value) {
-    var hexRegex = /^[A-Fa-f0-9]+$/u;
+  var hexRegex = /^[A-Fa-f0-9]+$/u;
 
-    return this.string(value) && (!value.length || hexRegex.test(value));
+  return this.string(value) && (!value.length || hexRegex.test(value));
 };

@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, countryCode) {
-    return validator.isVAT(...arguments);
+  return validator.isVAT(...arguments);
 };

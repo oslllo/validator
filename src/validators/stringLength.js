@@ -21,5 +21,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isLength(...arguments);
+  return validator.isLength(...arguments);
 };

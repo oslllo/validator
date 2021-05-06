@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isEthereumAddress(...arguments);
+  return validator.isEthereumAddress(...arguments);
 };

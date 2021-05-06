@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function () {
-    return validator.isBtcAddress(...arguments);
+  return validator.isBtcAddress(...arguments);
 };

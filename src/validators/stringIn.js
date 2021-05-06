@@ -20,5 +20,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, arr) {
-    return validator.isIn(...arguments);
+  return validator.isIn(...arguments);
 };

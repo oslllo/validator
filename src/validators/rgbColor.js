@@ -21,5 +21,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, includePercentValues) {
-    return validator.isRgbColor(...arguments);
+  return validator.isRgbColor(...arguments);
 };

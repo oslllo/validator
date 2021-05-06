@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-    return validator.isISRC(...arguments);
+  return validator.isISRC(...arguments);
 };

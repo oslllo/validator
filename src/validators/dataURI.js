@@ -18,7 +18,7 @@ const validator = require("validator");
  *
  */
 const dataURI = function (value) {
-    return validator.isDataURI(...arguments);
+  return validator.isDataURI(...arguments);
 };
 
 module.exports = dataURI;

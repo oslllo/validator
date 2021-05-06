@@ -16,17 +16,17 @@
  */
 
 module.exports = function (value) {
-    if (!value) {
-        return true;
-    }
-    if (
-        typeof value === "object" ||
+  if (!value) {
+    return true;
+  }
+  if (
+    typeof value === "object" ||
         this.object(value) ||
         this.fn(value) ||
         this.array(value)
-    ) {
-        return false;
-    }
+  ) {
+    return false;
+  }
 
-    return true;
+  return true;
 };

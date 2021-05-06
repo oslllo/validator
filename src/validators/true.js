@@ -16,5 +16,5 @@
  */
 
 module.exports = function (value) {
-    return this.bool(value) && Boolean(Number(value)) === true;
+  return this.bool(value) && Boolean(Number(value)) === true;
 };

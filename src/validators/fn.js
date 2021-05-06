@@ -16,14 +16,14 @@
  */
 
 module.exports = function (value) {
-    if (value === this._internal._window.alert) {
-        return true;
-    }
-    var type = this._internal._getObjectType(value);
+  if (value === this._internal._window.alert) {
+    return true;
+  }
+  var type = this._internal._getObjectType(value);
 
-    return (
-        type === "[object Function]" ||
+  return (
+    type === "[object Function]" ||
         type === "[object GeneratorFunction]" ||
         type === "[object AsyncFunction]"
-    );
+  );
 };

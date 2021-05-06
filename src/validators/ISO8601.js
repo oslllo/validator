@@ -29,5 +29,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isISO8601(...arguments);
+  return validator.isISO8601(...arguments);
 };

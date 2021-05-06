@@ -15,8 +15,8 @@
  */
 
 module.exports = function (value) {
-    /*eslint no-magic-numbers: "off"*/
-    return (
-        this.infinite(value) || (this.number(value) && value === value && value % 2 !== 0)
-    );
+  /*eslint no-magic-numbers: "off"*/
+  return (
+    this.infinite(value) || (this.number(value) && value === value && value % 2 !== 0)
+  );
 };

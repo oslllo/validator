@@ -25,5 +25,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-    return validator.isLatLong(...arguments);
+  return validator.isLatLong(...arguments);
 };

@@ -17,9 +17,9 @@
  */
 
 module.exports = function (value) {
-    return (
-        typeof Symbol === "function" &&
+  return (
+    typeof Symbol === "function" &&
         this._internal._getObjectType(value) === "[object Symbol]" &&
         typeof Symbol.prototype.valueOf.call(value) === "symbol"
-    );
+  );
 };
