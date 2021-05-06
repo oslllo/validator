@@ -17,6 +17,6 @@ module.exports = {
   output: {
     library: "is",
     libraryTarget: "umd",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
   },
 };
