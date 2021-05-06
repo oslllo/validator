@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0](https://www.github.com/oslllo/validator/compare/v1.1.1...v2.0.0) (2021-05-06)
 
+### Breaking Changes
+
+* drop support for pre-packaged dist bundles.
 
 ### Bug Fixes
 
