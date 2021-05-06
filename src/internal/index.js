@@ -9,9 +9,12 @@ const isNode =
     process.versions != null &&
     process.versions.node != null;
 /**
- * Try to detect if node or browser build in webpack
+ * Check if we are in a browser or being processed by webpack
+ *
+ * ! Do not use process.env.NODE_ENV === "undefined" to check for webpack
+ * ! it will break the script if its set and in a node enviroment.
  */
-if (typeof process.env.NODE_ENV === "undefined" && isNode && !isBrowser) {
+if (typeof __webpack_require__ === "undefined" && isNode && !isBrowser) {
     fs = require("fs");
     JSDOM = require("jsdom").JSDOM;
     DOM = new JSDOM("<!DOCTYPE html></html>");
