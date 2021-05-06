@@ -18,14 +18,12 @@
   },
   "files": [
     "src",
-    "docs",
     "LICENCE",
     "README.md"
   ],
   "sideEffects": false,
   "author": "Ghustavh Ehm <https://github.com/Ghustavh97>",
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Ghustavh Ehm",
       "email": "Ghustavh97@gmail.com",
       "url": "https://github.com/Ghustavh97"
