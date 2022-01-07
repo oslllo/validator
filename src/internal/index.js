@@ -1,13 +1,13 @@
 "use strict";
 
 const assertString = require("validator/lib/util/assertString");
-var fs, document, DOM, JSDOM;
+var fs, document, domino;
 var window = global.window;
 const isBrowser = typeof window !== "undefined" && typeof window.document !== "undefined";
 const isNode =
-    typeof process !== "undefined" &&
-    process.versions != null &&
-    process.versions.node != null;
+  typeof process !== "undefined" &&
+  process.versions != null &&
+  process.versions.node != null;
 /**
  * Check if we are in a browser or being processed by webpack
  *
@@ -16,9 +16,8 @@ const isNode =
  */
 if (typeof __webpack_require__ === "undefined" && isNode && !isBrowser) {
   fs = require("fs");
-  JSDOM = require("jsdom").JSDOM;
-  DOM = new JSDOM("<!DOCTYPE html></html>");
-  window = DOM.window;
+  domino = require("domino");
+  window = domino.createWindow("<!DOCTYPE html></html>");
 }
 
 document = window.document;
