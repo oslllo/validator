@@ -4,17 +4,17 @@
   "description": "All in one Javascript validator",
   "main": "src/index.js",
   "scripts": {
-    "eslint": "node_modules/.bin/eslint",
+    "eslint": "npx eslint",
     "lint": "npm run eslint -- src test",
     "lint:fix": "npm run eslint -- --fix src test",
     "test": "npm run test:code && npm run lint",
     "test:code": "npm run build && npm run test:only",
-    "test:only": "nyc node_modules/.bin/mocha",
+    "test:only": "nyc npx mocha",
     "build": "npm run browser:build && npm run docs:build",
     "docs:build": "node scripts/docs.build.js",
     "browser:build": "npm run webpack -- --config webpack.dev.js",
-    "webpack": "node_modules/.bin/webpack",
-    "coverage": "node_modules/.bin/nyc report --reporter=lcovonly"
+    "webpack": "npx webpack",
+    "coverage": "npx nyc report --reporter=lcovonly"
   },
   "files": [
     "src",
