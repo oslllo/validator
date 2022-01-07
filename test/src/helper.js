@@ -2,11 +2,10 @@
 
 const is = require("../../");
 const { assert } = require("chai");
-const { JSDOM } = require("jsdom");
+const domino = require("domino");
 const internal = require("../../src/internal");
 
-var DOM = new JSDOM("<!DOCTYPE html></html>");
-var { window } = DOM;
+var window = domino.createWindow("<!DOCTYPE html></html>");
 
 const type = function (value) {
   return Object.prototype.toString
@@ -303,5 +302,5 @@ module.exports = {
   assert,
   inputs,
   window,
-  internal
+  internal,
 };
