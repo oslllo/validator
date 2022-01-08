@@ -37,10 +37,4 @@ is.UUID("A987FBC9-4BED-3078-CF07-9141BA07C9F3", 3); // => True
 is.UUID("xxxA987FBC9-4BED-3078-CF07-9141BA07C9F3", 3); // => False
 ```
 
-## Throw `exception` on false
-
-If you want to throw an `exception` on `false` then check out `oslllo-validator-exception` [HERE](https://github.com/oslllo/validator-exception)
-
-![](./docs/images/cover-exception-small.png)
-
 ---
