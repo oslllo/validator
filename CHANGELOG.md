@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0](https://www.github.com/oslllo/validator/compare/v2.0.1...v3.1.0) (2022-07-16)
+
+
+### Features
+
+* **test:** add v16 to tests ([012af9a](https://www.github.com/oslllo/validator/commit/012af9a2d1f12c30724ebfb8a767e5076b662184))
+
+
+### Bug Fixes
+
+* **coverage:** use node v16 ([c00406c](https://www.github.com/oslllo/validator/commit/c00406ca00caf803011bd45647d669fabe0f1ee2))
+* **pkg:** update package-lock.json ([d0b3702](https://www.github.com/oslllo/validator/commit/d0b370282c081edd15a2f3d0816ddaf519a80c59))
+* **scripts:** replace node_modules with npx ([90747cc](https://www.github.com/oslllo/validator/commit/90747ccaee12c8d2469c33af81fa913de4e13f1d))
+
+
+### Miscellaneous Chores
+
+* release 2.0.2 ([07c5884](https://www.github.com/oslllo/validator/commit/07c588441ea831777f6a5bbdec718db3e6324944))
+* release 3.1.0 ([fd0e86d](https://www.github.com/oslllo/validator/commit/fd0e86d742b250a92837eee3895da0bd8658edcd))
+
 ## [3.0.0](https://www.github.com/oslllo/validator/compare/v2.0.2...v3.0.0) (2022-01-08)
 
 ### Breaking Changes
