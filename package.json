@@ -53,7 +53,7 @@
   "homepage": "https://docs.oslllo.com/validator/master",
   "dependencies": {
     "domino": "^2.1.6",
-    "validator": "^13.7.0"
+    "validator": "^13.9.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.6",
