@@ -1,6 +1,6 @@
 {
   "name": "oslllo-validator",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "All in one Javascript validator",
   "main": "src/index.js",
   "scripts": {
