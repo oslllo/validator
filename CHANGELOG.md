@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.0](https://www.github.com/oslllo/validator/compare/v3.1.0...v4.0.0) (2025-12-22)
+
+
+### Features
+
+* slim down package functions and only leave those used by other internal oslllo packages. ([6bf4932](https://www.github.com/oslllo/validator/commit/6bf493266c097f009681d08493e5b8f2ca1a2194))
+
+
+### Bug Fixes
+
+* **security:** audit fix ([8fcf2eb](https://www.github.com/oslllo/validator/commit/8fcf2eb363888788962c23c12c161fc4ee954eef))
+
+
+### Miscellaneous Chores
+
+* release 4.0.0 ([64ec7be](https://www.github.com/oslllo/validator/commit/64ec7bea50bcf8ce16ec3d6779c0441e0eb6f626))
+
 ## [3.1.0](https://www.github.com/oslllo/validator/compare/v2.0.1...v3.1.0) (2022-07-16)
 
 
