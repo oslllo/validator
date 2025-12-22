@@ -9,6 +9,7 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      # https://github.com/googleapis/release-please
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
         with:
