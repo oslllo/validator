@@ -1,6 +1,6 @@
 "use strict";
 
-const validator = require("validator");
+const isDataURI = require("validator").isDataURI;
 
 /**
  * @name dataURI
@@ -18,7 +18,7 @@ const validator = require("validator");
  *
  */
 const dataURI = function (value) {
-  return validator.isDataURI(...arguments);
+  return isDataURI(...arguments);
 };
 
 module.exports = dataURI;

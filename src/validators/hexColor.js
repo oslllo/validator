@@ -1,6 +1,6 @@
 "use strict";
 
-const validator = require("validator");
+const isHexColor = require("validator").isHexColor;
 
 /**
  * @name hexColor
@@ -19,5 +19,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value) {
-  return validator.isHexColor(...arguments);
+  return isHexColor(...arguments);
 };

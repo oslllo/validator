@@ -38,3 +38,24 @@ is.UUID("xxxA987FBC9-4BED-3078-CF07-9141BA07C9F3", 3); // => False
 ```
 
 ---
+
+## Available function
+
+```js
+is.actualNaN;
+is.base64;
+is.buffer;
+is.dataURI;
+is.defined;
+is.empty;
+is.fn;
+is.hexColor;
+is.number;
+is.number;
+is.object;
+is.pathToDir;
+is.pathToFile;
+is.string;
+is.string;
+is.svg;
+```

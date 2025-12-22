@@ -20,8 +20,8 @@ module.exports = function (value) {
   var type = this._internal._getObjectType(value);
   if (
     type === "[object Array]" ||
-        type === "[object Arguments]" ||
-        type === "[object String]"
+    type === "[object Arguments]" ||
+    type === "[object String]"
   ) {
     return value.length === 0;
   }

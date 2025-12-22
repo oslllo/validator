@@ -22,8 +22,8 @@ module.exports = function (value) {
 
   return (
     value !== undefined &&
-        typeof htmlelement !== "undefined" &&
-        value instanceof htmlelement &&
-        value.nodeType === 1
+    typeof htmlelement !== "undefined" &&
+    value instanceof htmlelement &&
+    value.nodeType === 1
   );
 };

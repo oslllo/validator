@@ -1,6 +1,6 @@
 "use strict";
 
-const validator = require("validator");
+const isBase64 = require("validator").isBase64;
 
 /**
  * @name base64
@@ -24,5 +24,5 @@ const validator = require("validator");
  */
 
 module.exports = function (value, options) {
-  return validator.isBase64(...arguments);
+  return isBase64(...arguments);
 };
